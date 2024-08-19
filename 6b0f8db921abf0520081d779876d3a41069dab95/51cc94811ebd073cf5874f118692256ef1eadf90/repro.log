@@ -1,0 +1,684 @@
+Warning: Permanently added '[localhost]:59076' (ED25519) to the list of known hosts.
+syzkaller login: [  158.803029][ T1124] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  158.803978][ T1124] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  158.811974][ T2558] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  158.812662][ T2558] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  158.895820][ T1124] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  158.896536][ T1124] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  158.938000][ T1096] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  158.938722][ T1096] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  158.993269][ T1096] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  158.993977][ T1096] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  159.042732][ T1124] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  159.043446][ T1124] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  159.079671][ T1124] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  159.082283][ T1124] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  159.147438][ T1124] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  159.148169][ T1124] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  159.204887][   T46] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  159.205587][   T46] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  159.262353][ T1124] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  159.263076][ T1124] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  159.302118][   T46] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  159.302820][   T46] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+executing program
+[  159.396755][ T2558] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  159.397468][ T2558] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+executing program
+[  159.476829][   T46] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  159.477525][   T46] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+executing program
+[  159.568755][ T1124] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  159.569460][ T1124] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+executing program
+[  159.630871][   T10] usb 2-1: new high-speed USB device number 2 using dummy_hcd
+[  159.674746][ T1096] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  159.675460][ T1096] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  159.710544][   T47] usb 4-1: new high-speed USB device number 2 using dummy_hcd
+[  159.724346][ T1124] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  159.725223][ T1124] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+executing program
+[  159.739303][ T8843] UDC core: USB Raw Gadget: couldn't find an available UDC or it's busy
+[  159.742229][ T8843] misc raw-gadget: fail, usb_gadget_register_driver returned -16
+executing program
+[  159.761448][ T8846] UDC core: USB Raw Gadget: couldn't find an available UDC or it's busy
+[  159.764870][ T8846] misc raw-gadget: fail, usb_gadget_register_driver returned -16
+[  159.790618][   T25] usb 1-1: new high-speed USB device number 2 using dummy_hcd
+executing program
+[  159.808009][ T8853] UDC core: USB Raw Gadget: couldn't find an available UDC or it's busy
+[  159.817951][ T8853] misc raw-gadget: fail, usb_gadget_register_driver returned -16
+[  159.834073][ T1096] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  159.834793][ T1096] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+executing program
+[  159.846827][ T8856] UDC core: USB Raw Gadget: couldn't find an available UDC or it's busy
+[  159.860239][ T8856] misc raw-gadget: fail, usb_gadget_register_driver returned -16
+executing program
+[  159.884106][   T10] usb 2-1: New USB device found, idVendor=0cf3, idProduct=9271, bcdDevice= 1.08
+[  159.885267][   T10] usb 2-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  159.885941][   T10] usb 2-1: Product: syz
+[  159.888665][   T10] usb 2-1: Manufacturer: syz
+[  159.888968][ T8859] UDC core: USB Raw Gadget: couldn't find an available UDC or it's busy
+[  159.889083][   T10] usb 2-1: SerialNumber: syz
+[  159.904644][  T780] usb 5-1: new high-speed USB device number 2 using dummy_hcd
+[  159.908431][ T8859] misc raw-gadget: fail, usb_gadget_register_driver returned -16
+[  159.919062][   T47] usb 4-1: New USB device found, idVendor=0cf3, idProduct=9271, bcdDevice= 1.08
+[  159.919905][   T47] usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+executing program
+[  159.923846][   T47] usb 4-1: Product: syz
+[  159.927840][   T47] usb 4-1: Manufacturer: syz
+[  159.928277][   T47] usb 4-1: SerialNumber: syz
+executing program
+[  159.963048][ T8865] UDC core: USB Raw Gadget: couldn't find an available UDC or it's busy
+[  159.969499][ T8865] misc raw-gadget: fail, usb_gadget_register_driver returned -16
+[  160.016596][   T10] usb 2-1: ath9k_htc: Firmware ath9k_htc/htc_9271-1.4.0.fw requested
+[  160.024716][   T25] usb 1-1: New USB device found, idVendor=0cf3, idProduct=9271, bcdDevice= 1.08
+[  160.025519][   T25] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  160.036143][   T47] usb 4-1: ath9k_htc: Firmware ath9k_htc/htc_9271-1.4.0.fw requested
+[  160.037937][   T25] usb 1-1: Product: syz
+[  160.038346][   T25] usb 1-1: Manufacturer: syz
+[  160.038765][   T25] usb 1-1: SerialNumber: syz
+executing program
+[  160.061942][ T8877] UDC core: USB Raw Gadget: couldn't find an available UDC or it's busy
+[  160.077834][ T8877] misc raw-gadget: fail, usb_gadget_register_driver returned -16
+[  160.101478][ T1096] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  160.114114][   T25] usb 1-1: ath9k_htc: Firmware ath9k_htc/htc_9271-1.4.0.fw requested
+[  160.115183][ T1096] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  160.121762][  T780] usb 5-1: New USB device found, idVendor=0cf3, idProduct=9271, bcdDevice= 1.08
+[  160.122532][  T780] usb 5-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  160.143506][  T780] usb 5-1: Product: syz
+[  160.143911][  T780] usb 5-1: Manufacturer: syz
+[  160.144342][  T780] usb 5-1: SerialNumber: syz
+executing program
+[  160.160734][ T8762] usb 2-1: ath9k_htc: Transferred FW: ath9k_htc/htc_9271-1.4.0.fw, size: 51008
+[  160.175833][ T8890] UDC core: USB Raw Gadget: couldn't find an available UDC or it's busy
+[  160.179328][ T8832] usb 4-1: ath9k_htc: Transferred FW: ath9k_htc/htc_9271-1.4.0.fw, size: 51008
+[  160.186753][ T8890] misc raw-gadget: fail, usb_gadget_register_driver returned -16
+[  160.200939][   T47] usb 1-1: ath9k_htc: Transferred FW: ath9k_htc/htc_9271-1.4.0.fw, size: 51008
+[  160.219894][ T8835] usb 3-1: new high-speed USB device number 2 using dummy_hcd
+[  160.279872][    C1] hrtimer: interrupt took 196460 ns
+executing program
+[  160.320315][ T8894] UDC core: USB Raw Gadget: couldn't find an available UDC or it's busy
+[  160.354034][ T8894] misc raw-gadget: fail, usb_gadget_register_driver returned -16
+[  215.974589][ T8832] ath9k_htc 4-1:1.0: ath9k_htc: Target is unresponsive
+[  215.975852][ T8832] ath9k_htc: Failed to initialize the device
+[  222.138983][ T8762] ath9k_htc 2-1:1.0: ath9k_htc: Target is unresponsive
+[  294.700478][    C1] rcu: INFO: rcu_preempt detected stalls on CPUs/tasks:
+[  294.701311][    C1] rcu: 	Tasks blocked on level-0 rcu_node (CPUs 0-1): P8894/1:b..l P47/1:b..l
+[  294.702567][    C1] rcu: 	(detected by 1, t=10502 jiffies, g=11937, q=81 ncpus=2)
+[  294.703581][    C1] task:kworker/1:1     state:R  running task     stack:25680 pid:47    tgid:47    ppid:2      flags:0x00004000
+[  294.705187][    C1] Workqueue: events request_firmware_work_func
+[  294.705784][    C1] Call Trace:
+[  294.706094][    C1]  <TASK>
+[  294.706384][    C1]  __schedule+0xc3f/0x5390
+[  294.706828][    C1]  ? __pfx_mark_lock+0x10/0x10
+[  294.707292][    C1]  ? check_irq_usage+0x293/0x1560
+[  294.707773][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.708246][    C1]  ? check_irq_usage+0x141/0x1560
+[  294.708741][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.709201][    C1]  ? __pfx___schedule+0x10/0x10
+[  294.709665][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.710119][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.710574][    C1]  ? mark_held_locks+0x9f/0xe0
+[  294.711039][    C1]  ? irqentry_exit+0x3b/0x90
+[  294.711492][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.711956][    C1]  ? lockdep_hardirqs_on+0x7c/0x110
+[  294.712452][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.712908][    C1]  ? preempt_schedule_thunk+0x1a/0x30
+[  294.713417][    C1]  preempt_schedule_common+0x44/0xb0
+[  294.713929][    C1]  preempt_schedule_thunk+0x1a/0x30
+[  294.714422][    C1]  ? unwind_next_frame+0x10f6/0x2220
+[  294.714919][    C1]  ? unwind_next_frame+0x1103/0x2220
+[  294.715412][    C1]  unwind_next_frame+0x1108/0x2220
+[  294.715894][    C1]  ? stack_trace_save+0x8f/0xc0
+[  294.716365][    C1]  ? __pfx_stack_trace_consume_entry+0x10/0x10
+[  294.716941][    C1]  arch_stack_walk+0xe6/0x160
+[  294.717409][    C1]  ? save_stack+0x153/0x1e0
+[  294.717856][    C1]  stack_trace_save+0x8f/0xc0
+[  294.718310][    C1]  ? __pfx_stack_trace_save+0x10/0x10
+[  294.718827][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.719286][    C1]  save_stack+0x153/0x1e0
+[  294.719708][    C1]  ? __pfx_save_stack+0x10/0x10
+[  294.720184][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.720644][    C1]  ? __pfx_lock_release+0x10/0x10
+[  294.721133][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.721594][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.722055][    C1]  __reset_page_owner+0x8d/0x400
+[  294.722532][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.722989][    C1]  free_unref_page+0x655/0xe40
+[  294.723457][    C1]  qlist_free_all+0x50/0x150
+[  294.723902][    C1]  kasan_quarantine_reduce+0x192/0x1e0
+[  294.724434][    C1]  __kasan_slab_alloc+0x67/0x90
+[  294.724905][    C1]  __kmalloc_cache_noprof+0x121/0x320
+[  294.725415][    C1]  ? dummy_urb_enqueue+0x8d/0x920
+[  294.725897][    C1]  dummy_urb_enqueue+0x8d/0x920
+[  294.726373][    C1]  usb_hcd_submit_urb+0x2be/0x2170
+[  294.726873][    C1]  ? __pfx_usb_hcd_submit_urb+0x10/0x10
+[  294.727395][    C1]  ? __pfx_mark_lock+0x10/0x10
+[  294.727852][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.728324][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.728780][    C1]  ? find_held_lock+0x2d/0x120
+[  294.729235][    C1]  ? ath9k_hif_usb_alloc_urbs+0xac5/0x1060
+[  294.729792][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.730265][    C1]  usb_submit_urb+0x86b/0x1730
+[  294.730736][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.731203][    C1]  ath9k_hif_usb_alloc_urbs+0xad2/0x1060
+[  294.731757][    C1]  ? __pfx_ath9k_hif_usb_firmware_cb+0x10/0x10
+[  294.732332][    C1]  ath9k_hif_usb_firmware_cb+0x146/0x620
+[  294.732851][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.733313][    C1]  ? __pfx_ath9k_hif_usb_firmware_cb+0x10/0x10
+[  294.733878][    C1]  request_firmware_work_func+0x133/0x240
+[  294.734427][    C1]  ? __pfx_request_firmware_work_func+0x10/0x10
+[  294.735019][    C1]  ? _raw_spin_unlock_irq+0x23/0x50
+[  294.735523][    C1]  process_one_work+0x95a/0x1ad0
+[  294.736032][    C1]  ? __pfx_kernfs_notify_workfn+0x10/0x10
+[  294.736583][    C1]  ? __pfx_process_one_work+0x10/0x10
+[  294.737102][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.737570][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.738028][    C1]  ? assign_work+0x194/0x240
+[  294.738484][    C1]  worker_thread+0x680/0xeb0
+[  294.738942][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.739407][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.739867][    C1]  ? __pfx_worker_thread+0x10/0x10
+[  294.740399][    C1]  kthread+0x2ca/0x3b0
+[  294.740793][    C1]  ? __pfx_kthread+0x10/0x10
+[  294.741233][    C1]  ret_from_fork+0x48/0x80
+[  294.741671][    C1]  ? __pfx_kthread+0x10/0x10
+[  294.742119][    C1]  ret_from_fork_asm+0x1a/0x30
+[  294.742605][    C1]  </TASK>
+[  294.742895][    C1] task:syz-executor356 state:R  running task     stack:27696 pid:8894  tgid:8894  ppid:8369   flags:0x00004002
+[  294.743943][    C1] Call Trace:
+[  294.744257][    C1]  <TASK>
+[  294.744542][    C1]  __schedule+0xc3f/0x5390
+[  294.744982][    C1]  ? __pfx___lock_acquire+0x10/0x10
+[  294.745475][    C1]  ? __pfx_mark_lock+0x10/0x10
+[  294.745931][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.746393][    C1]  ? __pfx_mark_lock+0x10/0x10
+[  294.746862][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.747323][    C1]  ? __pfx___schedule+0x10/0x10
+[  294.747788][    C1]  ? hlock_class+0x4e/0x130
+[  294.748227][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.748686][    C1]  ? mark_lock+0xb3/0xd60
+[  294.749117][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.749572][    C1]  ? mark_held_locks+0x9f/0xe0
+[  294.750039][    C1]  preempt_schedule_irq+0x51/0x90
+[  294.750525][    C1]  irqentry_exit+0x36/0x90
+[  294.750962][    C1]  asm_sysvec_apic_timer_interrupt+0x1a/0x20
+[  294.751515][    C1] RIP: 0010:lock_acquire+0x1f8/0x590
+[  294.752024][    C1] Code: f6 99 7e 83 f8 01 0f 85 09 03 00 00 9c 58 f6 c4 02 0f 85 f4 02 00 00 48 83 7c 24 08 00 74 01 fb 48 b8 00 00 00 00 00 fc ff df <48> 01 c3 48 c7 03 00 00 00 00 48 c7 43 08 00 00 00 00 48 8b 84 24
+[  294.753678][    C1] RSP: 0018:ffffc9000d6f7508 EFLAGS: 00000206
+[  294.754232][    C1] RAX: dffffc0000000000 RBX: 1ffff92001adeea4 RCX: 1ffff92001adee89
+[  294.754928][    C1] RDX: 1ffff11008f1a51b RSI: 0000000000000000 RDI: 0000000000000000
+[  294.755628][    C1] RBP: 0000000000000000 R08: 0000000000000000 R09: fffffbfff28714d8
+[  294.756339][    C1] R10: ffffffff9438a6c7 R11: 0000000000000000 R12: 0000000000000002
+[  294.757042][    C1] R13: 0000000000000000 R14: ffffffff8dbb8d60 R15: 0000000000000000
+[  294.757767][    C1]  ? __pfx_lock_acquire+0x10/0x10
+[  294.758258][    C1]  ? unwind_next_frame+0x5cd/0x2220
+[  294.758744][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.759200][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.759656][    C1]  ? stack_access_ok+0xf5/0x270
+[  294.760124][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.760585][    C1]  is_bpf_text_address+0x38/0x1a0
+[  294.761069][    C1]  ? is_bpf_text_address+0x32/0x1a0
+[  294.761567][    C1]  kernel_text_address+0x41/0x90
+[  294.762053][    C1]  __kernel_text_address+0xd/0x40
+[  294.762537][    C1]  unwind_get_return_address+0x7d/0xe0
+[  294.763041][    C1]  ? __pfx_stack_trace_consume_entry+0x10/0x10
+[  294.763614][    C1]  arch_stack_walk+0xa2/0x160
+[  294.764083][    C1]  stack_trace_save+0x8f/0xc0
+[  294.764533][    C1]  ? __pfx_stack_trace_save+0x10/0x10
+[  294.765040][    C1]  ? __pfx_mark_lock+0x10/0x10
+[  294.765505][    C1]  kasan_save_stack+0x24/0x50
+[  294.765948][    C1]  ? kasan_save_stack+0x24/0x50
+[  294.766419][    C1]  ? kasan_save_track+0x14/0x30
+[  294.766881][    C1]  ? kasan_save_free_info+0x3b/0x60
+[  294.767383][    C1]  ? poison_slab_object+0xf9/0x180
+[  294.767863][    C1]  ? __kasan_slab_free+0x33/0x50
+[  294.768346][    C1]  ? kmem_cache_free+0x12a/0x3a0
+[  294.768816][    C1]  ? unlink_anon_vmas+0x457/0x890
+[  294.769303][    C1]  ? free_pgtables+0xc8/0x8f0
+[  294.769745][    C1]  ? exit_mmap+0x3c7/0xb30
+[  294.770181][    C1]  ? __mmput+0x128/0x480
+[  294.770582][    C1]  ? mmput+0x60/0x70
+[  294.770957][    C1]  ? do_exit+0x9b3/0x2b40
+[  294.771384][    C1]  ? do_group_exit+0xd3/0x2a0
+[  294.771835][    C1]  ? __x64_sys_exit_group+0x3e/0x50
+[  294.772343][    C1]  ? x64_sys_call+0x1832/0x1840
+[  294.772813][    C1]  ? do_syscall_64+0xcb/0x250
+[  294.773270][    C1]  ? entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  294.773832][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.774293][    C1]  ? mark_held_locks+0x9f/0xe0
+[  294.774755][    C1]  ? _raw_spin_unlock_irqrestore+0x58/0x70
+[  294.775310][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.775762][    C1]  ? lockdep_hardirqs_on+0x7c/0x110
+[  294.776269][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.776724][    C1]  ? _raw_spin_unlock_irqrestore+0x41/0x70
+[  294.777273][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.777736][    C1]  ? debug_check_no_obj_freed+0x2bd/0x540
+[  294.778286][    C1]  ? __pfx_debug_check_no_obj_freed+0x10/0x10
+[  294.778854][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.779306][    C1]  ? __memcg_slab_free_hook+0xd5/0x560
+[  294.779829][    C1]  ? unlink_anon_vmas+0x457/0x890
+[  294.780309][    C1]  kasan_save_track+0x14/0x30
+[  294.780760][    C1]  kasan_save_free_info+0x3b/0x60
+[  294.781257][    C1]  poison_slab_object+0xf9/0x180
+[  294.781732][    C1]  __kasan_slab_free+0x33/0x50
+[  294.782190][    C1]  kmem_cache_free+0x12a/0x3a0
+[  294.782639][    C1]  ? unlink_anon_vmas+0x457/0x890
+[  294.783137][    C1]  unlink_anon_vmas+0x457/0x890
+[  294.783627][    C1]  free_pgtables+0xc8/0x8f0
+[  294.784084][    C1]  ? __pfx_free_pgtables+0x10/0x10
+[  294.784568][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.785033][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.785491][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.785950][    C1]  ? down_write+0x14e/0x200
+[  294.786380][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.786840][    C1]  exit_mmap+0x3c7/0xb30
+[  294.787262][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.787717][    C1]  ? __pfx_exit_mmap+0x10/0x10
+[  294.788230][    C1]  __mmput+0x128/0x480
+[  294.788628][    C1]  mmput+0x60/0x70
+[  294.788994][    C1]  do_exit+0x9b3/0x2b40
+[  294.789408][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.789868][    C1]  ? __pfx_lock_release+0x10/0x10
+[  294.790357][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.790811][    C1]  ? do_raw_spin_lock+0x12c/0x2b0
+[  294.791281][    C1]  ? __pfx_do_exit+0x10/0x10
+[  294.791731][    C1]  ? _raw_spin_unlock_irq+0x23/0x50
+[  294.792246][    C1]  do_group_exit+0xd3/0x2a0
+[  294.792693][    C1]  __x64_sys_exit_group+0x3e/0x50
+[  294.793177][    C1]  x64_sys_call+0x1832/0x1840
+[  294.793636][    C1]  do_syscall_64+0xcb/0x250
+[  294.794091][    C1]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  294.794644][    C1] RIP: 0033:0x7fdbb0458421
+[  294.795059][    C1] RSP: 002b:00007ffd20d4abf8 EFLAGS: 00000246 ORIG_RAX: 00000000000000e7
+[  294.795810][    C1] RAX: ffffffffffffffda RBX: 00007fdbb04df270 RCX: 00007fdbb0458421
+[  294.796518][    C1] RDX: 000000000000003c RSI: 00000000000000e7 RDI: 0000000000000000
+[  294.797222][    C1] RBP: 0000000000000000 R08: ffffffffffffffb8 R09: 00382e6364755f79
+[  294.797934][    C1] R10: 0000000000000011 R11: 0000000000000246 R12: 00007fdbb04df270
+[  294.798638][    C1] R13: 0000000000000000 R14: 00007fdbb04e4000 R15: 00007fdbb040c770
+[  294.799360][    C1]  </TASK>
+[  294.799657][    C1] rcu: rcu_preempt kthread starved for 620 jiffies! g11937 f0x0 RCU_GP_WAIT_FQS(5) ->state=0x0 ->cpu=0
+[  294.800632][    C1] rcu: 	Unless rcu_preempt kthread gets sufficient CPU time, OOM is now expected behavior.
+[  294.801497][    C1] rcu: RCU grace-period kthread stack dump:
+[  294.802027][    C1] task:rcu_preempt     state:R  running task     stack:27584 pid:17    tgid:17    ppid:2      flags:0x00004000
+[  294.803075][    C1] Call Trace:
+[  294.803383][    C1]  <TASK>
+[  294.803667][    C1]  __schedule+0xc3f/0x5390
+[  294.804134][    C1]  ? __pfx___schedule+0x10/0x10
+[  294.804598][    C1]  ? schedule+0x297/0x350
+[  294.805020][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.805476][    C1]  ? __pfx_lock_release+0x10/0x10
+[  294.805957][    C1]  ? __pfx___mod_timer+0x10/0x10
+[  294.806440][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.806890][    C1]  ? lockdep_init_map_type+0x2cb/0x7f0
+[  294.807415][    C1]  schedule+0xe7/0x350
+[  294.807819][    C1]  schedule_timeout+0x128/0x290
+[  294.808293][    C1]  ? __pfx_schedule_timeout+0x10/0x10
+[  294.808799][    C1]  ? __pfx_process_timeout+0x10/0x10
+[  294.809301][    C1]  ? bnep_session+0x420/0x27d0
+[  294.809767][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.810238][    C1]  ? _raw_spin_unlock_irqrestore+0x41/0x70
+[  294.810791][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.811254][    C1]  ? prepare_to_swait_event+0xf1/0x480
+[  294.811782][    C1]  rcu_gp_fqs_loop+0x18f/0xa10
+[  294.812256][    C1]  ? __pfx_rcu_gp_fqs_loop+0x10/0x10
+[  294.812775][    C1]  rcu_gp_kthread+0x273/0x370
+[  294.813229][    C1]  ? __pfx_rcu_gp_kthread+0x10/0x10
+[  294.813727][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.814188][    C1]  ? srso_return_thunk+0x5/0x5f
+[  294.814645][    C1]  ? __kthread_parkme+0x157/0x230
+[  294.815126][    C1]  ? __pfx_rcu_gp_kthread+0x10/0x10
+[  294.815624][    C1]  kthread+0x2ca/0x3b0
+[  294.816033][    C1]  ? __pfx_kthread+0x10/0x10
+[  294.816478][    C1]  ret_from_fork+0x48/0x80
+[  294.816917][    C1]  ? __pfx_kthread+0x10/0x10
+[  294.817356][    C1]  ret_from_fork_asm+0x1a/0x30
+[  294.817838][    C1]  </TASK>
+[  294.818127][    C1] rcu: Stack dump where RCU GP kthread last ran:
+[  294.818685][    C1] Sending NMI from CPU 1 to CPUs 0:
+[  294.819166][    C0] NMI backtrace for cpu 0
+[  294.819186][    C0] CPU: 0 UID: 0 PID: 88 Comm: kswapd0 Not tainted 6.11.0-rc3-00013-g6b0f8db921ab #1
+[  294.819220][    C0] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  294.819236][    C0] RIP: 0010:unwind_next_frame+0x4eb/0x2220
+[  294.819274][    C0] Code: 00 00 00 00 fc ff df 4c 89 ea 48 c1 ea 03 0f b6 04 02 4c 89 ea 83 e2 07 38 d0 7f 08 84 c0 0f 85 63 19 00 00 45 0f b6 7c 24 05 <31> ff 41 83 e7 07 44 89 fe e8 c7 0b 4e 00 45 84 ff 0f 84 95 fe ff
+[  294.819302][    C0] RSP: 0018:ffffc90000006e28 EFLAGS: 00000046
+[  294.819324][    C0] RAX: 0000000000000000 RBX: ffffc90000006ea0 RCX: ffffffff813bf384
+[  294.819344][    C0] RDX: 0000000000000005 RSI: ffffffff813c0309 RDI: 0000000000000006
+[  294.819363][    C0] RBP: 0000000000000001 R08: 0000000000000820 R09: 0000000000000000
+[  294.819381][    C0] R10: ffffffff81e72e95 R11: 0000000000000000 R12: ffffffff908d9118
+[  294.819401][    C0] R13: ffffffff908d911d R14: ffffc90000006ed5 R15: 0000000000000002
+[  294.819422][    C0] FS:  0000000000000000(0000) GS:ffff88802c400000(0000) knlGS:0000000000000000
+[  294.819449][    C0] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  294.819470][    C0] CR2: 00007fea1e094e84 CR3: 000000001c9a6000 CR4: 0000000000350ef0
+[  294.819490][    C0] Call Trace:
+[  294.819498][    C0]  <NMI>
+[  294.819510][    C0]  ? show_regs+0x93/0xa0
+[  294.819537][    C0]  ? nmi_cpu_backtrace+0x1d4/0x350
+[  294.819585][    C0]  ? nmi_cpu_backtrace_handler+0xc/0x20
+[  294.819630][    C0]  ? nmi_handle+0x1a9/0x5b0
+[  294.819657][    C0]  ? __pfx_perf_event_nmi_handler+0x10/0x10
+[  294.819697][    C0]  ? unwind_next_frame+0x4eb/0x2220
+[  294.819727][    C0]  ? default_do_nmi+0x88/0x220
+[  294.819763][    C0]  ? exc_nmi+0x262/0x310
+[  294.819796][    C0]  ? end_repeat_nmi+0xf/0x53
+[  294.819838][    C0]  ? kasan_save_track+0x5/0x30
+[  294.819883][    C0]  ? __orc_find+0xc4/0x130
+[  294.819919][    C0]  ? unwind_next_frame+0x4b9/0x2220
+[  294.819950][    C0]  ? unwind_next_frame+0x4eb/0x2220
+[  294.819981][    C0]  ? unwind_next_frame+0x4eb/0x2220
+[  294.820014][    C0]  ? unwind_next_frame+0x4eb/0x2220
+[  294.820045][    C0]  </NMI>
+[  294.820053][    C0]  <IRQ>
+[  294.820064][    C0]  ? kasan_save_track+0x14/0x30
+[  294.820100][    C0]  ? __pfx_stack_trace_consume_entry+0x10/0x10
+[  294.820142][    C0]  arch_stack_walk+0xe6/0x160
+[  294.820180][    C0]  ? kasan_save_track+0x14/0x30
+[  294.820219][    C0]  stack_trace_save+0x8f/0xc0
+[  294.820256][    C0]  ? __pfx_stack_trace_save+0x10/0x10
+[  294.820295][    C0]  ? __lock_acquire+0x14c5/0x3b60
+[  294.820342][    C0]  kasan_save_stack+0x24/0x50
+[  294.820377][    C0]  ? kasan_save_stack+0x24/0x50
+[  294.820411][    C0]  ? kasan_save_track+0x14/0x30
+[  294.820444][    C0]  ? __kasan_kmalloc+0xaa/0xb0
+[  294.820477][    C0]  ? dummy_urb_enqueue+0x8d/0x920
+[  294.820512][    C0]  ? usb_hcd_submit_urb+0x2be/0x2170
+[  294.820550][    C0]  ? usb_submit_urb+0x86b/0x1730
+[  294.820593][    C0]  ? ath9k_hif_usb_reg_in_cb+0x493/0x690
+[  294.820642][    C0]  ? __usb_hcd_giveback_urb+0x38a/0x6d0
+[  294.820678][    C0]  ? usb_hcd_giveback_urb+0x39b/0x460
+[  294.820713][    C0]  ? dummy_timer+0x12e6/0x31f0
+[  294.820746][    C0]  ? __hrtimer_run_queues+0x212/0xcc0
+[  294.820777][    C0]  ? hrtimer_interrupt+0x320/0x7b0
+[  294.820808][    C0]  ? __sysvec_apic_timer_interrupt+0x114/0x460
+[  294.820839][    C0]  ? sysvec_apic_timer_interrupt+0x45/0xb0
+[  294.820879][    C0]  ? asm_sysvec_apic_timer_interrupt+0x1a/0x20
+[  294.820916][    C0]  ? __pv_queued_spin_lock_slowpath+0x405/0xc40
+[  294.820973][    C0]  ? do_raw_spin_lock+0x20f/0x2b0
+[  294.821000][    C0]  ? mac80211_hwsim_tx_frame_no_nl.isra.0+0x6ec/0x1270
+[  294.821043][    C0]  ? mac80211_hwsim_tx_frame+0x1ed/0x2a0
+[  294.821082][    C0]  ? mac80211_hwsim_beacon_tx+0x56e/0x9e0
+[  294.821122][    C0]  ? __iterate_interfaces+0x2c3/0x5d0
+[  294.821152][    C0]  ? ieee80211_iterate_active_interfaces_atomic+0x71/0x1b0
+[  294.821190][    C0]  ? mac80211_hwsim_beacon+0x105/0x200
+[  294.821219][    C0]  ? __hrtimer_run_queues+0x212/0xcc0
+[  294.821249][    C0]  ? hrtimer_run_softirq+0x17f/0x350
+[  294.821279][    C0]  ? handle_softirqs+0x1d7/0x870
+[  294.821310][    C0]  ? irq_exit_rcu+0xbb/0x120
+[  294.821341][    C0]  ? sysvec_apic_timer_interrupt+0x99/0xb0
+[  294.821382][    C0]  ? asm_sysvec_apic_timer_interrupt+0x1a/0x20
+[  294.821416][    C0]  ? stack_access_ok+0x13c/0x270
+[  294.821444][    C0]  ? unwind_next_frame+0xd41/0x2220
+[  294.821472][    C0]  ? arch_stack_walk+0xe6/0x160
+[  294.821504][    C0]  ? stack_trace_save+0x8f/0xc0
+[  294.821538][    C0]  ? kasan_save_stack+0x24/0x50
+[  294.821572][    C0]  ? kasan_save_track+0x14/0x30
+[  294.821608][    C0]  ? __pfx_mark_lock+0x10/0x10
+[  294.821650][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.821678][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.821705][    C0]  ? hlock_class+0x4e/0x130
+[  294.821736][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.821763][    C0]  ? mark_lock+0xb3/0xd60
+[  294.821806][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.821833][    C0]  ? rcu_is_watching+0x12/0xc0
+[  294.821879][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.821907][    C0]  ? trace_kmalloc+0x2d/0xd0
+[  294.821938][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.821967][    C0]  ? __kmalloc_cache_noprof+0x179/0x320
+[  294.822009][    C0]  ? dummy_urb_enqueue+0x8d/0x920
+[  294.822052][    C0]  kasan_save_track+0x14/0x30
+[  294.822088][    C0]  __kasan_kmalloc+0xaa/0xb0
+[  294.822124][    C0]  dummy_urb_enqueue+0x8d/0x920
+[  294.822165][    C0]  usb_hcd_submit_urb+0x2be/0x2170
+[  294.822209][    C0]  ? __pfx_usb_hcd_submit_urb+0x10/0x10
+[  294.822249][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.822281][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.822308][    C0]  ? find_held_lock+0x2d/0x120
+[  294.822341][    C0]  ? ath9k_hif_usb_reg_in_cb+0x486/0x690
+[  294.822389][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.822423][    C0]  usb_submit_urb+0x86b/0x1730
+[  294.822472][    C0]  ? do_raw_spin_unlock+0x174/0x230
+[  294.822503][    C0]  ath9k_hif_usb_reg_in_cb+0x493/0x690
+[  294.822553][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.822584][    C0]  __usb_hcd_giveback_urb+0x38a/0x6d0
+[  294.822625][    C0]  usb_hcd_giveback_urb+0x39b/0x460
+[  294.822662][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.822693][    C0]  dummy_timer+0x12e6/0x31f0
+[  294.822733][    C0]  ? __pfx_lock_release+0x10/0x10
+[  294.822780][    C0]  ? __pfx___lock_acquire+0x10/0x10
+[  294.822826][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.822853][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.822881][    C0]  ? find_held_lock+0x2d/0x120
+[  294.822914][    C0]  ? __hrtimer_run_queues+0x5aa/0xcc0
+[  294.822944][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.822978][    C0]  ? __pfx_dummy_timer+0x10/0x10
+[  294.823013][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.823040][    C0]  ? timerqueue_del+0x83/0x150
+[  294.823089][    C0]  ? __pfx_dummy_timer+0x10/0x10
+[  294.823131][    C0]  __hrtimer_run_queues+0x212/0xcc0
+[  294.823171][    C0]  ? __pfx___hrtimer_run_queues+0x10/0x10
+[  294.823204][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.823231][    C0]  ? ktime_get_update_offsets_now+0x213/0x2f0
+[  294.823282][    C0]  hrtimer_interrupt+0x320/0x7b0
+[  294.823327][    C0]  __sysvec_apic_timer_interrupt+0x114/0x460
+[  294.823360][    C0]  sysvec_apic_timer_interrupt+0x45/0xb0
+[  294.823404][    C0]  asm_sysvec_apic_timer_interrupt+0x1a/0x20
+[  294.823439][    C0] RIP: 0010:__pv_queued_spin_lock_slowpath+0x405/0xc40
+[  294.823489][    C0] Code: ed c6 45 01 01 41 bc 00 80 00 00 4c 8d 74 24 78 48 c1 e9 03 41 83 e5 07 48 b8 00 00 00 00 00 fc ff df 48 8d 1c 01 eb 0c f3 90 <41> 83 ec 01 0f 84 10 05 00 00 b8 00 01 00 00 66 89 44 24 78 0f b6
+[  294.823517][    C0] RSP: 0018:ffffc900000079c0 EFLAGS: 00000206
+[  294.823539][    C0] RAX: 0000000000000003 RBX: fffffbfff1dab7a4 RCX: 1ffffffff1dab7a4
+[  294.823558][    C0] RDX: 0000000000000001 RSI: ffffffff8af70852 RDI: 0000000000000000
+[  294.823577][    C0] RBP: ffffffff8ed5bd20 R08: 0000000000000001 R09: fffffbfff28714e6
+[  294.823597][    C0] R10: 0000000000000001 R11: 0000000000000000 R12: 0000000000006d46
+[  294.823615][    C0] R13: 0000000000000000 R14: ffffc90000007a38 R15: ffff88802c43fc80
+[  294.823643][    C0]  ? __pv_queued_spin_lock_slowpath+0x9b2/0xc40
+[  294.823701][    C0]  ? __pfx___pv_queued_spin_lock_slowpath+0x10/0x10
+[  294.823752][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.823783][    C0]  ? __pfx_lock_acquire+0x10/0x10
+[  294.823829][    C0]  do_raw_spin_lock+0x20f/0x2b0
+[  294.823859][    C0]  ? __pfx_do_raw_spin_lock+0x10/0x10
+[  294.823895][    C0]  mac80211_hwsim_tx_frame_no_nl.isra.0+0x6ec/0x1270
+[  294.823955][    C0]  ? __pfx_mac80211_hwsim_tx_frame_no_nl.isra.0+0x10/0x10
+[  294.823998][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.824025][    C0]  ? lockdep_hardirqs_on+0x7c/0x110
+[  294.824068][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.824095][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.824122][    C0]  ? timekeeping_debug_get_ns+0x37b/0x5a0
+[  294.824171][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.824206][    C0]  ? mac80211_hwsim_monitor_rx+0x1c8/0x850
+[  294.824245][    C0]  mac80211_hwsim_tx_frame+0x1ed/0x2a0
+[  294.824289][    C0]  mac80211_hwsim_beacon_tx+0x56e/0x9e0
+[  294.824333][    C0]  ? __pfx_lock_acquire+0x10/0x10
+[  294.824375][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.824405][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.824436][    C0]  __iterate_interfaces+0x2c3/0x5d0
+[  294.824468][    C0]  ? __pfx_mac80211_hwsim_beacon_tx+0x10/0x10
+[  294.824512][    C0]  ? __pfx_mac80211_hwsim_beacon_tx+0x10/0x10
+[  294.824554][    C0]  ? __pfx_mac80211_hwsim_beacon+0x10/0x10
+[  294.824583][    C0]  ieee80211_iterate_active_interfaces_atomic+0x71/0x1b0
+[  294.824625][    C0]  mac80211_hwsim_beacon+0x105/0x200
+[  294.824658][    C0]  __hrtimer_run_queues+0x212/0xcc0
+[  294.824697][    C0]  ? __pfx___hrtimer_run_queues+0x10/0x10
+[  294.824730][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.824757][    C0]  ? ktime_get_update_offsets_now+0x213/0x2f0
+[  294.824808][    C0]  hrtimer_run_softirq+0x17f/0x350
+[  294.824843][    C0]  handle_softirqs+0x1d7/0x870
+[  294.824882][    C0]  irq_exit_rcu+0xbb/0x120
+[  294.824913][    C0]  sysvec_apic_timer_interrupt+0x99/0xb0
+[  294.824956][    C0]  </IRQ>
+[  294.824965][    C0]  <TASK>
+[  294.824974][    C0]  asm_sysvec_apic_timer_interrupt+0x1a/0x20
+[  294.825014][    C0] RIP: 0010:stack_access_ok+0x13c/0x270
+[  294.825053][    C0] Code: 3c 24 4c 39 fd 73 8c e8 52 0f 4e 00 48 8b 44 24 08 48 01 e8 49 39 c6 48 89 04 24 0f 83 72 ff ff ff e8 38 0f 4e 00 48 8b 04 24 <41> be 01 00 00 00 49 39 c7 73 a9 e9 59 ff ff ff e8 1f 0f 4e 00 48
+[  294.825084][    C0] RSP: 0018:ffffc90000ec7068 EFLAGS: 00000293
+[  294.825105][    C0] RAX: ffffc90000ec74b8 RBX: ffffc90000ec7128 RCX: ffffffff813bfc66
+[  294.825126][    C0] RDX: ffff888018a70000 RSI: ffffffff813bfd08 RDI: 0000000000000005
+[  294.825145][    C0] RBP: ffffc90000ec74b0 R08: 0000000000000002 R09: 0000000000000000
+[  294.825164][    C0] R10: 0000000000000001 R11: 0000000000000000 R12: ffffc90000ec7130
+[  294.825183][    C0] R13: ffffc90000ec7138 R14: ffffc90000ec0000 R15: ffffc90000ec8000
+[  294.825211][    C0]  ? stack_access_ok+0x96/0x270
+[  294.825240][    C0]  ? stack_access_ok+0x138/0x270
+[  294.825281][    C0]  ? stack_access_ok+0x138/0x270
+[  294.825319][    C0]  unwind_next_frame+0xd41/0x2220
+[  294.825352][    C0]  ? poison_slab_object+0xf9/0x180
+[  294.825388][    C0]  ? __pfx_stack_trace_consume_entry+0x10/0x10
+[  294.825429][    C0]  arch_stack_walk+0xe6/0x160
+[  294.825467][    C0]  ? poison_slab_object+0xf9/0x180
+[  294.825507][    C0]  stack_trace_save+0x8f/0xc0
+[  294.825544][    C0]  ? __pfx_stack_trace_save+0x10/0x10
+[  294.825580][    C0]  ? stack_depot_save_flags+0x2d/0x940
+[  294.825633][    C0]  ? __pfx_mark_lock+0x10/0x10
+[  294.825678][    C0]  kasan_save_stack+0x24/0x50
+[  294.825712][    C0]  ? kasan_save_stack+0x24/0x50
+[  294.825746][    C0]  ? kasan_save_track+0x14/0x30
+[  294.825781][    C0]  ? kasan_save_free_info+0x3b/0x60
+[  294.825829][    C0]  ? poison_slab_object+0xf9/0x180
+[  294.825866][    C0]  ? debug_check_no_obj_freed+0x2bd/0x540
+[  294.825907][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.825937][    C0]  ? __pfx_lock_release+0x10/0x10
+[  294.825983][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.826010][    C0]  ? mark_held_locks+0x9f/0xe0
+[  294.826053][    C0]  ? _raw_spin_unlock_irqrestore+0x58/0x70
+[  294.826096][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.826123][    C0]  ? lockdep_hardirqs_on+0x7c/0x110
+[  294.826165][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.826192][    C0]  ? _raw_spin_unlock_irqrestore+0x41/0x70
+[  294.826235][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.826262][    C0]  ? debug_check_no_obj_freed+0x2bd/0x540
+[  294.826302][    C0]  ? mark_held_locks+0x9f/0xe0
+[  294.826357][    C0]  ? __pfx_debug_check_no_obj_freed+0x10/0x10
+[  294.826408][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.826435][    C0]  ? mark_held_locks+0x9f/0xe0
+[  294.826477][    C0]  ? reclaim_list_global.part.0+0x758/0x1760
+[  294.826517][    C0]  kasan_save_track+0x14/0x30
+[  294.826552][    C0]  kasan_save_free_info+0x3b/0x60
+[  294.826602][    C0]  poison_slab_object+0xf9/0x180
+[  294.826640][    C0]  __kasan_slab_free+0x33/0x50
+[  294.826678][    C0]  kmem_cache_free+0x12a/0x3a0
+[  294.826712][    C0]  ? __rb_erase_color+0x2cf/0xcc0
+[  294.826741][    C0]  ? reclaim_list_global.part.0+0x758/0x1760
+[  294.826784][    C0]  reclaim_list_global.part.0+0x758/0x1760
+[  294.826835][    C0]  decay_va_pool_node+0xd22/0x1110
+[  294.826885][    C0]  ? __pfx_decay_va_pool_node+0x10/0x10
+[  294.826932][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.826960][    C0]  ? find_held_lock+0x2d/0x120
+[  294.826991][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.827022][    C0]  vmap_node_shrink_scan+0x43/0x70
+[  294.827061][    C0]  do_shrink_slab+0x44e/0x1190
+[  294.827110][    C0]  shrink_slab+0x18d/0x12e0
+[  294.827149][    C0]  ? shrink_slab+0x142/0x12e0
+[  294.827196][    C0]  ? __pfx_shrink_slab+0x10/0x10
+[  294.827236][    C0]  ? find_held_lock+0x2d/0x120
+[  294.827277][    C0]  shrink_one+0x4ad/0x7c0
+[  294.827311][    C0]  ? shrink_node+0x23bf/0x3850
+[  294.827345][    C0]  shrink_node+0x23db/0x3850
+[  294.827384][    C0]  ? shrink_node+0x2149/0x3850
+[  294.827422][    C0]  ? __pfx_lock_release+0x10/0x10
+[  294.827475][    C0]  ? __pfx_shrink_node+0x10/0x10
+[  294.827510][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.827544][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.827571][    C0]  ? mem_cgroup_iter+0x2f2/0x720
+[  294.827616][    C0]  balance_pgdat+0xba2/0x1880
+[  294.827660][    C0]  ? __pfx_balance_pgdat+0x10/0x10
+[  294.827695][    C0]  ? __x86_indirect_jump_thunk_r15+0x20/0x5e
+[  294.827725][    C0]  ? __schedule+0xc47/0x5390
+[  294.827790][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.827824][    C0]  kswapd+0x702/0xd50
+[  294.827865][    C0]  ? __pfx_kswapd+0x10/0x10
+[  294.827898][    C0]  ? _raw_spin_unlock_irqrestore+0x58/0x70
+[  294.827950][    C0]  ? __pfx_autoremove_wake_function+0x10/0x10
+[  294.827993][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.828022][    C0]  ? srso_return_thunk+0x5/0x5f
+[  294.828049][    C0]  ? __kthread_parkme+0x157/0x230
+[  294.828084][    C0]  ? __pfx_kswapd+0x10/0x10
+[  294.828119][    C0]  kthread+0x2ca/0x3b0
+[  294.828152][    C0]  ? __pfx_kthread+0x10/0x10
+[  294.828186][    C0]  ret_from_fork+0x48/0x80
+[  294.828233][    C0]  ? __pfx_kthread+0x10/0x10
+[  294.828267][    C0]  ret_from_fork_asm+0x1a/0x30
+[  294.828323][    C0]  </TASK>
+[  294.828333][    C0] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 9.168 msecs
+
+VM DIAGNOSIS:
+09:46:51  Registers:
+info registers vcpu 0
+RAX=0000000000010104 RBX=ffffffff8175e030 RCX=ffffffff81334337 RDX=ffff888018a70000
+RSI=0000000000000000 RDI=0000000000000005 RBP=ffffc900000071b8 RSP=ffffc90000007120
+R8 =0000000000000100 R9 =0000000000000000 R10=0000000000000002 R11=0000000000000000
+R12=0000000000000002 R13=ffffc900000071e8 R14=ffff888018a70000 R15=ffffc900000071b8
+RIP=ffffffff818a0c40 RFL=00000002 [-------] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 00000000 00000000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 00000000 00000000
+FS =0000 0000000000000000 00000000 00000000
+GS =0000 ffff88802c400000 00000000 00000000
+LDT=0000 fffffe0000000000 00000000 00000000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007fea1e094e84 CR3=000000001c9a6000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 00000000000f4240 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 00000000000f4240
+YMM02=0000000000000000 0000000000000000 00007fdbb04e8bc0 00007fdbb04e8bc0
+YMM03=0000000000000000 0000000000000000 8450d1d43198cc89 4f0000316e616c77
+YMM04=0000000000000000 0000000000000000 0000000000000000 00007ffd20d4ab6f
+YMM05=0000000000000000 0000000000000000 0000000000000000 00007fdbb04d9450
+YMM06=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM07=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM08=0000000000000000 0000000000000000 6b66722f7665642f 0035333535362030
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+info registers vcpu 1
+RAX=dffffc0000000005 RBX=00000000000003f9 RCX=0000000000000000 RDX=00000000000003f9
+RSI=ffffffff84f0cea0 RDI=ffffffff94ef1340 RBP=ffffffff94ef1300 RSP=ffffc900004d77a8
+R8 =0000000000000001 R9 =fffff5200009aee7 R10=0000000000000000 R11=0000000000000001
+R12=0000000000000000 R13=ffffffff94ef1300 R14=dffffc0000000000 R15=ffffffff94ef1350
+RIP=ffffffff84f0cec7 RFL=00000006 [-----P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 00000000 00000000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 00000000 00000000
+FS =0000 0000555571a083c0 00000000 00000000
+GS =0000 ffff88807ec00000 00000000 00000000
+LDT=0000 fffffe0000000000 00000000 00000000
+TR =0040 fffffe000004a000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000048000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00005585438ea0f8 CR3=000000002162e000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 00000000000f4240 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 00000000000f4240
+YMM02=0000000000000000 0000000000000000 00007fdbb04e8bc0 00007fdbb04e8bc0
+YMM03=0000000000000000 0000000000000000 8450d1d43198cc89 4f0000316e616c77
+YMM04=0000000000000000 0000000000000000 0000000000000000 00007ffd20d4ab6f
+YMM05=0000000000000000 0000000000000000 0000000000000000 00007fdbb04d9450
+YMM06=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM07=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM08=0000000000000000 0000000000000000 6b66722f7665642f 0035333535362030
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000
