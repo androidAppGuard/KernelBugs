@@ -1,0 +1,965 @@
+INFO: task kworker/u8:8:2499 blocked for more than 143 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:kworker/u8:8    state:D stack:22544 pid:2499  tgid:2499  ppid:2      flags:0x00004000
+Workqueue: netns cleanup_net
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ unregister_nexthop_notifier+0x19/0x70 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/ipv4/nexthop.c:3900
+ nsim_fib_destroy+0x84/0x1b0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/drivers/net/netdevsim/fib.c:1656
+ nsim_dev_reload_destroy+0x16a/0x490 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/drivers/net/netdevsim/dev.c:1662
+ nsim_dev_reload_down+0x6f/0xe0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/drivers/net/netdevsim/dev.c:965
+ devlink_reload+0x189/0x780 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/devlink/dev.c:461
+ devlink_pernet_pre_exit+0x195/0x2a0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/devlink/core.c:509
+ ops_pre_exit_list data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/net_namespace.c:163 [inline]
+ cleanup_net+0x474/0xbb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/net_namespace.c:620
+ process_one_work+0x95a/0x1ad0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3231
+ process_scheduled_works data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3312 [inline]
+ worker_thread+0x680/0xeb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3390
+ kthread+0x2ca/0x3b0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/kthread.c:389
+ ret_from_fork+0x48/0x80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/kernel/process.c:147
+ ret_from_fork_asm+0x1a/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/entry_64.S:244
+ </TASK>
+INFO: task kworker/u8:10:9543 blocked for more than 143 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:kworker/u8:10   state:D stack:23200 pid:9543  tgid:9543  ppid:2      flags:0x00004000
+Workqueue: ipv6_addrconf addrconf_dad_work
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ addrconf_dad_work+0xad/0x1510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/ipv6/addrconf.c:4194
+ process_one_work+0x95a/0x1ad0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3231
+ process_scheduled_works data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3312 [inline]
+ worker_thread+0x680/0xeb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3390
+ kthread+0x2ca/0x3b0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/kthread.c:389
+ ret_from_fork+0x48/0x80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/kernel/process.c:147
+ ret_from_fork_asm+0x1a/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/entry_64.S:244
+ </TASK>
+INFO: task syz-executor.12:24205 blocked for more than 143 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:syz-executor.12 state:D stack:21056 pid:24205 tgid:24205 ppid:24140  flags:0x00004002
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ __rtnl_newlink+0x7e0/0x18b0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:3720
+ rtnl_newlink+0x68/0xa0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:3743
+ rtnetlink_rcv_msg+0x3cc/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6647
+ netlink_rcv_skb+0x168/0x420 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2550
+ netlink_unicast_kernel data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1331 [inline]
+ netlink_unicast+0x547/0x800 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1357
+ netlink_sendmsg+0x8a5/0xd80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1901
+ sock_sendmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:730 [inline]
+ __sock_sendmsg data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:745 [inline]
+ __sys_sendto+0x4b7/0x510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2204
+ __do_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2216 [inline]
+ __se_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212 [inline]
+ __x64_sys_sendto+0xe0/0x1c0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7f8de80b1f16
+RSP: 002b:00007ffe41622c80 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+RAX: ffffffffffffffda RBX: 00007f8de8d14620 RCX: 00007f8de80b1f16
+RDX: 000000000000003c RSI: 00007f8de8d14670 RDI: 0000000000000003
+RBP: 0000000000000001 R08: 00007ffe41622cdc R09: 000000000000000c
+R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+R13: 00007f8de8d14670 R14: 0000000000000003 R15: 0000000000000000
+ </TASK>
+INFO: task syz-executor.0:24204 blocked for more than 143 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:syz-executor.0  state:D stack:21520 pid:24204 tgid:24204 ppid:24139  flags:0x00000002
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+ netlink_rcv_skb+0x168/0x420 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2550
+ netlink_unicast_kernel data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1331 [inline]
+ netlink_unicast+0x547/0x800 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1357
+ netlink_sendmsg+0x8a5/0xd80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1901
+ sock_sendmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:730 [inline]
+ __sock_sendmsg data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:745 [inline]
+ __sys_sendto+0x4b7/0x510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2204
+ __do_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2216 [inline]
+ __se_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212 [inline]
+ __x64_sys_sendto+0xe0/0x1c0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7fce100b1f16
+RSP: 002b:00007fff521f5060 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+RAX: ffffffffffffffda RBX: 00007fce10d14620 RCX: 00007fce100b1f16
+RDX: 0000000000000038 RSI: 00007fce10d14670 RDI: 0000000000000003
+RBP: 0000000000000001 R08: 00007fff521f50bc R09: 000000000000000c
+R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+R13: 00007fce10d14670 R14: 0000000000000003 R15: 0000000000000000
+ </TASK>
+INFO: task syz-executor.2:24238 blocked for more than 143 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:syz-executor.2  state:D stack:20064 pid:24238 tgid:24238 ppid:24173  flags:0x00000002
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+ netlink_rcv_skb+0x168/0x420 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2550
+ netlink_unicast_kernel data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1331 [inline]
+ netlink_unicast+0x547/0x800 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1357
+ netlink_sendmsg+0x8a5/0xd80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1901
+ sock_sendmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:730 [inline]
+ __sock_sendmsg data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:745 [inline]
+ __sys_sendto+0x4b7/0x510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2204
+ __do_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2216 [inline]
+ __se_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212 [inline]
+ __x64_sys_sendto+0xe0/0x1c0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7f0b780b1f16
+RSP: 002b:00007fff82151ea0 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+RAX: ffffffffffffffda RBX: 00007f0b78d14620 RCX: 00007f0b780b1f16
+RDX: 0000000000000038 RSI: 00007f0b78d14670 RDI: 0000000000000003
+RBP: 0000000000000001 R08: 00007fff82151efc R09: 000000000000000c
+R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+R13: 00007f0b78d14670 R14: 0000000000000003 R15: 0000000000000000
+ </TASK>
+INFO: task syz-executor.11:24244 blocked for more than 143 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:syz-executor.11 state:D stack:21360 pid:24244 tgid:24244 ppid:24162  flags:0x00004002
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ __rtnl_newlink+0x7e0/0x18b0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:3720
+ rtnl_newlink+0x68/0xa0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:3743
+ rtnetlink_rcv_msg+0x3cc/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6647
+ netlink_rcv_skb+0x168/0x420 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2550
+ netlink_unicast_kernel data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1331 [inline]
+ netlink_unicast+0x547/0x800 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1357
+ netlink_sendmsg+0x8a5/0xd80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1901
+ sock_sendmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:730 [inline]
+ __sock_sendmsg data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:745 [inline]
+ __sys_sendto+0x4b7/0x510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2204
+ __do_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2216 [inline]
+ __se_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212 [inline]
+ __x64_sys_sendto+0xe0/0x1c0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7f1376cb1f16
+RSP: 002b:00007fff9e034a30 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+RAX: ffffffffffffffda RBX: 00007f1377914620 RCX: 00007f1376cb1f16
+RDX: 000000000000003c RSI: 00007f1377914670 RDI: 0000000000000003
+RBP: 0000000000000001 R08: 00007fff9e034a8c R09: 000000000000000c
+R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+R13: 00007f1377914670 R14: 0000000000000003 R15: 0000000000000000
+ </TASK>
+INFO: task syz-executor.14:24240 blocked for more than 143 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:syz-executor.14 state:D stack:22512 pid:24240 tgid:24240 ppid:24168  flags:0x00000002
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+ netlink_rcv_skb+0x168/0x420 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2550
+ netlink_unicast_kernel data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1331 [inline]
+ netlink_unicast+0x547/0x800 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1357
+ netlink_sendmsg+0x8a5/0xd80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1901
+ sock_sendmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:730 [inline]
+ __sock_sendmsg data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:745 [inline]
+ __sys_sendto+0x4b7/0x510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2204
+ __do_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2216 [inline]
+ __se_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212 [inline]
+ __x64_sys_sendto+0xe0/0x1c0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7fedbc4b1f16
+RSP: 002b:00007ffd6b0bdad0 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+RAX: ffffffffffffffda RBX: 00007fedbd114620 RCX: 00007fedbc4b1f16
+RDX: 0000000000000038 RSI: 00007fedbd114670 RDI: 0000000000000003
+RBP: 0000000000000001 R08: 00007ffd6b0bdb2c R09: 000000000000000c
+R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+R13: 00007fedbd114670 R14: 0000000000000003 R15: 0000000000000000
+ </TASK>
+INFO: task syz-executor.9:24246 blocked for more than 144 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:syz-executor.9  state:D stack:22864 pid:24246 tgid:24246 ppid:24163  flags:0x00000002
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+ netlink_rcv_skb+0x168/0x420 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2550
+ netlink_unicast_kernel data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1331 [inline]
+ netlink_unicast+0x547/0x800 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1357
+ netlink_sendmsg+0x8a5/0xd80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1901
+ sock_sendmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:730 [inline]
+ __sock_sendmsg data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:745 [inline]
+ __sys_sendto+0x4b7/0x510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2204
+ __do_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2216 [inline]
+ __se_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212 [inline]
+ __x64_sys_sendto+0xe0/0x1c0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7fad69ab1f16
+RSP: 002b:00007ffdf4b35710 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+RAX: ffffffffffffffda RBX: 00007fad6a714620 RCX: 00007fad69ab1f16
+RDX: 0000000000000044 RSI: 00007fad6a714670 RDI: 0000000000000003
+RBP: 0000000000000001 R08: 00007ffdf4b3576c R09: 000000000000000c
+R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+R13: 00007fad6a714670 R14: 0000000000000003 R15: 0000000000000000
+ </TASK>
+INFO: task syz-executor.7:24255 blocked for more than 144 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:syz-executor.7  state:D stack:20960 pid:24255 tgid:24255 ppid:24166  flags:0x00000002
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+ netlink_rcv_skb+0x168/0x420 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2550
+ netlink_unicast_kernel data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1331 [inline]
+ netlink_unicast+0x547/0x800 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1357
+ netlink_sendmsg+0x8a5/0xd80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1901
+ sock_sendmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:730 [inline]
+ __sock_sendmsg data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:745 [inline]
+ __sys_sendto+0x4b7/0x510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2204
+ __do_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2216 [inline]
+ __se_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212 [inline]
+ __x64_sys_sendto+0xe0/0x1c0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7f00006b1f16
+RSP: 002b:00007ffec0f20b80 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+RAX: ffffffffffffffda RBX: 00007f0001314620 RCX: 00007f00006b1f16
+RDX: 0000000000000038 RSI: 00007f0001314670 RDI: 0000000000000003
+RBP: 0000000000000001 R08: 00007ffec0f20bdc R09: 000000000000000c
+R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+R13: 00007f0001314670 R14: 0000000000000003 R15: 0000000000000000
+ </TASK>
+INFO: task syz-executor.6:24267 blocked for more than 144 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:syz-executor.6  state:D stack:21984 pid:24267 tgid:24267 ppid:24169  flags:0x00000002
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+ netlink_rcv_skb+0x168/0x420 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2550
+ netlink_unicast_kernel data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1331 [inline]
+ netlink_unicast+0x547/0x800 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1357
+ netlink_sendmsg+0x8a5/0xd80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1901
+ sock_sendmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:730 [inline]
+ __sock_sendmsg data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:745 [inline]
+ __sys_sendto+0x4b7/0x510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2204
+ __do_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2216 [inline]
+ __se_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212 [inline]
+ __x64_sys_sendto+0xe0/0x1c0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7f2293ab1f16
+RSP: 002b:00007ffea3d981a0 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+RAX: ffffffffffffffda RBX: 00007f2294714620 RCX: 00007f2293ab1f16
+RDX: 0000000000000044 RSI: 00007f2294714670 RDI: 0000000000000003
+RBP: 0000000000000001 R08: 00007ffea3d981fc R09: 000000000000000c
+R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+R13: 00007f2294714670 R14: 0000000000000003 R15: 0000000000000000
+ </TASK>
+Future hung task reports are suppressed, see sysctl kernel.hung_task_warnings
+INFO: task syz-executor.4:24281 blocked for more than 144 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:syz-executor.4  state:D stack:22960 pid:24281 tgid:24281 ppid:24165  flags:0x00000002
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+ netlink_rcv_skb+0x168/0x420 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2550
+ netlink_unicast_kernel data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1331 [inline]
+ netlink_unicast+0x547/0x800 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1357
+ netlink_sendmsg+0x8a5/0xd80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1901
+ sock_sendmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:730 [inline]
+ __sock_sendmsg data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:745 [inline]
+ __sys_sendto+0x4b7/0x510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2204
+ __do_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2216 [inline]
+ __se_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212 [inline]
+ __x64_sys_sendto+0xe0/0x1c0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7f7c4b6b1f16
+RSP: 002b:00007fff04a7b7a0 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+RAX: ffffffffffffffda RBX: 00007f7c4c314620 RCX: 00007f7c4b6b1f16
+RDX: 0000000000000038 RSI: 00007f7c4c314670 RDI: 0000000000000003
+RBP: 0000000000000001 R08: 00007fff04a7b7fc R09: 000000000000000c
+R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+R13: 00007f7c4c314670 R14: 0000000000000003 R15: 0000000000000000
+ </TASK>
+Future hung task reports are suppressed, see sysctl kernel.hung_task_warnings
+INFO: task syz-executor.10:24271 blocked for more than 144 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:syz-executor.10 state:D stack:21328 pid:24271 tgid:24271 ppid:24174  flags:0x00000002
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+ netlink_rcv_skb+0x168/0x420 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2550
+ netlink_unicast_kernel data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1331 [inline]
+ netlink_unicast+0x547/0x800 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1357
+ netlink_sendmsg+0x8a5/0xd80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1901
+ sock_sendmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:730 [inline]
+ __sock_sendmsg data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:745 [inline]
+ __sys_sendto+0x4b7/0x510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2204
+ __do_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2216 [inline]
+ __se_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212 [inline]
+ __x64_sys_sendto+0xe0/0x1c0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7f602a4b1f16
+RSP: 002b:00007fff15d8b250 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+RAX: ffffffffffffffda RBX: 00007f602b114620 RCX: 00007f602a4b1f16
+RDX: 0000000000000038 RSI: 00007f602b114670 RDI: 0000000000000003
+RBP: 0000000000000001 R08: 00007fff15d8b2ac R09: 000000000000000c
+R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+R13: 00007f602b114670 R14: 0000000000000003 R15: 0000000000000000
+ </TASK>
+Future hung task reports are suppressed, see sysctl kernel.hung_task_warnings
+INFO: task syz-executor.3:24294 blocked for more than 144 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:syz-executor.3  state:D stack:19536 pid:24294 tgid:24294 ppid:24167  flags:0x00000002
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+ netlink_rcv_skb+0x168/0x420 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2550
+ netlink_unicast_kernel data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1331 [inline]
+ netlink_unicast+0x547/0x800 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1357
+ netlink_sendmsg+0x8a5/0xd80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1901
+ sock_sendmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:730 [inline]
+ __sock_sendmsg data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:745 [inline]
+ __sys_sendto+0x4b7/0x510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2204
+ __do_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2216 [inline]
+ __se_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212 [inline]
+ __x64_sys_sendto+0xe0/0x1c0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7ff974cb1f16
+RSP: 002b:00007fffe885fb30 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+RAX: ffffffffffffffda RBX: 00007ff975914620 RCX: 00007ff974cb1f16
+RDX: 0000000000000040 RSI: 00007ff975914670 RDI: 0000000000000003
+RBP: 0000000000000001 R08: 00007fffe885fb8c R09: 000000000000000c
+R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+R13: 00007ff975914670 R14: 0000000000000003 R15: 0000000000000000
+ </TASK>
+Future hung task reports are suppressed, see sysctl kernel.hung_task_warnings
+INFO: task syz-executor.13:24309 blocked for more than 144 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:syz-executor.13 state:D stack:22176 pid:24309 tgid:24309 ppid:24171  flags:0x00004002
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+ netlink_rcv_skb+0x168/0x420 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2550
+ netlink_unicast_kernel data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1331 [inline]
+ netlink_unicast+0x547/0x800 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1357
+ netlink_sendmsg+0x8a5/0xd80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1901
+ sock_sendmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:730 [inline]
+ __sock_sendmsg data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:745 [inline]
+ __sys_sendto+0x4b7/0x510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2204
+ __do_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2216 [inline]
+ __se_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212 [inline]
+ __x64_sys_sendto+0xe0/0x1c0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7f2379cb1f16
+RSP: 002b:00007ffdc180c090 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+RAX: ffffffffffffffda RBX: 00007f237a914620 RCX: 00007f2379cb1f16
+RDX: 0000000000000028 RSI: 00007f237a914670 RDI: 0000000000000003
+RBP: 0000000000000001 R08: 00007ffdc180c0ec R09: 000000000000000c
+R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+R13: 00007f237a914670 R14: 0000000000000003 R15: 0000000000000000
+ </TASK>
+Future hung task reports are suppressed, see sysctl kernel.hung_task_warnings
+INFO: task syz-executor.8:24316 blocked for more than 144 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:syz-executor.8  state:D stack:23408 pid:24316 tgid:24316 ppid:24175  flags:0x00000002
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+ netlink_rcv_skb+0x168/0x420 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2550
+ netlink_unicast_kernel data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1331 [inline]
+ netlink_unicast+0x547/0x800 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1357
+ netlink_sendmsg+0x8a5/0xd80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1901
+ sock_sendmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:730 [inline]
+ __sock_sendmsg data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:745 [inline]
+ __sys_sendto+0x4b7/0x510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2204
+ __do_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2216 [inline]
+ __se_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212 [inline]
+ __x64_sys_sendto+0xe0/0x1c0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7f973feb1f16
+RSP: 002b:00007ffda02b6560 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+RAX: ffffffffffffffda RBX: 00007f9740b14620 RCX: 00007f973feb1f16
+RDX: 0000000000000040 RSI: 00007f9740b14670 RDI: 0000000000000003
+RBP: 0000000000000001 R08: 00007ffda02b65bc R09: 000000000000000c
+R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+R13: 00007f9740b14670 R14: 0000000000000003 R15: 0000000000000000
+ </TASK>
+Future hung task reports are suppressed, see sysctl kernel.hung_task_warnings
+INFO: task syz-executor.5:24327 blocked for more than 144 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:syz-executor.5  state:D stack:21232 pid:24327 tgid:24327 ppid:24170  flags:0x00000002
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+ netlink_rcv_skb+0x168/0x420 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2550
+ netlink_unicast_kernel data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1331 [inline]
+ netlink_unicast+0x547/0x800 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1357
+ netlink_sendmsg+0x8a5/0xd80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1901
+ sock_sendmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:730 [inline]
+ __sock_sendmsg data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:745 [inline]
+ __sys_sendto+0x4b7/0x510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2204
+ __do_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2216 [inline]
+ __se_sys_sendto data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212 [inline]
+ __x64_sys_sendto+0xe0/0x1c0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2212
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7f39598b1f16
+RSP: 002b:00007fffd5345260 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+RAX: ffffffffffffffda RBX: 00007f395a514620 RCX: 00007f39598b1f16
+RDX: 0000000000000028 RSI: 00007f395a514670 RDI: 0000000000000003
+RBP: 0000000000000001 R08: 00007fffd53452bc R09: 000000000000000c
+R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+R13: 00007f395a514670 R14: 0000000000000003 R15: 0000000000000000
+ </TASK>
+Future hung task reports are suppressed, see sysctl kernel.hung_task_warnings
+INFO: task ifquery:24788 blocked for more than 144 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:ifquery         state:D stack:22736 pid:24788 tgid:24788 ppid:24787  flags:0x00004000
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ rtnl_dumpit+0x199/0x200 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6506
+ netlink_dump+0x554/0xcb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2325
+ netlink_recvmsg+0xc81/0xf20 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1983
+ sock_recvmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:1046 [inline]
+ sock_recvmsg+0x1e1/0x240 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:1068
+ ____sys_recvmsg+0x216/0x670 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2816
+ ___sys_recvmsg+0xff/0x190 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2858
+ __sys_recvmsg+0xfb/0x1d0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2888
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7f93070aade3
+RSP: 002b:00007ffd428e3e18 EFLAGS: 00000246 ORIG_RAX: 000000000000002f
+RAX: ffffffffffffffda RBX: 00007ffd428e4f70 RCX: 00007f93070aade3
+RDX: 0000000000000000 RSI: 00007ffd428e4e70 RDI: 0000000000000003
+RBP: 00007ffd428e4f00 R08: 0000000000000000 R09: 00007f930717cbe0
+R10: 0000000000000200 R11: 0000000000000246 R12: 00007ffd428e4e70
+R13: 00007ffd428e4e60 R14: 00007ffd428e4e54 R15: 0000000000000fcc
+ </TASK>
+Future hung task reports are suppressed, see sysctl kernel.hung_task_warnings
+INFO: task ifquery:24793 blocked for more than 144 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:ifquery         state:D stack:24912 pid:24793 tgid:24793 ppid:24786  flags:0x00000000
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ rtnl_dumpit+0x199/0x200 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6506
+ netlink_dump+0x554/0xcb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2325
+ netlink_recvmsg+0xc81/0xf20 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1983
+ sock_recvmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:1046 [inline]
+ sock_recvmsg+0x1e1/0x240 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:1068
+ ____sys_recvmsg+0x216/0x670 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2816
+ ___sys_recvmsg+0xff/0x190 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2858
+ __sys_recvmsg+0xfb/0x1d0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2888
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7fa9b78e0de3
+RSP: 002b:00007ffd849e77f8 EFLAGS: 00000246 ORIG_RAX: 000000000000002f
+RAX: ffffffffffffffda RBX: 00007ffd849e8950 RCX: 00007fa9b78e0de3
+RDX: 0000000000000000 RSI: 00007ffd849e8850 RDI: 0000000000000003
+RBP: 00007ffd849e88e0 R08: 0000000000000000 R09: 00007fa9b79b2be0
+R10: 000000000000006e R11: 0000000000000246 R12: 00007ffd849e8850
+R13: 00007ffd849e8840 R14: 00007ffd849e8834 R15: 0000000000000c40
+ </TASK>
+Future hung task reports are suppressed, see sysctl kernel.hung_task_warnings
+INFO: task ifquery:24859 blocked for more than 145 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:ifquery         state:D stack:25888 pid:24859 tgid:24859 ppid:24856  flags:0x00000000
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ rtnl_dumpit+0x199/0x200 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6506
+ netlink_dump+0x554/0xcb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2325
+ netlink_recvmsg+0xc81/0xf20 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1983
+ sock_recvmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:1046 [inline]
+ sock_recvmsg+0x1e1/0x240 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:1068
+ ____sys_recvmsg+0x216/0x670 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2816
+ ___sys_recvmsg+0xff/0x190 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2858
+ __sys_recvmsg+0xfb/0x1d0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2888
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7f8e85721de3
+RSP: 002b:00007ffd99235218 EFLAGS: 00000246 ORIG_RAX: 000000000000002f
+RAX: ffffffffffffffda RBX: 00007ffd99236370 RCX: 00007f8e85721de3
+RDX: 0000000000000000 RSI: 00007ffd99236270 RDI: 0000000000000003
+RBP: 00007ffd99236300 R08: 0000000000000000 R09: 00007f8e857f3be0
+R10: 0000000000000200 R11: 0000000000000246 R12: 00007ffd99236270
+R13: 00007ffd99236260 R14: 00007ffd99236254 R15: 0000000000000fcc
+ </TASK>
+Future hung task reports are suppressed, see sysctl kernel.hung_task_warnings
+INFO: task ifquery:24863 blocked for more than 145 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:ifquery         state:D stack:25456 pid:24863 tgid:24863 ppid:24862  flags:0x00000000
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ rtnl_dumpit+0x199/0x200 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6506
+ netlink_dump+0x554/0xcb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2325
+ netlink_recvmsg+0xc81/0xf20 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:1983
+ sock_recvmsg_nosec data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:1046 [inline]
+ sock_recvmsg+0x1e1/0x240 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:1068
+ ____sys_recvmsg+0x216/0x670 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2816
+ ___sys_recvmsg+0xff/0x190 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2858
+ __sys_recvmsg+0xfb/0x1d0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/socket.c:2888
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7f969d508de3
+RSP: 002b:00007ffe3275fb88 EFLAGS: 00000246 ORIG_RAX: 000000000000002f
+RAX: ffffffffffffffda RBX: 00007ffe32760ce0 RCX: 00007f969d508de3
+RDX: 0000000000000000 RSI: 00007ffe32760be0 RDI: 0000000000000003
+RBP: 00007ffe32760c70 R08: 0000000000000000 R09: 00007f969d5dabe0
+R10: 0000000000040000 R11: 0000000000000246 R12: 00007ffe32760be0
+R13: 00007ffe32760bd0 R14: 00007ffe32760bc4 R15: 0000000000000b94
+ </TASK>
+Future hung task reports are suppressed, see sysctl kernel.hung_task_warnings
+INFO: task kworker/u8:12:25101 blocked for more than 145 seconds.
+      Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+"echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+task:kworker/u8:12   state:D stack:27472 pid:25101 tgid:25101 ppid:2      flags:0x00004000
+Workqueue: events_unbound linkwatch_event
+Call Trace:
+ <TASK>
+ context_switch data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:5188 [inline]
+ __schedule+0xc3f/0x5390 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6529
+ __schedule_loop data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6606 [inline]
+ schedule+0xe7/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6621
+ schedule_preempt_disabled+0x13/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/sched/core.c:6678
+ __mutex_lock_common data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:684 [inline]
+ __mutex_lock+0x508/0x930 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/mutex.c:752
+ linkwatch_event+0xf/0x70 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/link_watch.c:276
+ process_one_work+0x95a/0x1ad0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3231
+ process_scheduled_works data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3312 [inline]
+ worker_thread+0x680/0xeb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3390
+ kthread+0x2ca/0x3b0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/kthread.c:389
+ ret_from_fork+0x48/0x80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/kernel/process.c:147
+ ret_from_fork_asm+0x1a/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/entry_64.S:244
+ </TASK>
+Future hung task reports are suppressed, see sysctl kernel.hung_task_warnings
+
+Showing all locks held in the system:
+2 locks held by systemd/1:
+ #0: ffff88802377f340 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_invalidate_lock_shared data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/fs.h:854 [inline]
+ #0: ffff88802377f340 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_fault+0x13ad/0x2510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/filemap.c:3321
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __perform_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3891 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_direct_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3916 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_slowpath data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4322 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_noprof+0xa51/0x21e0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4708
+1 lock held by khungtaskd/30:
+ #0: ffffffff8dbb8c60 (rcu_read_lock){....}-{1:2}, at: rcu_lock_acquire data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/rcupdate.h:326 [inline]
+ #0: ffffffff8dbb8c60 (rcu_read_lock){....}-{1:2}, at: rcu_read_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/rcupdate.h:838 [inline]
+ #0: ffffffff8dbb8c60 (rcu_read_lock){....}-{1:2}, at: debug_show_all_locks+0x75/0x340 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/locking/lockdep.c:6626
+2 locks held by kswapd1/91:
+6 locks held by kworker/u8:8/2499:
+ #0: ffff8880162de148 ((wq_completion)netns){+.+.}-{0:0}, at: process_one_work+0x11ec/0x1ad0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3206
+ #1: ffffc900094afd88 (net_cleanup_work){+.+.}-{0:0}, at: process_one_work+0x8ba/0x1ad0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3207
+ #2: ffffffff8f7f70d0 (pernet_ops_rwsem){++++}-{3:3}, at: cleanup_net+0xbb/0xbb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/net_namespace.c:594
+ #3: ffff8880122ff0e8 (&dev->mutex){....}-{3:3}, at: device_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/device.h:1009 [inline]
+ #3: ffff8880122ff0e8 (&dev->mutex){....}-{3:3}, at: devl_dev_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/devlink/devl_internal.h:108 [inline]
+ #3: ffff8880122ff0e8 (&dev->mutex){....}-{3:3}, at: devlink_pernet_pre_exit+0x120/0x2a0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/devlink/core.c:506
+ #4: ffff8880122fe250 (&devlink->lock_key#13){+.+.}-{3:3}, at: devl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/devlink/core.c:276 [inline]
+ #4: ffff8880122fe250 (&devlink->lock_key#13){+.+.}-{3:3}, at: devl_dev_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/devlink/devl_internal.h:109 [inline]
+ #4: ffff8880122fe250 (&devlink->lock_key#13){+.+.}-{3:3}, at: devlink_pernet_pre_exit+0x12a/0x2a0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/devlink/core.c:506
+ #5: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: unregister_nexthop_notifier+0x19/0x70 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/ipv4/nexthop.c:3900
+2 locks held by systemd-journal/4675:
+ #0: ffff88802377f340 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_invalidate_lock_shared data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/fs.h:854 [inline]
+ #0: ffff88802377f340 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_fault+0x13ad/0x2510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/filemap.c:3321
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __perform_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3891 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_direct_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3916 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_slowpath data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4322 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_noprof+0xa51/0x21e0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4708
+2 locks held by systemd-udevd/4688:
+ #0: ffff88802377f340 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_invalidate_lock_shared data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/fs.h:854 [inline]
+ #0: ffff88802377f340 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_fault+0x13ad/0x2510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/filemap.c:3321
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __perform_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3891 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_direct_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3916 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_slowpath data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4322 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_noprof+0xa51/0x21e0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4708
+2 locks held by cron/7816:
+ #0: ffff88802377f340 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_invalidate_lock_shared data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/fs.h:854 [inline]
+ #0: ffff88802377f340 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_fault+0x13ad/0x2510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/filemap.c:3321
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __perform_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3891 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_direct_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3916 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_slowpath data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4322 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_noprof+0xa51/0x21e0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4708
+3 locks held by kworker/1:3/7971:
+ #0: ffff888015478948 ((wq_completion)events){+.+.}-{0:0}, at: process_one_work+0x11ec/0x1ad0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3206
+ #1: ffffc9000e017d88 (deferred_process_work){+.+.}-{0:0}, at: process_one_work+0x8ba/0x1ad0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3207
+ #2: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: switchdev_deferred_process_work+0xe/0x20 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/switchdev/switchdev.c:104
+2 locks held by syz-fuzzer/8354:
+ #0: ffff888047070598 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_invalidate_lock_shared data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/fs.h:854 [inline]
+ #0: ffff888047070598 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_fault+0x13ad/0x2510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/filemap.c:3321
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __perform_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3891 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_direct_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3916 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_slowpath data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4322 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_noprof+0xa51/0x21e0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4708
+2 locks held by syz-fuzzer/8417:
+ #0: ffff888047070598 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_invalidate_lock_shared data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/fs.h:854 [inline]
+ #0: ffff888047070598 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_fault+0x13ad/0x2510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/filemap.c:3321
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __perform_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3891 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_direct_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3916 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_slowpath data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4322 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_noprof+0xa51/0x21e0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4708
+2 locks held by syz-fuzzer/8419:
+ #0: ffff888047070598 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_invalidate_lock_shared data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/fs.h:854 [inline]
+ #0: ffff888047070598 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_fault+0x13ad/0x2510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/filemap.c:3321
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __perform_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3891 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_direct_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3916 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_slowpath data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4322 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_noprof+0xa51/0x21e0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4708
+3 locks held by kworker/u8:9/9478:
+3 locks held by kworker/u8:10/9543:
+ #0: ffff888022878148 ((wq_completion)ipv6_addrconf){+.+.}-{0:0}, at: process_one_work+0x11ec/0x1ad0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3206
+ #1: ffffc90004befd88 ((work_completion)(&(&ifa->dad_work)->work)){+.+.}-{0:0}, at: process_one_work+0x8ba/0x1ad0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3207
+ #2: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: addrconf_dad_work+0xad/0x1510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/ipv6/addrconf.c:4194
+2 locks held by in:imklog/13708:
+ #0: ffff888023785f50 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_invalidate_lock_shared data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/fs.h:854 [inline]
+ #0: ffff888023785f50 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_fault+0x13ad/0x2510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/filemap.c:3321
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __perform_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3891 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_direct_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3916 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_slowpath data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4322 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_noprof+0xa51/0x21e0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4708
+2 locks held by systemd-udevd/18280:
+ #0: ffff88802377f340 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_invalidate_lock_shared data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/fs.h:854 [inline]
+ #0: ffff88802377f340 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_fault+0x13ad/0x2510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/filemap.c:3321
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __perform_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3891 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_direct_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3916 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_slowpath data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4322 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_noprof+0xa51/0x21e0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4708
+2 locks held by kworker/0:4/18843:
+2 locks held by systemd-udevd/19224:
+ #0: ffff88802377f340 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_invalidate_lock_shared data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/fs.h:854 [inline]
+ #0: ffff88802377f340 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_fault+0x13ad/0x2510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/filemap.c:3321
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __perform_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3891 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_direct_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3916 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_slowpath data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4322 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_noprof+0xa51/0x21e0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4708
+2 locks held by systemd-udevd/19230:
+ #0: ffff88802377f340 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_invalidate_lock_shared data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/fs.h:854 [inline]
+ #0: ffff88802377f340 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_fault+0x13ad/0x2510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/filemap.c:3321
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __perform_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3891 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_direct_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3916 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_slowpath data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4322 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_noprof+0xa51/0x21e0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4708
+2 locks held by systemd-udevd/19353:
+ #0: ffff88802377f340 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_invalidate_lock_shared data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/fs.h:854 [inline]
+ #0: ffff88802377f340 (mapping.invalidate_lock){++++}-{3:3}, at: filemap_fault+0x13ad/0x2510 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/filemap.c:3321
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __perform_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3891 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_direct_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3916 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_slowpath data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4322 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_noprof+0xa51/0x21e0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4708
+1 lock held by syz-executor.12/24205:
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: __rtnl_newlink+0x7e0/0x18b0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:3720
+1 lock held by syz-executor.0/24204:
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+1 lock held by syz-executor.2/24238:
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+1 lock held by syz-executor.11/24244:
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: __rtnl_newlink+0x7e0/0x18b0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:3720
+2 locks held by syz-executor.15/24242:
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __perform_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3891 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_direct_reclaim data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:3916 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_slowpath data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4322 [inline]
+ #1: ffffffff8dd3cc80 (fs_reclaim){+.+.}-{0:0}, at: __alloc_pages_noprof+0xa51/0x21e0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/page_alloc.c:4708
+1 lock held by syz-executor.14/24240:
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+1 lock held by syz-executor.9/24246:
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+1 lock held by syz-executor.7/24255:
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+1 lock held by syz-executor.6/24267:
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+1 lock held by syz-executor.4/24281:
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+1 lock held by syz-executor.10/24271:
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+1 lock held by syz-executor.3/24294:
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+1 lock held by syz-executor.13/24309:
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+1 lock held by syz-executor.8/24316:
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+1 lock held by syz-executor.5/24327:
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #0: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnetlink_rcv_msg+0x376/0xfb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6644
+2 locks held by ifquery/24788:
+ #0: ffff88804c281678 (nlk_cb_mutex-ROUTE){+.+.}-{3:3}, at: netlink_dump+0x67c/0xcb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2271
+ #1: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #1: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_dumpit+0x199/0x200 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6506
+2 locks held by ifquery/24793:
+ #0: ffff88805df59678 (nlk_cb_mutex-ROUTE){+.+.}-{3:3}, at: netlink_dump+0x67c/0xcb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2271
+ #1: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #1: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_dumpit+0x199/0x200 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6506
+2 locks held by ifquery/24859:
+ #0: ffff88805c88a678 (nlk_cb_mutex-ROUTE){+.+.}-{3:3}, at: netlink_dump+0x67c/0xcb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2271
+ #1: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #1: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_dumpit+0x199/0x200 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6506
+2 locks held by ifquery/24863:
+ #0: ffff88802616c678 (nlk_cb_mutex-ROUTE){+.+.}-{3:3}, at: netlink_dump+0x67c/0xcb0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/netlink/af_netlink.c:2271
+ #1: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_lock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:79 [inline]
+ #1: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: rtnl_dumpit+0x199/0x200 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/rtnetlink.c:6506
+3 locks held by kworker/u8:12/25101:
+ #0: ffff888015481148 ((wq_completion)events_unbound){+.+.}-{0:0}, at: process_one_work+0x11ec/0x1ad0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3206
+ #1: ffffc9000a1efd88 ((linkwatch_work).work){+.+.}-{0:0}, at: process_one_work+0x8ba/0x1ad0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/workqueue.c:3207
+ #2: ffffffff8f80c968 (rtnl_mutex){+.+.}-{3:3}, at: linkwatch_event+0xf/0x70 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/net/core/link_watch.c:276
+
+=============================================
+
+NMI backtrace for cpu 0
+CPU: 0 UID: 0 PID: 30 Comm: khungtaskd Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+Call Trace:
+ <TASK>
+ __dump_stack data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/lib/dump_stack.c:93 [inline]
+ dump_stack_lvl+0x116/0x1b0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/lib/dump_stack.c:119
+ nmi_cpu_backtrace+0x2a0/0x350 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/lib/nmi_backtrace.c:113
+ nmi_trigger_cpumask_backtrace+0x29c/0x300 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/lib/nmi_backtrace.c:62
+ trigger_all_cpu_backtrace data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/nmi.h:162 [inline]
+ check_hung_uninterruptible_tasks data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/hung_task.c:223 [inline]
+ watchdog+0xe5b/0x1180 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/hung_task.c:379
+ kthread+0x2ca/0x3b0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/kthread.c:389
+ ret_from_fork+0x48/0x80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/kernel/process.c:147
+ ret_from_fork_asm+0x1a/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/entry_64.S:244
+ </TASK>
+Sending NMI from CPU 0 to CPUs 1:
+NMI backtrace for cpu 1
+CPU: 1 UID: 0 PID: 90 Comm: kswapd0 Not tainted 6.11.0-rc4-00008-g6e4436539ae1 #2
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+RIP: 0010:__rcu_read_unlock+0x0/0x580 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/rcu/tree_plugin.h:429
+Code: eb 81 09 eb 86 e8 40 f1 75 00 e9 60 ff ff ff 66 66 2e 0f 1f 84 00 00 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 <f3> 0f 1e fa 41 57 41 56 41 55 41 54 55 65 48 8b 2d 4b 80 92 7e 53
+RSP: 0018:ffffc90000f07630 EFLAGS: 00000286
+RAX: 0000000000000000 RBX: 1ffff920001e0ec7 RCX: 0000000000000000
+RDX: 1ffff110032488da RSI: 0000000000000000 RDI: 0000000000000000
+RBP: 0000000000000001 R08: 0000000000000001 R09: ffff8880192446d8
+R10: ffffffff8ff15cdf R11: 0000000000000000 R12: ffff88801ed23480
+R13: ffff888028fb6000 R14: fffffffffffffffe R15: 0000000000000080
+FS:  0000000000000000(0000) GS:ffff88807ec00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 00007f5fe1927d56 CR3: 0000000063b76000 CR4: 0000000000350ef0
+Call Trace:
+ <NMI>
+ </NMI>
+ <TASK>
+ rcu_read_unlock data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/rcupdate.h:871 [inline]
+ xa_load+0x153/0x2c0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/lib/xarray.c:1481
+ list_lru_from_memcg_idx data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/list_lru.c:56 [inline]
+ list_lru_from_memcg_idx data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/list_lru.c:53 [inline]
+ list_lru_count_one+0x1bd/0x370 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/list_lru.c:188
+ list_lru_shrink_count data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/./include/linux/list_lru.h:156 [inline]
+ count_shadow_nodes+0x7e/0x410 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/workingset.c:662
+ do_shrink_slab+0x84/0x1190 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/shrinker.c:382
+ shrink_slab_memcg data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/shrinker.c:548 [inline]
+ shrink_slab+0xb5b/0x1290 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/shrinker.c:626
+ shrink_one+0x4ad/0x7c0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/vmscan.c:4815
+ shrink_many data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/vmscan.c:4876 [inline]
+ lru_gen_shrink_node data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/vmscan.c:4954 [inline]
+ shrink_node+0x23db/0x3850 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/vmscan.c:5934
+ kswapd_shrink_node data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/vmscan.c:6762 [inline]
+ balance_pgdat+0xba2/0x1880 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/vmscan.c:6954
+ kswapd+0x702/0xd50 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/mm/vmscan.c:7223
+ kthread+0x2ca/0x3b0 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/kernel/kthread.c:389
+ ret_from_fork+0x48/0x80 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/kernel/process.c:147
+ ret_from_fork_asm+0x1a/0x30 data/ghui/docker_data/linux_kernel/upstream/6b0f8db921abf0520081d779876d3a41069dab95/arch/x86/entry/entry_64.S:244
+ </TASK>
