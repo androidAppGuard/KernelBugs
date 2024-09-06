@@ -1,0 +1,62 @@
+REISERFS (device loop0): Using tea hash to sort names
+REISERFS panic (device loop0): vs-13065 update_stat_data: key [1 2 0x0 SD], found item *3.5*[1 2 0(0) DIR], item_len 80, item_location 3972, free_space(entry_count) 3
+------------[ cut here ]------------
+kernel BUG at fs/reiserfs/prints.c:390!
+Oops: invalid opcode: 0000 [#1] PREEMPT SMP KASAN NOPTI
+CPU: 1 UID: 0 PID: 8264 Comm: syz-executor270 Not tainted 6.11.0-rc6-00026-g88fac17500f4-dirty #1
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+RIP: 0010:__reiserfs_panic+0xf3/0x150 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/reiserfs/prints.c:390
+Code: 54 ff 4d 89 e8 4c 89 f1 4c 89 e2 48 8d b3 68 06 00 00 49 c7 c1 60 7e 6b 94 48 c7 c7 00 0e 04 8b e8 b2 38 35 ff e8 ed 4e 54 ff <0f> 0b 49 c7 c6 a0 0c 04 8b 4d 89 f4 eb c5 e8 da 4e 54 ff 4d 85 e4
+RSP: 0018:ffffc9000b85f650 EFLAGS: 00010293
+RAX: 0000000000000000 RBX: ffff88801ee8a000 RCX: ffffffff816af049
+RDX: ffff8880193c5a00 RSI: ffffffff8235abd3 RDI: 0000000000000005
+RBP: ffffc9000b85f720 R08: 0000000000000001 R09: ffffed100fd85179
+R10: 0000000080000000 R11: 0000000000000001 R12: ffffffff8b039ee0
+R13: ffffffff8b03aba0 R14: ffffffff8b040c60 R15: ffff8880455e2cb0
+FS:  000055556ea213c0(0000) GS:ffff88807ec00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 00007f799073e450 CR3: 00000000119aa000 CR4: 0000000000350ef0
+Call Trace:
+ <TASK>
+ update_stat_data data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/reiserfs/inode.c:1418 [inline]
+ reiserfs_update_sd_size+0x6e7/0xc20 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/reiserfs/inode.c:1491
+ reiserfs_update_sd data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/reiserfs/reiserfs.h:3101 [inline]
+ reiserfs_mkdir+0x6cb/0x990 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/reiserfs/namei.c:868
+ xattr_mkdir data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/reiserfs/xattr.c:77 [inline]
+ create_privroot data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/reiserfs/xattr.c:891 [inline]
+ reiserfs_xattr_init+0x586/0xbc0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/reiserfs/xattr.c:1007
+ reiserfs_fill_super+0x21af/0x2f50 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/reiserfs/super.c:2174
+ mount_bdev+0x1e8/0x2d0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/super.c:1679
+ legacy_get_tree+0x108/0x220 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/fs_context.c:662
+ vfs_get_tree+0x93/0x380 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/super.c:1800
+ do_new_mount data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/namespace.c:3472 [inline]
+ path_mount+0x6ae/0x1ea0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/namespace.c:3799
+ do_mount data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/namespace.c:3812 [inline]
+ __do_sys_mount data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/namespace.c:4020 [inline]
+ __se_sys_mount data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/namespace.c:3997 [inline]
+ __x64_sys_mount+0x280/0x300 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/namespace.c:3997
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0x6e/0x1c0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x76/0x7e
+RIP: 0033:0x7f3901df1afe
+Code: 48 c7 c0 ff ff ff ff eb aa e8 fe 06 00 00 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 f3 0f 1e fa 49 89 ca b8 a5 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b8 ff ff ff f7 d8 64 89 01 48
+RSP: 002b:00007ffddfaabdf8 EFLAGS: 00000286 ORIG_RAX: 00000000000000a5
+RAX: ffffffffffffffda RBX: 000055556ea21378 RCX: 00007f3901df1afe
+RDX: 0000000020001100 RSI: 0000000020001140 RDI: 00007ffddfaabe10
+RBP: 00007ffddfaabe10 R08: 00007ffddfaabe50 R09: 00000000000010ec
+R10: 0000000000000000 R11: 0000000000000286 R12: 0000000000000000
+R13: 00007ffddfaabe50 R14: 0000000000000003 R15: 0000000000000000
+ </TASK>
+Modules linked in:
+---[ end trace 0000000000000000 ]---
+RIP: 0010:__reiserfs_panic+0xf3/0x150 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/reiserfs/prints.c:390
+Code: 54 ff 4d 89 e8 4c 89 f1 4c 89 e2 48 8d b3 68 06 00 00 49 c7 c1 60 7e 6b 94 48 c7 c7 00 0e 04 8b e8 b2 38 35 ff e8 ed 4e 54 ff <0f> 0b 49 c7 c6 a0 0c 04 8b 4d 89 f4 eb c5 e8 da 4e 54 ff 4d 85 e4
+RSP: 0018:ffffc9000b85f650 EFLAGS: 00010293
+RAX: 0000000000000000 RBX: ffff88801ee8a000 RCX: ffffffff816af049
+RDX: ffff8880193c5a00 RSI: ffffffff8235abd3 RDI: 0000000000000005
+RBP: ffffc9000b85f720 R08: 0000000000000001 R09: ffffed100fd85179
+R10: 0000000080000000 R11: 0000000000000001 R12: ffffffff8b039ee0
+R13: ffffffff8b03aba0 R14: ffffffff8b040c60 R15: ffff8880455e2cb0
+FS:  000055556ea213c0(0000) GS:ffff88807ec00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 00007f799073e450 CR3: 00000000119aa000 CR4: 0000000000350ef0
