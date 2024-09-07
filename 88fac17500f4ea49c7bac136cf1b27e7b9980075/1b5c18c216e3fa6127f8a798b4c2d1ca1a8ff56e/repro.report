@@ -1,0 +1,64 @@
+batman_adv: The newly added mac address (aa:aa:aa:aa:aa:3e) already exists on: batadv_slave_0
+batman_adv: It is strongly recommended to keep mac addresses unique to avoid problems!
+Oops: general protection fault, probably for non-canonical address 0xe05fbc38000005ba: 0000 [#1] PREEMPT SMP KASAN NOPTI
+KASAN: maybe wild-memory-access in range [0x02fe01c000002dd0-0x02fe01c000002dd7]
+CPU: 0 UID: 0 PID: 8996 Comm: syz-executor Not tainted 6.11.0-rc6-00026-g88fac17500f4-dirty #1
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+RIP: 0010:__hlist_del data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/include/linux/list.h:990 [inline]
+RIP: 0010:hlist_del data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/include/linux/list.h:1002 [inline]
+RIP: 0010:__alloc_object data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/lib/debugobjects.c:214 [inline]
+RIP: 0010:alloc_object data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/lib/debugobjects.c:227 [inline]
+RIP: 0010:lookup_object_or_alloc.part.0+0x127/0xa30 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/lib/debugobjects.c:588
+Code: ea 03 80 3c 02 00 0f 85 59 08 00 00 48 85 db 49 89 5d 00 74 23 48 8d 7b 08 48 b8 00 00 00 00 00 fc ff df 48 89 fa 48 c1 ea 03 <80> 3c 02 00 0f 85 27 08 00 00 4c 89 6b 08 48 b8 00 01 00 00 00 00
+RSP: 0018:ffffc900051dee48 EFLAGS: 00010013
+RAX: dffffc0000000000 RBX: 02fe01c000002dcc RCX: 0000000000000000
+RDX: 005fc038000005ba RSI: 0000000000000001 RDI: 02fe01c000002dd4
+RBP: ffff88802c63a790 R08: 0000000000000000 R09: 0000000000000212
+R10: dffffc0000000000 R11: 0000000000000001 R12: ffff888055c305e8
+R13: ffff88802c63a790 R14: ffffffff948042b8 R15: ffff88804a156c40
+FS:  0000555594d8a500(0000) GS:ffff88802c600000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 000055645644d8c8 CR3: 000000000065a000 CR4: 0000000000350ef0
+Call Trace:
+ <TASK>
+ lookup_object_or_alloc data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/lib/debugobjects.c:568 [inline]
+ __debug_object_init+0x1ac/0x450 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/lib/debugobjects.c:634
+ debug_timer_init data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/time/timer.c:831 [inline]
+ debug_init data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/time/timer.c:879 [inline]
+ init_timer_key+0x32/0x300 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/time/timer.c:923
+ ____ip_mc_inc_group+0x450/0xcc0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/ipv4/igmp.c:1466
+ __ip_mc_inc_group data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/ipv4/igmp.c:1487 [inline]
+ ip_mc_inc_group data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/ipv4/igmp.c:1493 [inline]
+ ip_mc_up+0x150/0x3a0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/ipv4/igmp.c:1792
+ inetdev_event+0xb51/0x1b20 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/ipv4/devinet.c:1608
+ notifier_call_chain+0xbd/0x420 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/notifier.c:93
+ call_netdevice_notifiers_info+0xba/0x130 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/core/dev.c:1994
+ call_netdevice_notifiers_extack data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/core/dev.c:2032 [inline]
+ call_netdevice_notifiers data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/core/dev.c:2046 [inline]
+ __dev_notify_flags+0x129/0x2e0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/core/dev.c:8877
+ dev_change_flags+0x105/0x160 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/core/dev.c:8915
+ do_setlink+0x94b/0x3d10 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/core/rtnetlink.c:2900
+ __rtnl_newlink+0xdc6/0x18b0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/core/rtnetlink.c:3696
+ rtnl_newlink+0x64/0xa0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/core/rtnetlink.c:3743
+ rtnetlink_rcv_msg+0x3c8/0xfb0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/core/rtnetlink.c:6647
+ netlink_rcv_skb+0x164/0x420 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/netlink/af_netlink.c:2550
+ netlink_unicast_kernel data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/netlink/af_netlink.c:1331 [inline]
+ netlink_unicast+0x543/0x800 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/netlink/af_netlink.c:1357
+----------------
+Code disassembly (best guess), 1 bytes skipped:
+   0:	03 80 3c 02 00 0f    	add    0xf00023c(%rax),%eax
+   6:	85 59 08             	test   %ebx,0x8(%rcx)
+   9:	00 00                	add    %al,(%rax)
+   b:	48 85 db             	test   %rbx,%rbx
+   e:	49 89 5d 00          	mov    %rbx,0x0(%r13)
+  12:	74 23                	je     0x37
+  14:	48 8d 7b 08          	lea    0x8(%rbx),%rdi
+  18:	48 b8 00 00 00 00 00 	movabs $0xdffffc0000000000,%rax
+  1f:	fc ff df
+  22:	48 89 fa             	mov    %rdi,%rdx
+  25:	48 c1 ea 03          	shr    $0x3,%rdx
+* 29:	80 3c 02 00          	cmpb   $0x0,(%rdx,%rax,1) <-- trapping instruction
+  2d:	0f 85 27 08 00 00    	jne    0x85a
+  33:	4c 89 6b 08          	mov    %r13,0x8(%rbx)
+  37:	48                   	rex.W
+  38:	b8 00 01 00 00       	mov    $0x100,%eax
