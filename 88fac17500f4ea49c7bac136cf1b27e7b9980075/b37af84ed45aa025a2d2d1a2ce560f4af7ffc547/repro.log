@@ -1,0 +1,619 @@
+Warning: Permanently added '[localhost]:6842' (ED25519) to the list of known hosts.
+executing program
+executing program
+syzkaller login: [  164.190923][ T8271] FAULT_INJECTION: forcing a failure.
+[  164.190923][ T8271] name failslab, interval 1, probability 0, space 0, times 0
+[  164.193642][ T8271] CPU: 1 UID: 0 PID: 8271 Comm: syz-executor168 Not tainted 6.11.0-rc6-00026-g88fac17500f4-dirty #1
+[  164.194904][ T8271] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  164.195966][ T8271] Call Trace:
+[  164.196380][ T8271]  <TASK>
+[  164.196762][ T8271]  dump_stack_lvl+0x17c/0x1b0
+[  164.197366][ T8271]  should_fail_ex+0x4a4/0x5c0
+[  164.197975][ T8271]  ? srso_return_thunk+0x5/0x5f
+[  164.198611][ T8271]  should_failslab+0xbe/0x120
+[  164.199219][ T8271]  kmem_cache_alloc_noprof+0x6a/0x2f0
+[  164.199896][ T8271]  ? vm_area_dup+0x1f/0x300
+[  164.200497][ T8271]  ? srso_return_thunk+0x5/0x5f
+[  164.201146][ T8271]  vm_area_dup+0x1f/0x300
+[  164.201731][ T8271]  copy_mm+0xf94/0x2660
+[  164.202302][ T8271]  ? find_held_lock+0x2d/0x120
+[  164.202934][ T8271]  ? __pfx_copy_mm+0x10/0x10
+[  164.203562][ T8271]  ? srso_return_thunk+0x5/0x5f
+[  164.204187][ T8271]  ? __raw_spin_lock_init+0x36/0x110
+[  164.204866][ T8271]  copy_process+0x3c91/0x6fc0
+[  164.205517][ T8271]  ? __pfx_copy_process+0x10/0x10
+[  164.206172][ T8271]  ? ksys_write+0x11e/0x250
+[  164.206761][ T8271]  ? __pfx_lock_release+0x10/0x10
+[  164.207385][ T8271]  ? srso_return_thunk+0x5/0x5f
+[  164.208027][ T8271]  ? proc_fail_nth_write+0x95/0x250
+[  164.208701][ T8271]  kernel_clone+0xe7/0x8e0
+[  164.209299][ T8271]  ? __pfx_kernel_clone+0x10/0x10
+[  164.209961][ T8271]  ? vfs_write+0x151/0x10c0
+[  164.210539][ T8271]  ? __pfx_proc_fail_nth_write+0x10/0x10
+[  164.211243][ T8271]  ? __pfx_vfs_write+0x10/0x10
+[  164.211849][ T8271]  ? srso_return_thunk+0x5/0x5f
+[  164.212492][ T8271]  ? find_held_lock+0x2d/0x120
+[  164.213121][ T8271]  __do_sys_clone+0xba/0x100
+[  164.213742][ T8271]  ? __pfx___do_sys_clone+0x10/0x10
+[  164.214462][ T8271]  do_syscall_64+0x6e/0x1c0
+[  164.215077][ T8271]  entry_SYSCALL_64_after_hwframe+0x76/0x7e
+[  164.215828][ T8271] RIP: 0033:0x7fc1651e3c4d
+[  164.216377][ T8271] Code: c3 e8 57 23 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b8 ff ff ff f7 d8 64 89 01 48
+[  164.218571][ T8271] RSP: 002b:00007ffeff85edf8 EFLAGS: 00000246 ORIG_RAX: 0000000000000038
+[  164.219418][ T8271] RAX: ffffffffffffffda RBX: 0000000000000002 RCX: 00007fc1651e3c4d
+[  164.220212][ T8271] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000011
+[  164.221013][ T8271] RBP: 00007ffeff85ee50 R08: 0000000000000000 R09: 00007ffeff85ee2c
+[  164.221813][ T8271] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000003
+[  164.222611][ T8271] R13: 431bde82d7b634db R14: aaaaaaaaaaaa0102 R15: 00007ffeff85ee50
+[  164.223427][ T8271]  </TASK>
+[  164.258507][ T8272] FAULT_INJECTION: forcing a failure.
+[  164.258507][ T8272] name failslab, interval 1, probability 0, space 0, times 0
+[  164.260052][ T8272] CPU: 0 UID: 0 PID: 8272 Comm: syz-executor168 Not tainted 6.11.0-rc6-00026-g88fac17500f4-dirty #1
+[  164.261336][ T8272] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  164.262415][ T8272] Call Trace:
+[  164.262842][ T8272]  <TASK>
+[  164.263221][ T8272]  dump_stack_lvl+0x17c/0x1b0
+[  164.263840][ T8272]  should_fail_ex+0x4a4/0x5c0
+[  164.264463][ T8272]  ? srso_return_thunk+0x5/0x5f
+[  164.265116][ T8272]  should_failslab+0xbe/0x120
+[  164.265745][ T8272]  kmem_cache_alloc_noprof+0x6a/0x2f0
+[  164.266581][ T8272]  ? anon_vma_fork+0x1f1/0x630
+[  164.267213][ T8272]  anon_vma_fork+0x1f1/0x630
+[  164.267816][ T8272]  ? anon_vma_name+0x71/0xf0
+[  164.268442][ T8272]  copy_mm+0x19e8/0x2660
+[  164.269050][ T8272]  ? find_held_lock+0x2d/0x120
+[  164.269700][ T8272]  ? __pfx_copy_mm+0x10/0x10
+[  164.270341][ T8272]  ? srso_return_thunk+0x5/0x5f
+[  164.271008][ T8272]  ? __raw_spin_lock_init+0x36/0x110
+[  164.271703][ T8272]  copy_process+0x3c91/0x6fc0
+[  164.272352][ T8272]  ? __pfx_copy_process+0x10/0x10
+[  164.273027][ T8272]  ? ksys_write+0x11e/0x250
+[  164.273625][ T8272]  ? __pfx_lock_release+0x10/0x10
+[  164.274260][ T8272]  ? srso_return_thunk+0x5/0x5f
+[  164.274913][ T8272]  ? proc_fail_nth_write+0x95/0x250
+[  164.275593][ T8272]  kernel_clone+0xe7/0x8e0
+[  164.276193][ T8272]  ? __pfx_kernel_clone+0x10/0x10
+[  164.276868][ T8272]  ? vfs_write+0x151/0x10c0
+[  164.277441][ T8272]  ? __pfx_proc_fail_nth_write+0x10/0x10
+[  164.278163][ T8272]  ? __pfx_vfs_write+0x10/0x10
+[  164.278777][ T8272]  ? srso_return_thunk+0x5/0x5f
+[  164.279422][ T8272]  ? find_held_lock+0x2d/0x120
+[  164.280075][ T8272]  __do_sys_clone+0xba/0x100
+[  164.280700][ T8272]  ? __pfx___do_sys_clone+0x10/0x10
+[  164.281424][ T8272]  do_syscall_64+0x6e/0x1c0
+[  164.282040][ T8272]  entry_SYSCALL_64_after_hwframe+0x76/0x7e
+[  164.282792][ T8272] RIP: 0033:0x7fc1651e3c4d
+[  164.283348][ T8272] Code: c3 e8 57 23 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b8 ff ff ff f7 d8 64 89 01 48
+[  164.285582][ T8272] RSP: 002b:00007ffeff85edf8 EFLAGS: 00000246 ORIG_RAX: 0000000000000038
+[  164.286595][ T8272] RAX: ffffffffffffffda RBX: 0000000000000002 RCX: 00007fc1651e3c4d
+[  164.287538][ T8272] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000011
+[  164.288464][ T8272] RBP: 00007ffeff85ee50 R08: 0000000000000000 R09: 00007ffeff85ee2c
+[  164.289420][ T8272] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000003
+[  164.290363][ T8272] R13: 431bde82d7b634db R14: aaaaaaaaaaaa0102 R15: 00007ffeff85ee50
+[  164.291335][ T8272]  </TASK>
+executing program
+executing program
+executing program
+executing program
+[  164.370753][ T8279] FAULT_INJECTION: forcing a failure.
+[  164.370753][ T8279] name fail_page_alloc, interval 1, probability 0, space 0, times 1
+[  164.372314][ T8279] CPU: 0 UID: 0 PID: 8279 Comm: syz-executor168 Not tainted 6.11.0-rc6-00026-g88fac17500f4-dirty #1
+[  164.373599][ T8279] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  164.374676][ T8279] Call Trace:
+[  164.375097][ T8279]  <TASK>
+[  164.375486][ T8279]  dump_stack_lvl+0x17c/0x1b0
+[  164.376101][ T8279]  should_fail_ex+0x4a4/0x5c0
+[  164.376738][ T8279]  should_fail_alloc_page+0xe5/0x140
+[  164.377433][ T8279]  prepare_alloc_pages.constprop.0+0x176/0x560
+[  164.378221][ T8279]  ? __lock_acquire+0x1a00/0x58d0
+[  164.378878][ T8279]  __alloc_pages_noprof+0x144/0x500
+[  164.379570][ T8279]  ? __pfx___alloc_pages_noprof+0x10/0x10
+[  164.380307][ T8279]  ? srso_return_thunk+0x5/0x5f
+[  164.380976][ T8279]  ? srso_return_thunk+0x5/0x5f
+[  164.381631][ T8279]  ? __sanitizer_cov_trace_switch+0x50/0x90
+[  164.382388][ T8279]  ? srso_return_thunk+0x5/0x5f
+[  164.383048][ T8279]  ? policy_nodemask+0xeb/0x4d0
+[  164.383710][ T8279]  alloc_pages_mpol_noprof+0x25e/0x600
+[  164.384400][ T8279]  ? __pfx_alloc_pages_mpol_noprof+0x10/0x10
+[  164.385186][ T8279]  ? srso_return_thunk+0x5/0x5f
+[  164.385854][ T8279]  __pud_alloc+0x35/0x5d0
+[  164.386443][ T8279]  copy_page_range+0x2f92/0x5930
+[  164.387130][ T8279]  ? srso_return_thunk+0x5/0x5f
+[  164.387811][ T8279]  ? srso_return_thunk+0x5/0x5f
+[  164.388623][ T8279]  ? mas_wr_end_piv+0x170/0x740
+[  164.389272][ T8279]  ? srso_return_thunk+0x5/0x5f
+[  164.389935][ T8279]  ? mas_wr_store_entry+0xc34/0xea0
+[  164.390621][ T8279]  ? srso_return_thunk+0x5/0x5f
+[  164.391304][ T8279]  ? rcu_is_watching+0xe/0xc0
+[  164.392013][ T8279]  ? __pfx_copy_page_range+0x10/0x10
+[  164.392727][ T8279]  ? srso_return_thunk+0x5/0x5f
+[  164.393368][ T8279]  ? mas_store+0x2bc/0x420
+[  164.393961][ T8279]  ? __pfx_mas_store+0x10/0x10
+[  164.394686][ T8279]  ? srso_return_thunk+0x5/0x5f
+[  164.395374][ T8279]  ? srso_return_thunk+0x5/0x5f
+[  164.396122][ T8279]  ? srso_return_thunk+0x5/0x5f
+[  164.396890][ T8279]  ? up_write+0x1af/0x520
+[  164.397578][ T8279]  copy_mm+0x149b/0x2660
+[  164.398173][ T8279]  ? find_held_lock+0x2d/0x120
+[  164.398823][ T8279]  ? __pfx_copy_mm+0x10/0x10
+[  164.399460][ T8279]  ? srso_return_thunk+0x5/0x5f
+[  164.400108][ T8279]  ? __raw_spin_lock_init+0x36/0x110
+[  164.400811][ T8279]  copy_process+0x3c91/0x6fc0
+[  164.401478][ T8279]  ? __pfx_copy_process+0x10/0x10
+[  164.402151][ T8279]  ? ksys_write+0x11e/0x250
+[  164.402747][ T8279]  ? __pfx_lock_release+0x10/0x10
+[  164.403388][ T8279]  ? srso_return_thunk+0x5/0x5f
+[  164.404055][ T8279]  ? proc_fail_nth_write+0x95/0x250
+[  164.404743][ T8279]  kernel_clone+0xe7/0x8e0
+[  164.405349][ T8279]  ? __pfx_kernel_clone+0x10/0x10
+[  164.406016][ T8279]  ? vfs_write+0x151/0x10c0
+[  164.406599][ T8279]  ? __pfx_proc_fail_nth_write+0x10/0x10
+[  164.407316][ T8279]  ? __pfx_vfs_write+0x10/0x10
+[  164.407926][ T8279]  ? srso_return_thunk+0x5/0x5f
+[  164.408567][ T8279]  ? find_held_lock+0x2d/0x120
+[  164.409213][ T8279]  __do_sys_clone+0xba/0x100
+[  164.409840][ T8279]  ? __pfx___do_sys_clone+0x10/0x10
+[  164.410572][ T8279]  do_syscall_64+0x6e/0x1c0
+[  164.411179][ T8279]  entry_SYSCALL_64_after_hwframe+0x76/0x7e
+[  164.411932][ T8279] RIP: 0033:0x7fc1651e3c4d
+[  164.412498][ T8279] Code: c3 e8 57 23 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b8 ff ff ff f7 d8 64 89 01 48
+[  164.414698][ T8279] RSP: 002b:00007ffeff85edf8 EFLAGS: 00000246 ORIG_RAX: 0000000000000038
+[  164.415696][ T8279] RAX: ffffffffffffffda RBX: 0000000000000002 RCX: 00007fc1651e3c4d
+[  164.416628][ T8279] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000011
+[  164.417554][ T8279] RBP: 00007ffeff85ee50 R08: 0000000000000000 R09: 00007ffeff85ee2c
+[  164.418498][ T8279] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000003
+[  164.419426][ T8279] R13: 431bde82d7b634db R14: aaaaaaaaaaaa0102 R15: 00007ffeff85ee50
+[  164.420397][ T8279]  </TASK>
+executing program
+executing program
+executing program
+[  164.530725][ T8287] FAULT_INJECTION: forcing a failure.
+[  164.530725][ T8287] name failslab, interval 1, probability 0, space 0, times 0
+[  164.532208][ T8287] CPU: 0 UID: 0 PID: 8287 Comm: syz-executor168 Not tainted 6.11.0-rc6-00026-g88fac17500f4-dirty #1
+[  164.533485][ T8287] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  164.534551][ T8287] Call Trace:
+[  164.534968][ T8287]  <TASK>
+[  164.535342][ T8287]  dump_stack_lvl+0x17c/0x1b0
+[  164.535953][ T8287]  should_fail_ex+0x4a4/0x5c0
+[  164.536579][ T8287]  ? srso_return_thunk+0x5/0x5f
+[  164.537231][ T8287]  should_failslab+0xbe/0x120
+[  164.537867][ T8287]  kmem_cache_alloc_noprof+0x6a/0x2f0
+[  164.538560][ T8287]  ? vm_area_dup+0x1f/0x300
+[  164.539167][ T8287]  ? srso_return_thunk+0x5/0x5f
+[  164.539827][ T8287]  vm_area_dup+0x1f/0x300
+[  164.540408][ T8287]  copy_mm+0xf94/0x2660
+[  164.540994][ T8287]  ? find_held_lock+0x2d/0x120
+[  164.541635][ T8287]  ? __pfx_copy_mm+0x10/0x10
+[  164.542257][ T8287]  ? srso_return_thunk+0x5/0x5f
+[  164.542917][ T8287]  ? __raw_spin_lock_init+0x36/0x110
+[  164.543613][ T8287]  copy_process+0x3c91/0x6fc0
+[  164.544264][ T8287]  ? __pfx_copy_process+0x10/0x10
+[  164.544935][ T8287]  ? ksys_write+0x11e/0x250
+[  164.545518][ T8287]  ? __pfx_lock_release+0x10/0x10
+[  164.546140][ T8287]  ? srso_return_thunk+0x5/0x5f
+[  164.546784][ T8287]  ? proc_fail_nth_write+0x95/0x250
+[  164.547443][ T8287]  kernel_clone+0xe7/0x8e0
+[  164.548049][ T8287]  ? __pfx_kernel_clone+0x10/0x10
+[  164.548711][ T8287]  ? vfs_write+0x151/0x10c0
+[  164.549279][ T8287]  ? __pfx_proc_fail_nth_write+0x10/0x10
+[  164.549990][ T8287]  ? __pfx_vfs_write+0x10/0x10
+[  164.550601][ T8287]  ? srso_return_thunk+0x5/0x5f
+[  164.551235][ T8287]  ? find_held_lock+0x2d/0x120
+[  164.551873][ T8287]  __do_sys_clone+0xba/0x100
+[  164.552499][ T8287]  ? __pfx___do_sys_clone+0x10/0x10
+[  164.553203][ T8287]  do_syscall_64+0x6e/0x1c0
+[  164.553805][ T8287]  entry_SYSCALL_64_after_hwframe+0x76/0x7e
+[  164.554533][ T8287] RIP: 0033:0x7fc1651e3c4d
+[  164.555089][ T8287] Code: c3 e8 57 23 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b8 ff ff ff f7 d8 64 89 01 48
+[  164.557281][ T8287] RSP: 002b:00007ffeff85edf8 EFLAGS: 00000246 ORIG_RAX: 0000000000000038
+[  164.558260][ T8287] RAX: ffffffffffffffda RBX: 0000000000000002 RCX: 00007fc1651e3c4d
+[  164.559184][ T8287] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000011
+[  164.560105][ T8287] RBP: 00007ffeff85ee50 R08: 0000000000000000 R09: 00007ffeff85ee2c
+[  164.561049][ T8287] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000004
+[  164.561986][ T8287] R13: 431bde82d7b634db R14: aaaaaaaaaaaa0102 R15: 00007ffeff85ee50
+[  164.562941][ T8287]  </TASK>
+executing program
+[  164.620420][ T8288] FAULT_INJECTION: forcing a failure.
+[  164.620420][ T8288] name failslab, interval 1, probability 0, space 0, times 0
+[  164.621892][ T8288] CPU: 0 UID: 0 PID: 8288 Comm: syz-executor168 Not tainted 6.11.0-rc6-00026-g88fac17500f4-dirty #1
+[  164.623150][ T8288] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  164.624214][ T8288] Call Trace:
+[  164.624636][ T8288]  <TASK>
+[  164.625004][ T8288]  dump_stack_lvl+0x17c/0x1b0
+[  164.625609][ T8288]  should_fail_ex+0x4a4/0x5c0
+[  164.626253][ T8288]  ? srso_return_thunk+0x5/0x5f
+[  164.626908][ T8288]  should_failslab+0xbe/0x120
+[  164.627523][ T8288]  kmem_cache_alloc_noprof+0x6a/0x2f0
+[  164.628203][ T8288]  ? vm_area_dup+0x51/0x300
+[  164.628812][ T8288]  vm_area_dup+0x51/0x300
+[  164.629385][ T8288]  copy_mm+0xf94/0x2660
+[  164.629975][ T8288]  ? find_held_lock+0x2d/0x120
+[  164.630615][ T8288]  ? __pfx_copy_mm+0x10/0x10
+[  164.631239][ T8288]  ? srso_return_thunk+0x5/0x5f
+[  164.631883][ T8288]  ? __raw_spin_lock_init+0x36/0x110
+[  164.632569][ T8288]  copy_process+0x3c91/0x6fc0
+[  164.633212][ T8288]  ? __pfx_copy_process+0x10/0x10
+[  164.633886][ T8288]  ? ksys_write+0x11e/0x250
+[  164.634458][ T8288]  ? __pfx_lock_release+0x10/0x10
+[  164.635110][ T8288]  ? srso_return_thunk+0x5/0x5f
+[  164.635764][ T8288]  ? proc_fail_nth_write+0x95/0x250
+[  164.636433][ T8288]  kernel_clone+0xe7/0x8e0
+[  164.637049][ T8288]  ? __pfx_kernel_clone+0x10/0x10
+[  164.637724][ T8288]  ? vfs_write+0x151/0x10c0
+[  164.638296][ T8288]  ? __pfx_proc_fail_nth_write+0x10/0x10
+[  164.639021][ T8288]  ? __pfx_vfs_write+0x10/0x10
+[  164.639628][ T8288]  ? srso_return_thunk+0x5/0x5f
+[  164.640267][ T8288]  ? find_held_lock+0x2d/0x120
+[  164.640917][ T8288]  __do_sys_clone+0xba/0x100
+[  164.641548][ T8288]  ? __pfx___do_sys_clone+0x10/0x10
+[  164.642268][ T8288]  do_syscall_64+0x6e/0x1c0
+[  164.642886][ T8288]  entry_SYSCALL_64_after_hwframe+0x76/0x7e
+[  164.643639][ T8288] RIP: 0033:0x7fc1651e3c4d
+[  164.644177][ T8288] Code: c3 e8 57 23 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b8 ff ff ff f7 d8 64 89 01 48
+[  164.646326][ T8288] RSP: 002b:00007ffeff85edf8 EFLAGS: 00000246 ORIG_RAX: 0000000000000038
+[  164.647328][ T8288] RAX: ffffffffffffffda RBX: 0000000000000002 RCX: 00007fc1651e3c4d
+[  164.648261][ T8288] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000011
+[  164.649221][ T8288] RBP: 00007ffeff85ee50 R08: 0000000000000000 R09: 00007ffeff85ee2c
+[  164.650150][ T8288] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000004
+[  164.651075][ T8288] R13: 431bde82d7b634db R14: aaaaaaaaaaaa0102 R15: 00007ffeff85ee50
+[  164.652027][ T8288]  </TASK>
+executing program
+[  164.715663][ T8289] FAULT_INJECTION: forcing a failure.
+[  164.715663][ T8289] name failslab, interval 1, probability 0, space 0, times 0
+[  164.717147][ T8289] CPU: 0 UID: 0 PID: 8289 Comm: syz-executor168 Not tainted 6.11.0-rc6-00026-g88fac17500f4-dirty #1
+[  164.718409][ T8289] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  164.719481][ T8289] Call Trace:
+[  164.719898][ T8289]  <TASK>
+[  164.720282][ T8289]  dump_stack_lvl+0x17c/0x1b0
+[  164.720900][ T8289]  should_fail_ex+0x4a4/0x5c0
+[  164.721528][ T8289]  ? srso_return_thunk+0x5/0x5f
+[  164.722172][ T8289]  should_failslab+0xbe/0x120
+[  164.722807][ T8289]  kmem_cache_alloc_noprof+0x6a/0x2f0
+[  164.723505][ T8289]  ? vm_area_dup+0x1f/0x300
+[  164.724104][ T8289]  ? srso_return_thunk+0x5/0x5f
+[  164.724757][ T8289]  vm_area_dup+0x1f/0x300
+[  164.725330][ T8289]  copy_mm+0xf94/0x2660
+[  164.725922][ T8289]  ? find_held_lock+0x2d/0x120
+[  164.726560][ T8289]  ? __pfx_copy_mm+0x10/0x10
+[  164.727192][ T8289]  ? srso_return_thunk+0x5/0x5f
+[  164.727845][ T8289]  ? __raw_spin_lock_init+0x36/0x110
+[  164.728532][ T8289]  copy_process+0x3c91/0x6fc0
+[  164.729181][ T8289]  ? __pfx_copy_process+0x10/0x10
+[  164.729855][ T8289]  ? ksys_write+0x11e/0x250
+[  164.730439][ T8289]  ? __pfx_lock_release+0x10/0x10
+[  164.731081][ T8289]  ? srso_return_thunk+0x5/0x5f
+[  164.731732][ T8289]  ? proc_fail_nth_write+0x95/0x250
+[  164.732414][ T8289]  kernel_clone+0xe7/0x8e0
+[  164.733023][ T8289]  ? __pfx_kernel_clone+0x10/0x10
+[  164.733695][ T8289]  ? vfs_write+0x151/0x10c0
+[  164.734259][ T8289]  ? __pfx_proc_fail_nth_write+0x10/0x10
+[  164.734972][ T8289]  ? __pfx_vfs_write+0x10/0x10
+[  164.735585][ T8289]  ? srso_return_thunk+0x5/0x5f
+[  164.736222][ T8289]  ? find_held_lock+0x2d/0x120
+[  164.736868][ T8289]  __do_sys_clone+0xba/0x100
+[  164.737497][ T8289]  ? __pfx___do_sys_clone+0x10/0x10
+[  164.738211][ T8289]  do_syscall_64+0x6e/0x1c0
+[  164.738820][ T8289]  entry_SYSCALL_64_after_hwframe+0x76/0x7e
+[  164.739546][ T8289] RIP: 0033:0x7fc1651e3c4d
+[  164.740109][ T8289] Code: c3 e8 57 23 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b8 ff ff ff f7 d8 64 89 01 48
+[  164.742332][ T8289] RSP: 002b:00007ffeff85edf8 EFLAGS: 00000246 ORIG_RAX: 0000000000000038
+[  164.743346][ T8289] RAX: ffffffffffffffda RBX: 0000000000000002 RCX: 00007fc1651e3c4d
+[  164.744313][ T8289] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000011
+[  164.745266][ T8289] RBP: 00007ffeff85ee50 R08: 0000000000000000 R09: 00007ffeff85ee2c
+[  164.746204][ T8289] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000004
+[  164.747147][ T8289] R13: 431bde82d7b634db R14: aaaaaaaaaaaa0102 R15: 00007ffeff85ee50
+[  164.748148][ T8289]  </TASK>
+executing program
+[  164.787753][ T8290] FAULT_INJECTION: forcing a failure.
+[  164.787753][ T8290] name failslab, interval 1, probability 0, space 0, times 0
+[  164.789275][ T8290] CPU: 0 UID: 0 PID: 8290 Comm: syz-executor168 Not tainted 6.11.0-rc6-00026-g88fac17500f4-dirty #1
+[  164.790697][ T8290] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  164.791780][ T8290] Call Trace:
+[  164.792198][ T8290]  <TASK>
+[  164.792673][ T8290]  dump_stack_lvl+0x17c/0x1b0
+[  164.793278][ T8290]  should_fail_ex+0x4a4/0x5c0
+[  164.793911][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.794570][ T8290]  should_failslab+0xbe/0x120
+[  164.795191][ T8290]  __kmalloc_cache_noprof+0x67/0x320
+[  164.795883][ T8290]  ? memtype_reserve+0x283/0xbc0
+[  164.796546][ T8290]  ? find_held_lock+0x2d/0x120
+[  164.797171][ T8290]  ? find_held_lock+0x2d/0x120
+[  164.797816][ T8290]  memtype_reserve+0x283/0xbc0
+[  164.798449][ T8290]  ? __pfx_memtype_reserve+0x10/0x10
+[  164.799147][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.799798][ T8290]  ? pat_pagerange_is_ram+0xa7/0x140
+[  164.800490][ T8290]  ? __pfx_pat_pagerange_is_ram+0x10/0x10
+[  164.801222][ T8290]  ? __pfx_pgprot2cachemode+0x10/0x10
+[  164.801951][ T8290]  reserve_pfn_range+0x2b7/0x670
+[  164.802618][ T8290]  ? __pfx_reserve_pfn_range+0x10/0x10
+[  164.803328][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.803973][ T8290]  ? register_lock_class+0xb2/0xf90
+[  164.804654][ T8290]  track_pfn_copy+0x16d/0x1b0
+[  164.805281][ T8290]  ? __pfx_track_pfn_copy+0x10/0x10
+[  164.805983][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.806646][ T8290]  copy_page_range+0x2dc7/0x5930
+[  164.807394][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.808061][ T8290]  ? __pfx___lock_acquire+0x10/0x10
+[  164.808756][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.809402][ T8290]  ? mas_wr_store_entry+0xc34/0xea0
+[  164.810083][ T8290]  ? __pfx_copy_page_range+0x10/0x10
+[  164.810787][ T8290]  ? copy_mm+0x144e/0x2660
+[  164.811383][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.812044][ T8290]  ? __pfx_lock_release+0x10/0x10
+[  164.812699][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.813351][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.814015][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.814664][ T8290]  ? down_write+0x14a/0x200
+[  164.815271][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.815920][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.816571][ T8290]  ? up_write+0x1af/0x520
+[  164.817137][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.817806][ T8290]  copy_mm+0x149b/0x2660
+[  164.818398][ T8290]  ? find_held_lock+0x2d/0x120
+[  164.819051][ T8290]  ? __pfx_copy_mm+0x10/0x10
+[  164.819694][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.820379][ T8290]  ? __raw_spin_lock_init+0x36/0x110
+[  164.821081][ T8290]  copy_process+0x3c91/0x6fc0
+[  164.821754][ T8290]  ? __pfx_copy_process+0x10/0x10
+[  164.822427][ T8290]  ? ksys_write+0x11e/0x250
+[  164.823032][ T8290]  ? __pfx_lock_release+0x10/0x10
+[  164.823688][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.824329][ T8290]  ? proc_fail_nth_write+0x95/0x250
+[  164.825015][ T8290]  kernel_clone+0xe7/0x8e0
+[  164.825630][ T8290]  ? __pfx_kernel_clone+0x10/0x10
+[  164.826296][ T8290]  ? vfs_write+0x151/0x10c0
+[  164.826899][ T8290]  ? __pfx_proc_fail_nth_write+0x10/0x10
+[  164.827631][ T8290]  ? __pfx_vfs_write+0x10/0x10
+[  164.828244][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.828901][ T8290]  ? find_held_lock+0x2d/0x120
+[  164.829552][ T8290]  __do_sys_clone+0xba/0x100
+[  164.830171][ T8290]  ? __pfx___do_sys_clone+0x10/0x10
+[  164.830913][ T8290]  do_syscall_64+0x6e/0x1c0
+[  164.831548][ T8290]  entry_SYSCALL_64_after_hwframe+0x76/0x7e
+[  164.832299][ T8290] RIP: 0033:0x7fc1651e3c4d
+[  164.832877][ T8290] Code: c3 e8 57 23 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b8 ff ff ff f7 d8 64 89 01 48
+[  164.835122][ T8290] RSP: 002b:00007ffeff85edf8 EFLAGS: 00000246 ORIG_RAX: 0000000000000038
+[  164.836141][ T8290] RAX: ffffffffffffffda RBX: 0000000000000002 RCX: 00007fc1651e3c4d
+[  164.837091][ T8290] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000011
+[  164.838029][ T8290] RBP: 00007ffeff85ee50 R08: 0000000000000000 R09: 00007ffeff85ee2c
+[  164.838973][ T8290] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000004
+[  164.839926][ T8290] R13: 431bde82d7b634db R14: aaaaaaaaaaaa0102 R15: 00007ffeff85ee50
+[  164.840908][ T8290]  </TASK>
+[  164.856766][ T8290] ------------[ cut here ]------------
+[  164.857917][ T8290] WARNING: CPU: 0 PID: 8290 at arch/x86/mm/pat/memtype.c:1002 get_pat_info+0x410/0x510
+[  164.859120][ T8290] Modules linked in:
+[  164.859633][ T8290] CPU: 0 UID: 0 PID: 8290 Comm: syz-executor168 Not tainted 6.11.0-rc6-00026-g88fac17500f4-dirty #1
+[  164.861067][ T8290] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  164.862722][ T8290] RIP: 0010:get_pat_info+0x410/0x510
+[  164.863412][ T8290] Code: ff e8 04 c3 4b 00 0f 0b e9 bb fc ff ff 4c 89 ff e8 35 36 a9 00 e9 15 fe ff ff 41 bc ea ff ff ff e9 0d fe ff ff e8 e0 c2 4b 00 <0f> 0b 41 bc ea ff ff ff e9 fb fd ff ff e8 ce c2 4b 00 e8 c9 7c 32
+[  164.865643][ T8290] RSP: 0018:ffffc9000e6ff500 EFLAGS: 00010293
+[  164.866387][ T8290] RAX: 0000000000000000 RBX: ffff88802aec56c8 RCX: ffffffff813e36b5
+[  164.867344][ T8290] RDX: ffff88801d20da00 RSI: ffffffff813e37e0 RDI: 0000000000000007
+[  164.868311][ T8290] RBP: 1ffff92001cdfea1 R08: 0000000000000001 R09: ffff88801d20e4d8
+[  164.869269][ T8290] R10: 0000000000000000 R11: 0000000000000001 R12: 0000000000000000
+[  164.870230][ T8290] R13: ffffc9000e6ff5e8 R14: 0000000000000000 R15: 0000000000000000
+[  164.871191][ T8290] FS:  000055558db5d3c0(0000) GS:ffff88802c600000(0000) knlGS:0000000000000000
+[  164.872271][ T8290] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  164.873146][ T8290] CR2: 00007fc1652239f0 CR3: 000000001b1f8000 CR4: 0000000000350ef0
+[  164.874110][ T8290] Call Trace:
+[  164.874541][ T8290]  <TASK>
+[  164.874919][ T8290]  ? show_regs+0x8f/0xa0
+[  164.875508][ T8290]  ? __warn+0xe1/0x3b0
+[  164.876048][ T8290]  ? get_pat_info+0x410/0x510
+[  164.876674][ T8290]  ? report_bug+0x2dd/0x500
+[  164.877304][ T8290]  ? get_pat_info+0x410/0x510
+[  164.877946][ T8290]  ? handle_bug+0x98/0x120
+[  164.878554][ T8290]  ? exc_invalid_op+0x31/0x70
+[  164.879186][ T8290]  ? asm_exc_invalid_op+0x16/0x20
+[  164.879861][ T8290]  ? get_pat_info+0x2e5/0x510
+[  164.880483][ T8290]  ? get_pat_info+0x410/0x510
+[  164.881102][ T8290]  ? get_pat_info+0x410/0x510
+[  164.881728][ T8290]  ? __pfx_get_pat_info+0x10/0x10
+[  164.882390][ T8290]  untrack_pfn+0xf3/0x4f0
+[  164.883084][ T8290]  ? __pfx_untrack_pfn+0x10/0x10
+[  164.883743][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.884374][ T8290]  ? uprobe_munmap+0x1c/0x5b0
+[  164.884996][ T8290]  unmap_single_vma+0x1c3/0x2b0
+[  164.885651][ T8290]  unmap_vmas+0x1ee/0x440
+[  164.886230][ T8290]  ? __pfx_unmap_vmas+0x10/0x10
+[  164.886878][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.887541][ T8290]  ? __pfx_lock_release+0x10/0x10
+[  164.888189][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.888840][ T8290]  ? lru_add_drain_cpu+0x46c/0x850
+[  164.889538][ T8290]  exit_mmap+0x1a7/0xb20
+[  164.890139][ T8290]  ? __pfx_exit_mmap+0x10/0x10
+[  164.890843][ T8290]  __mmput+0x128/0x470
+[  164.891403][ T8290]  mmput+0x5c/0x70
+[  164.891942][ T8290]  copy_mm+0x1860/0x2660
+[  164.892655][ T8290]  ? find_held_lock+0x2d/0x120
+[  164.893297][ T8290]  ? __pfx_copy_mm+0x10/0x10
+[  164.893942][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.894603][ T8290]  ? __raw_spin_lock_init+0x36/0x110
+[  164.895287][ T8290]  copy_process+0x3c91/0x6fc0
+[  164.895952][ T8290]  ? __pfx_copy_process+0x10/0x10
+[  164.896634][ T8290]  ? ksys_write+0x11e/0x250
+[  164.897223][ T8290]  ? __pfx_lock_release+0x10/0x10
+[  164.897875][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.898530][ T8290]  ? proc_fail_nth_write+0x95/0x250
+[  164.899202][ T8290]  kernel_clone+0xe7/0x8e0
+[  164.899819][ T8290]  ? __pfx_kernel_clone+0x10/0x10
+[  164.900492][ T8290]  ? vfs_write+0x151/0x10c0
+[  164.901083][ T8290]  ? __pfx_proc_fail_nth_write+0x10/0x10
+[  164.901811][ T8290]  ? __pfx_vfs_write+0x10/0x10
+[  164.902421][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.903121][ T8290]  ? find_held_lock+0x2d/0x120
+[  164.903788][ T8290]  __do_sys_clone+0xba/0x100
+[  164.904413][ T8290]  ? __pfx___do_sys_clone+0x10/0x10
+[  164.905147][ T8290]  do_syscall_64+0x6e/0x1c0
+[  164.905765][ T8290]  entry_SYSCALL_64_after_hwframe+0x76/0x7e
+[  164.906525][ T8290] RIP: 0033:0x7fc1651e3c4d
+[  164.907086][ T8290] Code: c3 e8 57 23 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b8 ff ff ff f7 d8 64 89 01 48
+[  164.909320][ T8290] RSP: 002b:00007ffeff85edf8 EFLAGS: 00000246 ORIG_RAX: 0000000000000038
+[  164.910332][ T8290] RAX: ffffffffffffffda RBX: 0000000000000002 RCX: 00007fc1651e3c4d
+[  164.911281][ T8290] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000011
+[  164.912219][ T8290] RBP: 00007ffeff85ee50 R08: 0000000000000000 R09: 00007ffeff85ee2c
+[  164.913226][ T8290] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000004
+[  164.914194][ T8290] R13: 431bde82d7b634db R14: aaaaaaaaaaaa0102 R15: 00007ffeff85ee50
+[  164.915178][ T8290]  </TASK>
+[  164.915586][ T8290] Kernel panic - not syncing: kernel: panic_on_warn set ...
+[  164.916453][ T8290] CPU: 0 UID: 0 PID: 8290 Comm: syz-executor168 Not tainted 6.11.0-rc6-00026-g88fac17500f4-dirty #1
+[  164.917745][ T8290] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  164.918823][ T8290] Call Trace:
+[  164.919244][ T8290]  <TASK>
+[  164.919640][ T8290]  dump_stack_lvl+0x39/0x1b0
+[  164.920237][ T8290]  panic+0x6dc/0x790
+[  164.920775][ T8290]  ? __pfx_panic+0x10/0x10
+[  164.921371][ T8290]  ? check_panic_on_warn+0x1b/0xb0
+[  164.922049][ T8290]  ? get_pat_info+0x410/0x510
+[  164.922683][ T8290]  check_panic_on_warn+0xad/0xb0
+[  164.923322][ T8290]  __warn+0xed/0x3b0
+[  164.923863][ T8290]  ? get_pat_info+0x410/0x510
+[  164.924514][ T8290]  report_bug+0x2dd/0x500
+[  164.925114][ T8290]  ? get_pat_info+0x410/0x510
+[  164.925758][ T8290]  handle_bug+0x98/0x120
+[  164.926339][ T8290]  exc_invalid_op+0x31/0x70
+[  164.926970][ T8290]  asm_exc_invalid_op+0x16/0x20
+[  164.927616][ T8290] RIP: 0010:get_pat_info+0x410/0x510
+[  164.928302][ T8290] Code: ff e8 04 c3 4b 00 0f 0b e9 bb fc ff ff 4c 89 ff e8 35 36 a9 00 e9 15 fe ff ff 41 bc ea ff ff ff e9 0d fe ff ff e8 e0 c2 4b 00 <0f> 0b 41 bc ea ff ff ff e9 fb fd ff ff e8 ce c2 4b 00 e8 c9 7c 32
+[  164.930552][ T8290] RSP: 0018:ffffc9000e6ff500 EFLAGS: 00010293
+[  164.931282][ T8290] RAX: 0000000000000000 RBX: ffff88802aec56c8 RCX: ffffffff813e36b5
+[  164.932213][ T8290] RDX: ffff88801d20da00 RSI: ffffffff813e37e0 RDI: 0000000000000007
+[  164.933138][ T8290] RBP: 1ffff92001cdfea1 R08: 0000000000000001 R09: ffff88801d20e4d8
+[  164.934073][ T8290] R10: 0000000000000000 R11: 0000000000000001 R12: 0000000000000000
+[  164.935005][ T8290] R13: ffffc9000e6ff5e8 R14: 0000000000000000 R15: 0000000000000000
+[  164.935962][ T8290]  ? get_pat_info+0x2e5/0x510
+[  164.936600][ T8290]  ? get_pat_info+0x410/0x510
+[  164.937232][ T8290]  ? __pfx_get_pat_info+0x10/0x10
+[  164.937921][ T8290]  untrack_pfn+0xf3/0x4f0
+[  164.938528][ T8290]  ? __pfx_untrack_pfn+0x10/0x10
+[  164.939190][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.939850][ T8290]  ? uprobe_munmap+0x1c/0x5b0
+[  164.940479][ T8290]  unmap_single_vma+0x1c3/0x2b0
+[  164.941131][ T8290]  unmap_vmas+0x1ee/0x440
+[  164.941740][ T8290]  ? __pfx_unmap_vmas+0x10/0x10
+[  164.942379][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.943043][ T8290]  ? __pfx_lock_release+0x10/0x10
+[  164.943703][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.944347][ T8290]  ? lru_add_drain_cpu+0x46c/0x850
+[  164.945053][ T8290]  exit_mmap+0x1a7/0xb20
+[  164.945649][ T8290]  ? __pfx_exit_mmap+0x10/0x10
+[  164.946332][ T8290]  __mmput+0x128/0x470
+[  164.946901][ T8290]  mmput+0x5c/0x70
+[  164.947408][ T8290]  copy_mm+0x1860/0x2660
+[  164.948008][ T8290]  ? find_held_lock+0x2d/0x120
+[  164.948650][ T8290]  ? __pfx_copy_mm+0x10/0x10
+[  164.949276][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.949926][ T8290]  ? __raw_spin_lock_init+0x36/0x110
+[  164.950624][ T8290]  copy_process+0x3c91/0x6fc0
+[  164.951277][ T8290]  ? __pfx_copy_process+0x10/0x10
+[  164.951964][ T8290]  ? ksys_write+0x11e/0x250
+[  164.952562][ T8290]  ? __pfx_lock_release+0x10/0x10
+[  164.953203][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.953863][ T8290]  ? proc_fail_nth_write+0x95/0x250
+[  164.954547][ T8290]  kernel_clone+0xe7/0x8e0
+[  164.955159][ T8290]  ? __pfx_kernel_clone+0x10/0x10
+[  164.955843][ T8290]  ? vfs_write+0x151/0x10c0
+[  164.956422][ T8290]  ? __pfx_proc_fail_nth_write+0x10/0x10
+[  164.957149][ T8290]  ? __pfx_vfs_write+0x10/0x10
+[  164.957775][ T8290]  ? srso_return_thunk+0x5/0x5f
+[  164.958420][ T8290]  ? find_held_lock+0x2d/0x120
+[  164.959080][ T8290]  __do_sys_clone+0xba/0x100
+[  164.959715][ T8290]  ? __pfx___do_sys_clone+0x10/0x10
+[  164.960439][ T8290]  do_syscall_64+0x6e/0x1c0
+[  164.961075][ T8290]  entry_SYSCALL_64_after_hwframe+0x76/0x7e
+[  164.961849][ T8290] RIP: 0033:0x7fc1651e3c4d
+[  164.962417][ T8290] Code: c3 e8 57 23 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b8 ff ff ff f7 d8 64 89 01 48
+[  164.964670][ T8290] RSP: 002b:00007ffeff85edf8 EFLAGS: 00000246 ORIG_RAX: 0000000000000038
+[  164.965684][ T8290] RAX: ffffffffffffffda RBX: 0000000000000002 RCX: 00007fc1651e3c4d
+[  164.966641][ T8290] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000011
+[  164.967593][ T8290] RBP: 00007ffeff85ee50 R08: 0000000000000000 R09: 00007ffeff85ee2c
+[  164.968535][ T8290] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000004
+[  164.969452][ T8290] R13: 431bde82d7b634db R14: aaaaaaaaaaaa0102 R15: 00007ffeff85ee50
+[  164.970410][ T8290]  </TASK>
+[  164.971028][ T8290] Kernel Offset: disabled
+[  164.971588][ T8290] Rebooting in 86400 seconds..
+
+VM DIAGNOSIS:
+13:51:34  Registers:
+info registers vcpu 0
+RAX=0000000000000054 RBX=00000000000003f8 RCX=0000000000000000 RDX=00000000000003f8
+RSI=ffffffff84b45b21 RDI=ffffffff94871400 RBP=ffffffff948713c0 RSP=ffffc9000e6feee8
+R8 =0000000000000000 R9 =ffffed10037ce046 R10=0000000000000000 R11=0000000000000001
+R12=0000000000000000 R13=0000000000000054 R14=ffffffff84b45ac0 R15=0000000000000000
+RIP=ffffffff84b45b4b RFL=00000002 [-------] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 00000000 00000000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 00000000 00000000
+FS =0000 000055558db5d3c0 00000000 00000000
+GS =0000 ffff88802c600000 00000000 00000000
+LDT=0000 fffffe0000000000 00000000 00000000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007fc1652239f0 CR3=000000001b1f8000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 2033333a31353a33 3120323120706553
+YMM01=0000000000000000 0000000000000000 5d3830393034382e 34363120205b203a
+YMM02=0000000000000000 0000000000000000 205b5d3830393034 382e34363120205b
+YMM03=0000000000000000 0000000000000000 79732033333a3135 3a33312032312070
+YMM04=0000000000000000 0000000000000000 30203a5841525f47 49524f2036343230
+YMM05=0000000000000000 0000000000000000 6535386666656666 37303030303a6232
+YMM06=0000000000000000 0000000000000000 5d3232313533382e 34363120205b203a
+YMM07=0000000000000000 0000000000000000 2033333a31353a33 3120323120706553
+YMM08=0000000000000000 0000000000000000 3820383420366420 3938203834203766
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+info registers vcpu 1
+RAX=0000000000000001 RBX=1ffff92000a7df30 RCX=0000000000000000 RDX=1ffff11003701c9a
+RSI=0000000000000001 RDI=0000000000000000 RBP=58cce5e7c8d5ebdc RSP=ffffc900053ef970
+R8 =0000000000000001 R9 =ffff88801b80e4d8 R10=ffffffff8f9f5e1f R11=0000000000000001
+R12=0000000000000001 R13=ffffffff81fdda41 R14=0000000000000002 R15=ffff88801b80da00
+RIP=ffffffff81687da6 RFL=00000057 [---ZAPC] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 00000000 00000000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 00000000 00000000
+FS =0000 00007f32c5d44900 00000000 00000000
+GS =0000 ffff88807ec00000 00000000 00000000
+LDT=0000 fffffe0000000000 00000000 00000000
+TR =0040 fffffe000004a000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000048000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007f32c5041f10 CR3=0000000019fdc000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM01=0000000000000000 0000000000000000 6536363866616430 3535356138316236
+YMM02=0000000000000000 0000000000000000 3965363638666164 3035353561383162
+YMM03=0000000000000000 0000000000000000 2f6c616e72756f6a 2f676f6c2f6e7572
+YMM04=0000000000000000 0000000000000000 6b96dd37e0600163 0000000000410ff0
+YMM05=0000000000000000 0000000000000000 d3fdd5f48436fbd7 00000000002c5988
+YMM06=0000000000000000 0000000000000000 a730493e0744ce42 00000000002c5840
+YMM07=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM08=0000000000000000 0000000000000000 44495f474f4c5359 530069253d595449
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000
