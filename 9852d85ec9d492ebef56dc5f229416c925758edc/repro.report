@@ -1,0 +1,80 @@
+BUG: kernel NULL pointer dereference, address: 0000000000000030
+#PF: supervisor read access in kernel mode
+#PF: error_code(0x0000) - not-present page
+PGD 0 P4D 0 
+Oops: Oops: 0000 [#1] PREEMPT SMP NOPTI
+CPU: 1 UID: 0 PID: 8218 Comm: syz-executor368 Not tainted 6.12.0-rc1 #5
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+RIP: 0010:write_special_inodes+0x38/0x70 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/jfs/jfs_logmgr.c:208
+Code: 53 e8 6c 30 68 ff 49 8b 45 00 49 39 c5 74 43 48 8d 58 c8 e8 5a 30 68 ff 48 8b 43 10 48 8b 78 30 2e e8 4c 0d 39 03 48 8b 43 28 <48> 8b 78 30 2e e8 3e 0d 39 03 48 8b 83 b0 00 00 00 48 8b 78 30 2e
+RSP: 0018:ffff88800f2c3ce8 EFLAGS: 00010286
+RAX: 0000000000000000 RBX: ffff88800e279c00 RCX: ffffffff814acf4f
+RDX: ffff88800dde3300 RSI: ffffffff814acf5b RDI: 0000000000000005
+RBP: ffff88800f2c3d00 R08: ffff88800a50e3d0 R09: 0000000000000001
+R10: 0000000000000000 R11: 0000000000000001 R12: ffffffff814b2420
+R13: ffff888040fd5200 R14: ffff888040fd5280 R15: 0000000000000000
+FS:  00005555717b43c0(0000) GS:ffff88807ee00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 0000000000000030 CR3: 000000000d8fa000 CR4: 0000000000350ef0
+Call Trace:
+ <TASK>
+ lmLogSync+0x231/0x310 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/jfs/jfs_logmgr.c:937
+ jfs_syncpt+0x6d/0x70 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/jfs/jfs_logmgr.c:1041
+ jfs_sync_fs+0x51/0x70 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/jfs/super.c:685
+ sync_filesystem data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/sync.c:56 [inline]
+ sync_filesystem+0x8d/0x140 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/sync.c:30
+ generic_shutdown_super+0x39/0x170 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/super.c:621
+ kill_block_super+0x22/0x50 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/super.c:1696
+ deactivate_locked_super+0x57/0x1a0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/super.c:473
+ deactivate_super+0x83/0xa0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/super.c:506
+ cleanup_mnt+0x17e/0x210 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/namespace.c:1373
+ __cleanup_mnt+0x1a/0x30 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/namespace.c:1380
+ task_work_run+0x9d/0xf0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/task_work.c:228
+ resume_user_mode_work data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/include/linux/resume_user_mode.h:50 [inline]
+ exit_to_user_mode_loop data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/entry/common.c:114 [inline]
+ exit_to_user_mode_prepare data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/include/linux/entry-common.h:328 [inline]
+ __syscall_exit_to_user_mode_work data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/entry/common.c:207 [inline]
+ syscall_exit_to_user_mode+0x17f/0x190 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/entry/common.c:218
+ do_syscall_64+0xab/0x1d0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/entry/common.c:89
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7f44ff534f8b
+Code: 08 00 48 83 c4 08 5b 5d c3 66 0f 1f 44 00 00 c3 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 44 00 00 f3 0f 1e fa b8 a6 00 00 00 0f 05 <48> 3d 00 f0 ff ff 77 05 c3 0f 1f 40 00 48 c7 c2 b8 ff ff ff f7 d8
+RSP: 002b:00007ffc50d9a3b8 EFLAGS: 00000202 ORIG_RAX: 00000000000000a6
+RAX: 0000000000000000 RBX: 000000000000a5ee RCX: 00007f44ff534f8b
+RDX: 00007f44ff4e4e88 RSI: 0000000000000009 RDI: 00007ffc50d9a470
+RBP: 00007ffc50d9a470 R08: 0000000000000000 R09: 00007ffc50d9a240
+R10: 00005555717b57b3 R11: 0000000000000202 R12: 00007ffc50d9b500
+R13: 00005555717b5770 R14: 00007ffc50d9a3d8 R15: 00007ffc50d9b560
+ </TASK>
+Modules linked in:
+CR2: 0000000000000030
+---[ end trace 0000000000000000 ]---
+RIP: 0010:write_special_inodes+0x38/0x70 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/jfs/jfs_logmgr.c:208
+Code: 53 e8 6c 30 68 ff 49 8b 45 00 49 39 c5 74 43 48 8d 58 c8 e8 5a 30 68 ff 48 8b 43 10 48 8b 78 30 2e e8 4c 0d 39 03 48 8b 43 28 <48> 8b 78 30 2e e8 3e 0d 39 03 48 8b 83 b0 00 00 00 48 8b 78 30 2e
+RSP: 0018:ffff88800f2c3ce8 EFLAGS: 00010286
+RAX: 0000000000000000 RBX: ffff88800e279c00 RCX: ffffffff814acf4f
+RDX: ffff88800dde3300 RSI: ffffffff814acf5b RDI: 0000000000000005
+RBP: ffff88800f2c3d00 R08: ffff88800a50e3d0 R09: 0000000000000001
+R10: 0000000000000000 R11: 0000000000000001 R12: ffffffff814b2420
+R13: ffff888040fd5200 R14: ffff888040fd5280 R15: 0000000000000000
+FS:  00005555717b43c0(0000) GS:ffff88807ee00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 0000000000000030 CR3: 000000000d8fa000 CR4: 0000000000350ef0
+----------------
+Code disassembly (best guess):
+   0:	53                   	push   %rbx
+   1:	e8 6c 30 68 ff       	call   0xff683072
+   6:	49 8b 45 00          	mov    0x0(%r13),%rax
+   a:	49 39 c5             	cmp    %rax,%r13
+   d:	74 43                	je     0x52
+   f:	48 8d 58 c8          	lea    -0x38(%rax),%rbx
+  13:	e8 5a 30 68 ff       	call   0xff683072
+  18:	48 8b 43 10          	mov    0x10(%rbx),%rax
+  1c:	48 8b 78 30          	mov    0x30(%rax),%rdi
+  20:	2e e8 4c 0d 39 03    	cs call 0x3390d72
+  26:	48 8b 43 28          	mov    0x28(%rbx),%rax
+* 2a:	48 8b 78 30          	mov    0x30(%rax),%rdi <-- trapping instruction
+  2e:	2e e8 3e 0d 39 03    	cs call 0x3390d72
+  34:	48 8b 83 b0 00 00 00 	mov    0xb0(%rbx),%rax
+  3b:	48 8b 78 30          	mov    0x30(%rax),%rdi
+  3f:	2e                   	cs
