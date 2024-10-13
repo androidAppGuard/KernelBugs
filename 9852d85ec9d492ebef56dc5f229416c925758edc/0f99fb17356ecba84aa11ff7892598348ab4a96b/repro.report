@@ -1,0 +1,91 @@
+loop0: detected capacity change from 0 to 64
+BUG: kernel NULL pointer dereference, address: 0000000000000040
+#PF: supervisor read access in kernel mode
+#PF: error_code(0x0000) - not-present page
+PGD eab4067 P4D eab4067 PUD dd6a067 PMD 0 
+Oops: Oops: 0000 [#1] PREEMPT SMP NOPTI
+CPU: 1 UID: 0 PID: 8201 Comm: syz-executor153 Not tainted 6.12.0-rc1 #5
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+RIP: 0010:hfs_find_init+0x2b/0xd0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/hfs/bfind.c:21
+Code: 0f 1f 00 55 48 89 e5 41 55 41 54 49 89 f4 53 48 89 fb e8 58 43 9f ff 49 89 5c 24 10 be c0 0c 00 00 49 c7 44 24 18 00 00 00 00 <8b> 43 40 8d 7c 00 04 e8 d9 05 c4 ff 48 85 c0 0f 84 80 00 00 00 49
+RSP: 0018:ffff8880120ff978 EFLAGS: 00010293
+RAX: 0000000000000000 RBX: 0000000000000000 RCX: ffffffff81960dd1
+RDX: ffff88800e1b4400 RSI: 0000000000000cc0 RDI: 0000000000000000
+RBP: ffff8880120ff990 R08: ffff8880120ff988 R09: 0000000000000000
+R10: 0000000000000000 R11: 0000000000000000 R12: ffff8880120ff9a8
+R13: 0000000000000000 R14: 0000000000000000 R15: 0000000000000004
+FS:  0000555560bc73c0(0000) GS:ffff88807ee00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 0000000000000040 CR3: 000000000e424000 CR4: 0000000000350ef0
+Call Trace:
+ <TASK>
+ hfs_ext_read_extent+0x73/0x280 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/hfs/extent.c:200
+ hfs_get_block+0x23c/0x390 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/hfs/extent.c:366
+ block_read_full_folio+0x1ca/0x520 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/buffer.c:2401
+ hfs_read_folio+0x21/0x30 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/hfs/inode.c:34
+ filemap_read_folio+0x4c/0x140 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/mm/filemap.c:2367
+ do_read_cache_folio+0x1ac/0x300 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/mm/filemap.c:3825
+ do_read_cache_page data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/mm/filemap.c:3891 [inline]
+ read_cache_page+0x38/0xb0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/mm/filemap.c:3900
+ read_mapping_page data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/include/linux/pagemap.h:1005 [inline]
+ hfs_btree_open+0x1e7/0x690 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/hfs/btree.c:78
+ hfs_mdb_get+0x6c1/0x930 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/hfs/mdb.c:199
+ hfs_fill_super+0x420/0x900 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/hfs/super.c:407
+ mount_bdev+0x130/0x1a0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/super.c:1679
+ hfs_mount+0x39/0x50 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/hfs/super.c:457
+ legacy_get_tree+0x36/0xa0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/fs_context.c:662
+ vfs_get_tree+0x37/0x130 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/super.c:1800
+ do_new_mount data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/namespace.c:3507 [inline]
+ path_mount+0xc4c/0x1100 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/namespace.c:3834
+ do_mount data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/namespace.c:3847 [inline]
+ __do_sys_mount data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/namespace.c:4055 [inline]
+ __se_sys_mount data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/namespace.c:4032 [inline]
+ __x64_sys_mount+0x178/0x1c0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/namespace.c:4032
+ x64_sys_call+0x209b/0x20d0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/include/generated/asm/syscalls_64.h:166
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0x9e/0x1d0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7fc03b79f4ee
+Code: 48 c7 c0 ff ff ff ff eb aa e8 fe 06 00 00 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 f3 0f 1e fa 49 89 ca b8 a5 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b8 ff ff ff f7 d8 64 89 01 48
+RSP: 002b:00007ffca88dfd18 EFLAGS: 00000286 ORIG_RAX: 00000000000000a5
+RAX: ffffffffffffffda RBX: 0000555560bc7378 RCX: 00007fc03b79f4ee
+RDX: 0000000020000240 RSI: 0000000020000040 RDI: 00007ffca88dfd30
+RBP: 00007ffca88dfd30 R08: 00007ffca88dfd70 R09: 0000000000000256
+R10: 0000000003008800 R11: 0000000000000286 R12: 0000000003008800
+R13: 00007ffca88dfd70 R14: 0000000000000003 R15: 0000000000000000
+ </TASK>
+Modules linked in:
+CR2: 0000000000000040
+---[ end trace 0000000000000000 ]---
+RIP: 0010:hfs_find_init+0x2b/0xd0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/hfs/bfind.c:21
+Code: 0f 1f 00 55 48 89 e5 41 55 41 54 49 89 f4 53 48 89 fb e8 58 43 9f ff 49 89 5c 24 10 be c0 0c 00 00 49 c7 44 24 18 00 00 00 00 <8b> 43 40 8d 7c 00 04 e8 d9 05 c4 ff 48 85 c0 0f 84 80 00 00 00 49
+RSP: 0018:ffff8880120ff978 EFLAGS: 00010293
+RAX: 0000000000000000 RBX: 0000000000000000 RCX: ffffffff81960dd1
+RDX: ffff88800e1b4400 RSI: 0000000000000cc0 RDI: 0000000000000000
+RBP: ffff8880120ff990 R08: ffff8880120ff988 R09: 0000000000000000
+R10: 0000000000000000 R11: 0000000000000000 R12: ffff8880120ff9a8
+R13: 0000000000000000 R14: 0000000000000000 R15: 0000000000000004
+FS:  0000555560bc73c0(0000) GS:ffff88807ee00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 0000000000000040 CR3: 000000000e424000 CR4: 0000000000350ef0
+----------------
+Code disassembly (best guess):
+   0:	0f 1f 00             	nopl   (%rax)
+   3:	55                   	push   %rbp
+   4:	48 89 e5             	mov    %rsp,%rbp
+   7:	41 55                	push   %r13
+   9:	41 54                	push   %r12
+   b:	49 89 f4             	mov    %rsi,%r12
+   e:	53                   	push   %rbx
+   f:	48 89 fb             	mov    %rdi,%rbx
+  12:	e8 58 43 9f ff       	call   0xff9f436f
+  17:	49 89 5c 24 10       	mov    %rbx,0x10(%r12)
+  1c:	be c0 0c 00 00       	mov    $0xcc0,%esi
+  21:	49 c7 44 24 18 00 00 	movq   $0x0,0x18(%r12)
+  28:	00 00
+* 2a:	8b 43 40             	mov    0x40(%rbx),%eax <-- trapping instruction
+  2d:	8d 7c 00 04          	lea    0x4(%rax,%rax,1),%edi
+  31:	e8 d9 05 c4 ff       	call   0xffc4060f
+  36:	48 85 c0             	test   %rax,%rax
+  39:	0f 84 80 00 00 00    	je     0xbf
+  3f:	49                   	rex.WB
