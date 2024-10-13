@@ -1,0 +1,224 @@
+Extracting prog: 1m9.260499953s
+Minimizing prog: 4m44.981341733s
+Simplifying prog options: 0s
+Extracting C: 22.218988226s
+Simplifying C: 8m52.152716404s
+
+
+17 programs, timeouts [30s 1m40s 6m0s]
+extracting reproducer from 17 programs
+testing a last program of every proc
+single: executing 5 programs separately with timeout 30s
+testing program (duration=30s, {Threaded:true Repeat:true RepeatTimes:0 Procs:24 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:true NetDevices:true NetReset:true Cgroups:true BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): io_uring_register$IORING_REGISTER_IOWQ_AFF-syz_mount_image$hfsplus-mmap-syz_init_net_socket$ax25-ioctl$SIOCAX25NOUID-ioctl$PAGEMAP_SCAN-ioctl$PAGEMAP_SCAN-openat-ioctl$FS_IOC_FSSETXATTR-socket$nl_generic-socket$nl_generic-openat$mice-sendmsg$NL80211_CMD_JOIN_MESH-sendmsg$NL80211_CMD_REQ_SET_REG-socket$inet_udp-setsockopt$ARPT_SO_SET_REPLACE-ioctl$sock_TIOCOUTQ
+detailed listing:
+executing program 0:
+io_uring_register$IORING_REGISTER_IOWQ_AFF(0xffffffffffffffff, 0x11, 0x0, 0x0)
+syz_mount_image$hfsplus(&(0x7f0000000600), &(0x7f0000000140)='./file0\x00', 0x0, &(0x7f0000000180)={[{@nls={'nls', 0x3d, 'maccenteuro'}}, {@umask={'umask', 0x3d, 0x2}}, {@part={'part', 0x3d, 0x4}}, {}, {}, {@umask={'umask', 0x3d, 0x9}}]}, 0x1, 0x5ca, &(0x7f00000006c0)="$eJzs3cFvHFcdB/DvbGLHDlK6SZOmICSscgA1IlnvRiZISEApyEIVqsSlVyvZ1FY2aWRvkdsDCohz+y+Ugzlz4ISClANn/gWjHhHcfUs1s7PeTbJ1ncb1rtvPR5p9782befObn2dGM7OyNsA31uo7mXuUIqtX3tou27s7nd7uTufusJ7kTJJGspCkKGf/PcmnyYMMpnx72DFWPqP4ePXm+sOPLg9aC/VULV8ctN7h7MfSHMRalUc1XvuFxxvt4VKSC3UJU/d46D8Tu1/wvAQAZlmRnJo0v5mcrW/Wy+eAwV3x4B77RHsw7QAAAADgGLy0l71s59y04wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICTpP79/6KeGsP6Uorh7//P1/NS10+0R9MOAAAAAAAAAACOwPf2spftnBu2HxfVd/6vVY2L1ee38n620s1mrmY7a+mnn80sJ2mODTS/vdbvby4fYs32xDXbx7O/AAAAAAAAAPA19aesjr7/BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAWVAkpwZFNV0c1ptpnE6ykGS+XO5B8nBYP8keTTsAAAAAOAYv7WUv2zk3bD8uqmf+V6rn/oW8n3vpZyP99NLNrepdwOCpv7G70+nt7nTultOz4/7i/88VRjViBu8eJm+5VS1xaX+N1fw6v8uVLOXtbGYjv89a+ulmKW9WtbUUadZvL5rDOCfH+/MnWm9/UayvVpEs5nY2qtiu5mbeSy+30qj2oVrm4C3+scxO8bPaIXN0qy7LPfpNXc6GZpWRuf2MtOrcl9k4f3AmnvM4eXpLy2nsv4O6+BXk/Gxdlrl+c6Zz3h47+l45OBNJq/2/++u9e3fWb29dmZ1d+pKezkRnLBOXv1GZmK+zMbiKPt/V8rVq3XPZyG/zXm6lmxtp5UZWcj2drOQnWRnL66VDnGuN5zvXvv/DujKX5Fd1ORvKvJ4fy+v4la5Z9Y3PGWXpwtFfkU5/p66UB+sbM3dFOv/UtXmYiZcPzsRfHpefW717dzbX1+4fcns/qMsyA7+cqUyUx8uF8o9VtZ48Osq+lyf2LVd9F/f7Gs/0Xdrv+6Izdb6+h3t2pHbVd3liX6fqe3Wsb9JdDgAz7+zrZ+cX/7v478VPFv+8uL741sIbZ26c+e585v51+h+n/tb4a+Onxev5JH8YPf8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABf3tYHH95Z6/W6myoqKir7lWlfmYCv2rX+3fvXtj748Ecbd9fe7b7bvXd9eaV9/Xpr5cc3rt3e6HVbg89phwkAHKHRTf+0IwEAAAAAAAAAAAAAAD7Pcfw78bT3EQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+HpbfSdzj1JkuXW1VbZ3dzq9chrWR0suJCnKyj+TfJo8yGBKc2y44vO2U3y8enP94UeXR2MtDJcvDlrvcJ6IpfFUTC86XvuFxxvt4VKSC3UJU/dZAAAA//94/wNT")
+mmap(&(0x7f0000000000/0x2000)=nil, 0x2000, 0x0, 0x32, 0xffffffffffffffff, 0x0)
+r0 = syz_init_net_socket$ax25(0x3, 0x5, 0xcb)
+ioctl$SIOCAX25NOUID(r0, 0x89e3, &(0x7f0000000000))
+ioctl$PAGEMAP_SCAN(0xffffffffffffffff, 0xc0606610, &(0x7f00000002c0)={0x60, 0x1, &(0x7f0000000000/0x4000)=nil, &(0x7f0000000000/0x3000)=nil, 0x7934030e, 0x0, 0x0, 0x1, 0x62, 0x24, 0x70, 0x6})
+ioctl$PAGEMAP_SCAN(0xffffffffffffffff, 0xc0606610, &(0x7f00000000c0)={0x60, 0x1, &(0x7f0000000000/0x3000)=nil, &(0x7f0000001000/0x3000)=nil, 0x0, 0x0, 0x0, 0x9, 0x2, 0x3c, 0x52, 0x3})
+r1 = openat(0xffffffffffffff9c, &(0x7f0000000080)='./file1\x00', 0x105042, 0x1ff)
+ioctl$FS_IOC_FSSETXATTR(r1, 0x401c5820, &(0x7f00000001c0)={0x0, 0x4, 0x1000000, 0x7, 0x80000001})
+socket$nl_generic(0x10, 0x3, 0x10)
+r2 = socket$nl_generic(0x10, 0x3, 0x10)
+openat$mice(0xffffffffffffff9c, &(0x7f0000000340), 0x2)
+sendmsg$NL80211_CMD_JOIN_MESH(r2, &(0x7f0000000180)={0x0, 0x0, 0x0}, 0x0)
+sendmsg$NL80211_CMD_REQ_SET_REG(r1, 0x0, 0x8800)
+r3 = socket$inet_udp(0x2, 0x2, 0x0)
+setsockopt$ARPT_SO_SET_REPLACE(r3, 0x0, 0x60, 0x0, 0x2d)
+ioctl$sock_TIOCOUTQ(r3, 0x5411, &(0x7f0000000000))
+
+program did not crash
+testing program (duration=30s, {Threaded:true Repeat:true RepeatTimes:0 Procs:24 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:true NetDevices:true NetReset:true Cgroups:true BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mmap-mremap-openat$binderfs-mmap$binder
+detailed listing:
+executing program 0:
+mmap(&(0x7f0000000000/0xa000)=nil, 0xa000, 0xa, 0x31, 0xffffffffffffffff, 0x59d66000)
+mremap(&(0x7f0000001000/0x1000)=nil, 0x1000, 0x3000, 0x3, &(0x7f0000002000/0x3000)=nil)
+r0 = openat$binderfs(0xffffffffffffff9c, &(0x7f00000000c0)='./binderfs/binder1\x00', 0x0, 0x0)
+mmap$binder(&(0x7f0000000000/0xc00000)=nil, 0xc00000, 0x1, 0x11, r0, 0x0) (fail_nth: 10)
+
+program crashed: kernel BUG in binder_alloc_deferred_release
+single: successfully extracted reproducer
+found reproducer with 4 syscalls
+minimizing guilty program
+testing program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:24 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:true NetDevices:true NetReset:true Cgroups:true BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mmap-mremap-openat$binderfs
+detailed listing:
+executing program 0:
+mmap(&(0x7f0000000000/0xa000)=nil, 0xa000, 0xa, 0x31, 0xffffffffffffffff, 0x59d66000)
+mremap(&(0x7f0000001000/0x1000)=nil, 0x1000, 0x3000, 0x3, &(0x7f0000002000/0x3000)=nil)
+openat$binderfs(0xffffffffffffff9c, &(0x7f00000000c0)='./binderfs/binder1\x00', 0x0, 0x0)
+
+program did not crash
+testing program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:24 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:true NetDevices:true NetReset:true Cgroups:true BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mmap-mremap-mmap$binder
+detailed listing:
+executing program 0:
+mmap(&(0x7f0000000000/0xa000)=nil, 0xa000, 0xa, 0x31, 0xffffffffffffffff, 0x59d66000)
+mremap(&(0x7f0000001000/0x1000)=nil, 0x1000, 0x3000, 0x3, &(0x7f0000002000/0x3000)=nil)
+mmap$binder(&(0x7f0000000000/0xc00000)=nil, 0xc00000, 0x1, 0x11, 0xffffffffffffffff, 0x0) (fail_nth: 10)
+
+program did not crash
+testing program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:24 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:true NetDevices:true NetReset:true Cgroups:true BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mmap-openat$binderfs-mmap$binder
+detailed listing:
+executing program 0:
+mmap(&(0x7f0000000000/0xa000)=nil, 0xa000, 0xa, 0x31, 0xffffffffffffffff, 0x59d66000)
+r0 = openat$binderfs(0xffffffffffffff9c, &(0x7f00000000c0)='./binderfs/binder1\x00', 0x0, 0x0)
+mmap$binder(&(0x7f0000000000/0xc00000)=nil, 0xc00000, 0x1, 0x11, r0, 0x0) (fail_nth: 10)
+
+program did not crash
+testing program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:24 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:true NetDevices:true NetReset:true Cgroups:true BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+detailed listing:
+executing program 0:
+mremap(&(0x7f0000001000/0x1000)=nil, 0x1000, 0x3000, 0x3, &(0x7f0000002000/0x3000)=nil)
+r0 = openat$binderfs(0xffffffffffffff9c, &(0x7f00000000c0)='./binderfs/binder1\x00', 0x0, 0x0)
+mmap$binder(&(0x7f0000000000/0xc00000)=nil, 0xc00000, 0x1, 0x11, r0, 0x0) (fail_nth: 10)
+
+program crashed: kernel BUG in binder_alloc_deferred_release
+testing program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:24 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:true NetDevices:true NetReset:true Cgroups:true BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+detailed listing:
+executing program 0:
+mremap(&(0x7f0000001000/0x1000)=nil, 0x1000, 0x3000, 0x3, &(0x7f0000002000/0x3000)=nil)
+r0 = openat$binderfs(0xffffffffffffff9c, &(0x7f00000000c0)='./binderfs/binder1\x00', 0x0, 0x0)
+mmap$binder(&(0x7f0000000000/0xc00000)=nil, 0xc00000, 0x1, 0x11, r0, 0x0)
+
+program did not crash
+testing program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:24 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:true NetDevices:true NetReset:true Cgroups:true BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+detailed listing:
+executing program 0:
+mremap(&(0x7f0000001000/0x1000)=nil, 0x1000, 0x3000, 0x3, &(0x7f0000002000/0x3000)=nil)
+r0 = openat$binderfs(0xffffffffffffff9c, 0x0, 0x0, 0x0)
+mmap$binder(&(0x7f0000000000/0xc00000)=nil, 0xc00000, 0x1, 0x11, r0, 0x0) (fail_nth: 10)
+
+program did not crash
+extracting C reproducer
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:24 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:true NetDevices:true NetReset:true Cgroups:true BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program crashed: kernel BUG in binder_alloc_deferred_release
+simplifying C reproducer
+testing compiled C program (duration=43.09049298s, {Threaded:false Repeat:true RepeatTimes:0 Procs:24 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:true NetDevices:true NetReset:true Cgroups:true BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program did not crash
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:true NetDevices:true NetReset:false Cgroups:false BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program did not crash
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:true NetDevices:true NetReset:true Cgroups:true BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program crashed: kernel BUG in binder_alloc_deferred_release
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:1 Slowdown:1 Sandbox: SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:true Sysctl:true Swap:false UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program did not crash
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:false NetDevices:true NetReset:true Cgroups:true BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program crashed: kernel BUG in binder_alloc_deferred_release
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:true Cgroups:true BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program crashed: kernel BUG in binder_alloc_deferred_release
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:true BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program crashed: kernel BUG in binder_alloc_deferred_release
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program crashed: kernel BUG in binder_alloc_deferred_release
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program crashed: kernel BUG in binder_alloc_deferred_release
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:true Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program crashed: kernel BUG in binder_alloc_deferred_release
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:true IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program crashed: kernel BUG in binder_alloc_deferred_release
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:true Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program crashed: kernel BUG in binder_alloc_deferred_release
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:true Swap:true UseTmpDir:true HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program crashed: kernel BUG in binder_alloc_deferred_release
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:true Swap:true UseTmpDir:false HandleSegv:true Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program crashed: kernel BUG in binder_alloc_deferred_release
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:true Swap:true UseTmpDir:false HandleSegv:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program crashed: kernel BUG in binder_alloc_deferred_release
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false Swap:true UseTmpDir:false HandleSegv:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program crashed: kernel BUG in binder_alloc_deferred_release
+testing compiled C program (duration=43.09049298s, {Threaded:true Repeat:true RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false Swap:false UseTmpDir:false HandleSegv:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}): mremap-openat$binderfs-mmap$binder
+program crashed: kernel BUG in binder_alloc_deferred_release
+reproducing took 15m8.613565566s
+repro crashed as (corrupted=false):
+------------[ cut here ]------------
+kernel BUG at drivers/android/binder_alloc.c:897!
+Oops: invalid opcode: 0000 [#1] PREEMPT SMP NOPTI
+CPU: 1 UID: 0 PID: 1139 Comm: kworker/1:2 Not tainted 6.12.0-rc1 #5
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+Workqueue: events binder_deferred_func
+RIP: 0010:binder_alloc_deferred_release+0x3cc/0x3e0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder_alloc.c:897
+Code: 18 fd 8b 53 58 44 89 e9 48 c7 c6 b0 50 94 85 44 8b 45 d0 48 c7 c7 40 52 65 86 e8 6f f5 0a fd e9 7c ff ff ff e8 e5 7b 18 fd 90 <0f> 0b e8 dd 7b 18 fd 4c 89 e7 e8 35 ad ff fc e9 43 ff ff ff 90 90
+RSP: 0018:ffff888041e97d28 EFLAGS: 00010293
+RAX: 0000000000000000 RBX: ffff88800e66a9e8 RCX: ffffffff841b7794
+RDX: ffff888041ed0000 RSI: ffffffff841c6e1b RDI: ffff88800e66a9e8
+RBP: ffff888041e97d60 R08: 0000000000000000 R09: 0000000000000000
+R10: 0000000000000002 R11: 0000000000000020 R12: ffff88800e66a800
+R13: ffff88800f6d9300 R14: ffff88800f6d93a0 R15: 0000000000000000
+FS:  0000000000000000(0000) GS:ffff88807ee00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 000055558ed7bd68 CR3: 000000001789c000 CR4: 0000000000350ef0
+Call Trace:
+ <TASK>
+ binder_free_proc data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder.c:5237 [inline]
+ binder_proc_dec_tmpref data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder.c:1559 [inline]
+ binder_proc_dec_tmpref+0x1be/0x2d0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder.c:1552
+ binder_deferred_release data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder.c:6269 [inline]
+ binder_deferred_func+0x908/0x950 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder.c:6296
+ process_one_work+0x237/0x5c0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/workqueue.c:3229
+ process_scheduled_works data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/workqueue.c:3310 [inline]
+ worker_thread+0x3c6/0x5f0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/workqueue.c:3391
+ kthread+0x11d/0x160 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/kthread.c:389
+ ret_from_fork+0x54/0x60 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/kernel/process.c:147
+ ret_from_fork_asm+0x1a/0x30 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/entry/entry_64.S:244
+ </TASK>
+Modules linked in:
+---[ end trace 0000000000000000 ]---
+RIP: 0010:binder_alloc_deferred_release+0x3cc/0x3e0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder_alloc.c:897
+Code: 18 fd 8b 53 58 44 89 e9 48 c7 c6 b0 50 94 85 44 8b 45 d0 48 c7 c7 40 52 65 86 e8 6f f5 0a fd e9 7c ff ff ff e8 e5 7b 18 fd 90 <0f> 0b e8 dd 7b 18 fd 4c 89 e7 e8 35 ad ff fc e9 43 ff ff ff 90 90
+RSP: 0018:ffff888041e97d28 EFLAGS: 00010293
+RAX: 0000000000000000 RBX: ffff88800e66a9e8 RCX: ffffffff841b7794
+RDX: ffff888041ed0000 RSI: ffffffff841c6e1b RDI: ffff88800e66a9e8
+RBP: ffff888041e97d60 R08: 0000000000000000 R09: 0000000000000000
+R10: 0000000000000002 R11: 0000000000000020 R12: ffff88800e66a800
+R13: ffff88800f6d9300 R14: ffff88800f6d93a0 R15: 0000000000000000
+FS:  0000000000000000(0000) GS:ffff88807ee00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 000055558ed7bd68 CR3: 0000000006a60000 CR4: 0000000000350ef0
+
+final repro crashed as (corrupted=false):
+------------[ cut here ]------------
+kernel BUG at drivers/android/binder_alloc.c:897!
+Oops: invalid opcode: 0000 [#1] PREEMPT SMP NOPTI
+CPU: 1 UID: 0 PID: 1139 Comm: kworker/1:2 Not tainted 6.12.0-rc1 #5
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+Workqueue: events binder_deferred_func
+RIP: 0010:binder_alloc_deferred_release+0x3cc/0x3e0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder_alloc.c:897
+Code: 18 fd 8b 53 58 44 89 e9 48 c7 c6 b0 50 94 85 44 8b 45 d0 48 c7 c7 40 52 65 86 e8 6f f5 0a fd e9 7c ff ff ff e8 e5 7b 18 fd 90 <0f> 0b e8 dd 7b 18 fd 4c 89 e7 e8 35 ad ff fc e9 43 ff ff ff 90 90
+RSP: 0018:ffff888041e97d28 EFLAGS: 00010293
+RAX: 0000000000000000 RBX: ffff88800e66a9e8 RCX: ffffffff841b7794
+RDX: ffff888041ed0000 RSI: ffffffff841c6e1b RDI: ffff88800e66a9e8
+RBP: ffff888041e97d60 R08: 0000000000000000 R09: 0000000000000000
+R10: 0000000000000002 R11: 0000000000000020 R12: ffff88800e66a800
+R13: ffff88800f6d9300 R14: ffff88800f6d93a0 R15: 0000000000000000
+FS:  0000000000000000(0000) GS:ffff88807ee00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 000055558ed7bd68 CR3: 000000001789c000 CR4: 0000000000350ef0
+Call Trace:
+ <TASK>
+ binder_free_proc data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder.c:5237 [inline]
+ binder_proc_dec_tmpref data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder.c:1559 [inline]
+ binder_proc_dec_tmpref+0x1be/0x2d0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder.c:1552
+ binder_deferred_release data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder.c:6269 [inline]
+ binder_deferred_func+0x908/0x950 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder.c:6296
+ process_one_work+0x237/0x5c0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/workqueue.c:3229
+ process_scheduled_works data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/workqueue.c:3310 [inline]
+ worker_thread+0x3c6/0x5f0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/workqueue.c:3391
+ kthread+0x11d/0x160 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/kthread.c:389
+ ret_from_fork+0x54/0x60 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/kernel/process.c:147
+ ret_from_fork_asm+0x1a/0x30 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/entry/entry_64.S:244
+ </TASK>
+Modules linked in:
+---[ end trace 0000000000000000 ]---
+RIP: 0010:binder_alloc_deferred_release+0x3cc/0x3e0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder_alloc.c:897
+Code: 18 fd 8b 53 58 44 89 e9 48 c7 c6 b0 50 94 85 44 8b 45 d0 48 c7 c7 40 52 65 86 e8 6f f5 0a fd e9 7c ff ff ff e8 e5 7b 18 fd 90 <0f> 0b e8 dd 7b 18 fd 4c 89 e7 e8 35 ad ff fc e9 43 ff ff ff 90 90
+RSP: 0018:ffff888041e97d28 EFLAGS: 00010293
+RAX: 0000000000000000 RBX: ffff88800e66a9e8 RCX: ffffffff841b7794
+RDX: ffff888041ed0000 RSI: ffffffff841c6e1b RDI: ffff88800e66a9e8
+RBP: ffff888041e97d60 R08: 0000000000000000 R09: 0000000000000000
+R10: 0000000000000002 R11: 0000000000000020 R12: ffff88800e66a800
+R13: ffff88800f6d9300 R14: ffff88800f6d93a0 R15: 0000000000000000
+FS:  0000000000000000(0000) GS:ffff88807ee00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 000055558ed7bd68 CR3: 0000000006a60000 CR4: 0000000000350ef0
+

@@ -1,0 +1,44 @@
+------------[ cut here ]------------
+kernel BUG at drivers/android/binder_alloc.c:897!
+Oops: invalid opcode: 0000 [#1] PREEMPT SMP NOPTI
+CPU: 1 UID: 0 PID: 16018 Comm: kworker/1:8 Not tainted 6.12.0-rc1 #5
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+Workqueue: events binder_deferred_func
+RIP: 0010:binder_alloc_deferred_release+0x3cc/0x3e0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder_alloc.c:897
+Code: 18 fd 8b 53 58 44 89 e9 48 c7 c6 b0 50 94 85 44 8b 45 d0 48 c7 c7 40 52 65 86 e8 6f f5 0a fd e9 7c ff ff ff e8 e5 7b 18 fd 90 <0f> 0b e8 dd 7b 18 fd 4c 89 e7 e8 35 ad ff fc e9 43 ff ff ff 90 90
+RSP: 0018:ffff8880561e7d28 EFLAGS: 00010293
+RAX: 0000000000000000 RBX: ffff888055ca9de8 RCX: ffffffff841b7794
+RDX: ffff8880548c6600 RSI: ffffffff841c6e1b RDI: ffff888055ca9de8
+RBP: ffff8880561e7d60 R08: 0000000000000000 R09: 0000000000000000
+R10: 0000000000000002 R11: 0000000000000020 R12: ffff888055ca9c00
+R13: ffff888055e4f840 R14: ffff888055e4f8e0 R15: 0000000000000000
+FS:  0000000000000000(0000) GS:ffff88807ee00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 00007f9caa1366f4 CR3: 000000001b13a000 CR4: 0000000000350ef0
+Call Trace:
+ <TASK>
+ binder_free_proc data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder.c:5237 [inline]
+ binder_proc_dec_tmpref data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder.c:1559 [inline]
+ binder_proc_dec_tmpref+0x1be/0x2d0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder.c:1552
+ binder_deferred_release data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder.c:6269 [inline]
+ binder_deferred_func+0x908/0x950 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder.c:6296
+ process_one_work+0x237/0x5c0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/workqueue.c:3229
+ process_scheduled_works data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/workqueue.c:3310 [inline]
+ worker_thread+0x3c6/0x5f0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/workqueue.c:3391
+ kthread+0x11d/0x160 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/kthread.c:389
+ ret_from_fork+0x54/0x60 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/kernel/process.c:147
+ ret_from_fork_asm+0x1a/0x30 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/entry/entry_64.S:244
+ </TASK>
+Modules linked in:
+---[ end trace 0000000000000000 ]---
+RIP: 0010:binder_alloc_deferred_release+0x3cc/0x3e0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/drivers/android/binder_alloc.c:897
+Code: 18 fd 8b 53 58 44 89 e9 48 c7 c6 b0 50 94 85 44 8b 45 d0 48 c7 c7 40 52 65 86 e8 6f f5 0a fd e9 7c ff ff ff e8 e5 7b 18 fd 90 <0f> 0b e8 dd 7b 18 fd 4c 89 e7 e8 35 ad ff fc e9 43 ff ff ff 90 90
+RSP: 0018:ffff8880561e7d28 EFLAGS: 00010293
+RAX: 0000000000000000 RBX: ffff888055ca9de8 RCX: ffffffff841b7794
+RDX: ffff8880548c6600 RSI: ffffffff841c6e1b RDI: ffff888055ca9de8
+RBP: ffff8880561e7d60 R08: 0000000000000000 R09: 0000000000000000
+R10: 0000000000000002 R11: 0000000000000020 R12: ffff888055ca9c00
+R13: ffff888055e4f840 R14: ffff888055e4f8e0 R15: 0000000000000000
+FS:  0000000000000000(0000) GS:ffff88807ee00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 00007f9caa1366f4 CR3: 000000001b13a000 CR4: 0000000000350ef0
