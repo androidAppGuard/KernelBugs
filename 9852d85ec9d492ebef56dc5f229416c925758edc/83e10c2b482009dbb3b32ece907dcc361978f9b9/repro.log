@@ -1,0 +1,510 @@
+Warning: Permanently added '[localhost]:51312' (ED25519) to the list of known hosts.
+executing program
+syzkaller login: [   42.505863][ T8151] usb 1-1: new high-speed USB device number 2 using dummy_hcd
+[   42.656168][ T8151] usb 1-1: Using ep0 maxpacket: 8
+[   42.657818][ T8151] usb 1-1: config 8 has an invalid interface number: 207 but max is 3
+[   42.658785][ T8151] usb 1-1: config 8 has an invalid interface number: 146 but max is 3
+[   42.659767][ T8151] usb 1-1: config 8 has an invalid descriptor of length 0, skipping remainder of the config
+[   42.660958][ T8151] usb 1-1: config 8 has 2 interfaces, different from the descriptor's value: 4
+[   42.662024][ T8151] usb 1-1: config 8 has no interface number 0
+[   42.662804][ T8151] usb 1-1: config 8 has no interface number 1
+[   42.663601][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has an invalid descriptor for endpoint zero, skipping
+[   42.664947][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0x8, skipping
+[   42.666345][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x5 has invalid maxpacket 959, setting to 64
+[   42.667689][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0xB, skipping
+[   42.668954][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x2 has invalid maxpacket 512, setting to 64
+[   42.670281][ T8151] usb 1-1: config 8 interface 146 altsetting 9 has 0 endpoint descriptors, different from the interface descriptor's value: 8
+[   42.671813][ T8151] usb 1-1: config 8 interface 207 has no altsetting 0
+[   42.672654][ T8151] usb 1-1: config 8 interface 146 has no altsetting 0
+[   42.674771][ T8151] usb 1-1: New USB device found, idVendor=0424, idProduct=cf30, bcdDevice=86.3f
+[   42.675899][ T8151] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   42.676843][ T8151] usb 1-1: Product: syz
+[   42.677377][ T8151] usb 1-1: Manufacturer: syz
+[   42.677944][ T8151] usb 1-1: SerialNumber: syz
+[   42.681399][ T8188] raw-gadget.0 gadget.0: fail, usb_ep_enable returned -22
+executing program
+[   42.898551][ T8151] usb 1-1: USB disconnect, device number 2
+[   42.909529][ T8151] ------------[ cut here ]------------
+[   42.910197][ T8151] refcount_t: underflow; use-after-free.
+[   42.911481][ T8151] WARNING: CPU: 0 PID: 8151 at lib/refcount.c:28 refcount_warn_saturate+0x15f/0x1d0
+[   42.912615][ T8151] Modules linked in:
+[   42.913101][ T8151] CPU: 0 UID: 0 PID: 8151 Comm: kworker/0:4 Not tainted 6.12.0-rc1 #5
+[   42.914060][ T8151] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[   42.915701][ T8151] Workqueue: usb_hub_wq hub_event
+[   42.916696][ T8151] RIP: 0010:refcount_warn_saturate+0x15f/0x1d0
+[   42.917476][ T8151] Code: ff 89 de e8 83 16 c8 fe 84 db 0f 85 1c ff ff ff e8 66 14 c8 fe c6 05 81 f8 85 04 01 90 48 c7 c7 98 fc 50 86 e8 e2 ae af fe 90 <0f> 0b 90 90 e9 f9 fe ff ff e8 43 14 c8 fe 0f b6 1d 5c f8 85 04 31
+[   42.919702][ T8151] RSP: 0018:ffff88800ec1ba60 EFLAGS: 00010282
+[   42.920454][ T8151] RAX: 0000000000000000 RBX: 0000000000000000 RCX: ffffffff811c855c
+[   42.921408][ T8151] RDX: ffff88800ced4400 RSI: ffffffff811c85bb RDI: 0000000000000001
+[   42.922362][ T8151] RBP: ffff88800ec1ba70 R08: 0000000000000000 R09: 205b5d3739313031
+[   42.923316][ T8151] R10: 0000000000000001 R11: 205d313531385420 R12: ffff88800fcff038
+[   42.924272][ T8151] R13: ffff88800fcff038 R14: ffff88800fcfe450 R15: 0000000000000000
+[   42.925226][ T8151] FS:  0000000000000000(0000) GS:ffff88803ea00000(0000) knlGS:0000000000000000
+[   42.926352][ T8151] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[   42.927158][ T8151] CR2: 00007f416ec799d0 CR3: 000000000b202000 CR4: 0000000000350ef0
+[   42.928106][ T8151] Call Trace:
+[   42.928514][ T8151]  <TASK>
+[   42.928879][ T8151]  ? show_regs+0x68/0x80
+[   42.929458][ T8151]  ? __warn+0xaa/0x1c0
+[   42.929998][ T8151]  ? refcount_warn_saturate+0x15f/0x1d0
+[   42.930710][ T8151]  ? report_bug+0x1fc/0x2d0
+[   42.931314][ T8151]  ? refcount_warn_saturate+0x15f/0x1d0
+[   42.932002][ T8151]  ? refcount_warn_saturate+0x160/0x1d0
+[   42.932694][ T8151]  ? handle_bug+0xf0/0x160
+[   42.933283][ T8151]  ? exc_invalid_op+0x3c/0xb0
+[   42.933867][ T8151]  ? asm_exc_invalid_op+0x1f/0x30
+[   42.934532][ T8151]  ? __warn_printk+0xcc/0x140
+[   42.935162][ T8151]  ? __warn_printk+0x12b/0x140
+[   42.935840][ T8151]  ? refcount_warn_saturate+0x15f/0x1d0
+[   42.936553][ T8151]  kobject_put+0x144/0x170
+[   42.937149][ T8151]  put_device+0x24/0x40
+[   42.937698][ T8151]  hdm_disconnect+0xd2/0xf0
+[   42.938292][ T8151]  usb_unbind_interface+0xef/0x420
+[   42.938970][ T8151]  ? __pfx_usb_unbind_interface+0x10/0x10
+[   42.939724][ T8151]  device_remove+0x82/0x90
+[   42.940325][ T8151]  device_release_driver_internal+0x25c/0x2f0
+[   42.941100][ T8151]  device_release_driver+0x1e/0x30
+[   42.941786][ T8151]  bus_remove_device+0x105/0x150
+[   42.942444][ T8151]  device_del+0x1c6/0x490
+[   42.943015][ T8151]  ? srso_return_thunk+0x5/0x5f
+[   42.943646][ T8151]  ? device_unregister+0x31/0x40
+[   42.944313][ T8151]  usb_disable_device+0x15a/0x260
+[   42.944967][ T8151]  usb_disconnect+0x14d/0x3e0
+[   42.945596][ T8151]  ? usb_control_msg+0x12d/0x170
+[   42.946284][ T8151]  ? srso_return_thunk+0x5/0x5f
+[   42.946900][ T8151]  ? hub_port_warm_reset_required+0x83/0xa0
+[   42.947634][ T8151]  hub_event+0x1c72/0x24f0
+[   42.948224][ T8151]  ? srso_return_thunk+0x5/0x5f
+[   42.948848][ T8151]  ? kick_pool+0xe9/0x260
+[   42.949428][ T8151]  process_one_work+0x237/0x5c0
+[   42.950066][ T8151]  ? srso_return_thunk+0x5/0x5f
+[   42.950701][ T8151]  worker_thread+0x3c6/0x5f0
+[   42.951340][ T8151]  ? __pfx_worker_thread+0x10/0x10
+[   42.952018][ T8151]  kthread+0x11d/0x160
+[   42.952552][ T8151]  ? __pfx_kthread+0x10/0x10
+[   42.953149][ T8151]  ret_from_fork+0x54/0x60
+[   42.953738][ T8151]  ? __pfx_kthread+0x10/0x10
+[   42.954358][ T8151]  ret_from_fork_asm+0x1a/0x30
+[   42.954995][ T8151]  </TASK>
+[   42.955394][ T8151] ---[ end trace 0000000000000000 ]---
+[   43.245901][ T8151] usb 1-1: new high-speed USB device number 3 using dummy_hcd
+[   43.395828][ T8151] usb 1-1: Using ep0 maxpacket: 8
+[   43.397496][ T8151] usb 1-1: config 8 has an invalid interface number: 207 but max is 3
+[   43.398525][ T8151] usb 1-1: config 8 has an invalid interface number: 146 but max is 3
+[   43.399470][ T8151] usb 1-1: config 8 has an invalid descriptor of length 0, skipping remainder of the config
+[   43.400616][ T8151] usb 1-1: config 8 has 2 interfaces, different from the descriptor's value: 4
+[   43.401659][ T8151] usb 1-1: config 8 has no interface number 0
+[   43.402382][ T8151] usb 1-1: config 8 has no interface number 1
+[   43.403119][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has an invalid descriptor for endpoint zero, skipping
+[   43.404366][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0x8, skipping
+[   43.405566][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x5 has invalid maxpacket 959, setting to 64
+[   43.406898][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0xB, skipping
+[   43.408117][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x2 has invalid maxpacket 512, setting to 64
+[   43.409369][ T8151] usb 1-1: config 8 interface 146 altsetting 9 has 0 endpoint descriptors, different from the interface descriptor's value: 8
+[   43.410849][ T8151] usb 1-1: config 8 interface 207 has no altsetting 0
+[   43.411658][ T8151] usb 1-1: config 8 interface 146 has no altsetting 0
+[   43.413754][ T8151] usb 1-1: New USB device found, idVendor=0424, idProduct=cf30, bcdDevice=86.3f
+[   43.414801][ T8151] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   43.415729][ T8151] usb 1-1: Product: syz
+[   43.416301][ T8151] usb 1-1: Manufacturer: syz
+[   43.416856][ T8151] usb 1-1: SerialNumber: syz
+[   43.420405][ T8202] raw-gadget.0 gadget.0: fail, usb_ep_enable returned -22
+executing program
+[   43.638470][ T8151] usb 1-1: USB disconnect, device number 3
+[   43.935926][ T8151] usb 1-1: new high-speed USB device number 4 using dummy_hcd
+[   44.085879][ T8151] usb 1-1: Using ep0 maxpacket: 8
+[   44.087532][ T8151] usb 1-1: config 8 has an invalid interface number: 207 but max is 3
+[   44.088493][ T8151] usb 1-1: config 8 has an invalid interface number: 146 but max is 3
+[   44.089450][ T8151] usb 1-1: config 8 has an invalid descriptor of length 0, skipping remainder of the config
+[   44.090611][ T8151] usb 1-1: config 8 has 2 interfaces, different from the descriptor's value: 4
+[   44.091612][ T8151] usb 1-1: config 8 has no interface number 0
+[   44.092315][ T8151] usb 1-1: config 8 has no interface number 1
+[   44.093022][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has an invalid descriptor for endpoint zero, skipping
+[   44.094246][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0x8, skipping
+[   44.095442][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x5 has invalid maxpacket 959, setting to 64
+[   44.096759][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0xB, skipping
+[   44.097962][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x2 has invalid maxpacket 512, setting to 64
+[   44.099203][ T8151] usb 1-1: config 8 interface 146 altsetting 9 has 0 endpoint descriptors, different from the interface descriptor's value: 8
+[   44.100726][ T8151] usb 1-1: config 8 interface 207 has no altsetting 0
+[   44.101549][ T8151] usb 1-1: config 8 interface 146 has no altsetting 0
+[   44.103660][ T8151] usb 1-1: New USB device found, idVendor=0424, idProduct=cf30, bcdDevice=86.3f
+[   44.104799][ T8151] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   44.105836][ T8151] usb 1-1: Product: syz
+[   44.106373][ T8151] usb 1-1: Manufacturer: syz
+[   44.106936][ T8151] usb 1-1: SerialNumber: syz
+[   44.109816][ T8227] raw-gadget.0 gadget.0: fail, usb_ep_enable returned -22
+executing program
+[   44.331282][ T8151] usb 1-1: USB disconnect, device number 4
+[   44.625805][ T8151] usb 1-1: new high-speed USB device number 5 using dummy_hcd
+[   44.775840][ T8151] usb 1-1: Using ep0 maxpacket: 8
+[   44.777539][ T8151] usb 1-1: config 8 has an invalid interface number: 207 but max is 3
+[   44.778537][ T8151] usb 1-1: config 8 has an invalid interface number: 146 but max is 3
+[   44.779519][ T8151] usb 1-1: config 8 has an invalid descriptor of length 0, skipping remainder of the config
+[   44.780697][ T8151] usb 1-1: config 8 has 2 interfaces, different from the descriptor's value: 4
+[   44.781758][ T8151] usb 1-1: config 8 has no interface number 0
+[   44.782513][ T8151] usb 1-1: config 8 has no interface number 1
+[   44.783264][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has an invalid descriptor for endpoint zero, skipping
+[   44.784511][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0x8, skipping
+[   44.785735][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x5 has invalid maxpacket 959, setting to 64
+[   44.787108][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0xB, skipping
+[   44.788360][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x2 has invalid maxpacket 512, setting to 64
+[   44.789651][ T8151] usb 1-1: config 8 interface 146 altsetting 9 has 0 endpoint descriptors, different from the interface descriptor's value: 8
+[   44.791197][ T8151] usb 1-1: config 8 interface 207 has no altsetting 0
+[   44.792008][ T8151] usb 1-1: config 8 interface 146 has no altsetting 0
+[   44.794113][ T8151] usb 1-1: New USB device found, idVendor=0424, idProduct=cf30, bcdDevice=86.3f
+[   44.795225][ T8151] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   44.796218][ T8151] usb 1-1: Product: syz
+[   44.796723][ T8151] usb 1-1: Manufacturer: syz
+[   44.797306][ T8151] usb 1-1: SerialNumber: syz
+[   44.799961][ T8253] raw-gadget.0 gadget.0: fail, usb_ep_enable returned -22
+executing program
+[   45.019441][ T8151] usb 1-1: USB disconnect, device number 5
+[   45.315879][ T8151] usb 1-1: new high-speed USB device number 6 using dummy_hcd
+[   45.465835][ T8151] usb 1-1: Using ep0 maxpacket: 8
+[   45.467495][ T8151] usb 1-1: config 8 has an invalid interface number: 207 but max is 3
+[   45.468473][ T8151] usb 1-1: config 8 has an invalid interface number: 146 but max is 3
+[   45.469440][ T8151] usb 1-1: config 8 has an invalid descriptor of length 0, skipping remainder of the config
+[   45.470628][ T8151] usb 1-1: config 8 has 2 interfaces, different from the descriptor's value: 4
+[   45.471695][ T8151] usb 1-1: config 8 has no interface number 0
+[   45.472426][ T8151] usb 1-1: config 8 has no interface number 1
+[   45.473188][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has an invalid descriptor for endpoint zero, skipping
+[   45.474489][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0x8, skipping
+[   45.475837][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x5 has invalid maxpacket 959, setting to 64
+[   45.477164][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0xB, skipping
+[   45.478429][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x2 has invalid maxpacket 512, setting to 64
+[   45.479738][ T8151] usb 1-1: config 8 interface 146 altsetting 9 has 0 endpoint descriptors, different from the interface descriptor's value: 8
+[   45.481272][ T8151] usb 1-1: config 8 interface 207 has no altsetting 0
+[   45.482126][ T8151] usb 1-1: config 8 interface 146 has no altsetting 0
+[   45.484276][ T8151] usb 1-1: New USB device found, idVendor=0424, idProduct=cf30, bcdDevice=86.3f
+[   45.485374][ T8151] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   45.486371][ T8151] usb 1-1: Product: syz
+[   45.486885][ T8151] usb 1-1: Manufacturer: syz
+[   45.487458][ T8151] usb 1-1: SerialNumber: syz
+[   45.490790][ T8284] raw-gadget.0 gadget.0: fail, usb_ep_enable returned -22
+executing program
+[   45.713221][ T8151] usb 1-1: USB disconnect, device number 6
+[   46.005827][ T8151] usb 1-1: new high-speed USB device number 7 using dummy_hcd
+[   46.155830][ T8151] usb 1-1: Using ep0 maxpacket: 8
+[   46.157708][ T8151] usb 1-1: config 8 has an invalid interface number: 207 but max is 3
+[   46.158784][ T8151] usb 1-1: config 8 has an invalid interface number: 146 but max is 3
+[   46.159879][ T8151] usb 1-1: config 8 has an invalid descriptor of length 0, skipping remainder of the config
+[   46.161177][ T8151] usb 1-1: config 8 has 2 interfaces, different from the descriptor's value: 4
+[   46.162330][ T8151] usb 1-1: config 8 has no interface number 0
+[   46.163146][ T8151] usb 1-1: config 8 has no interface number 1
+[   46.163933][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has an invalid descriptor for endpoint zero, skipping
+[   46.165291][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0x8, skipping
+[   46.166717][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x5 has invalid maxpacket 959, setting to 64
+[   46.168162][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0xB, skipping
+[   46.169549][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x2 has invalid maxpacket 512, setting to 64
+[   46.170961][ T8151] usb 1-1: config 8 interface 146 altsetting 9 has 0 endpoint descriptors, different from the interface descriptor's value: 8
+[   46.172652][ T8151] usb 1-1: config 8 interface 207 has no altsetting 0
+[   46.173548][ T8151] usb 1-1: config 8 interface 146 has no altsetting 0
+[   46.175829][ T8151] usb 1-1: New USB device found, idVendor=0424, idProduct=cf30, bcdDevice=86.3f
+[   46.177002][ T8151] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   46.178053][ T8151] usb 1-1: Product: syz
+[   46.178642][ T8151] usb 1-1: Manufacturer: syz
+[   46.179286][ T8151] usb 1-1: SerialNumber: syz
+[   46.181499][ T8313] raw-gadget.0 gadget.0: fail, usb_ep_enable returned -22
+executing program
+[   46.403594][ T8151] usb 1-1: USB disconnect, device number 7
+[   46.735856][ T8151] usb 1-1: new high-speed USB device number 8 using dummy_hcd
+[   46.885838][ T8151] usb 1-1: Using ep0 maxpacket: 8
+[   46.887650][ T8151] usb 1-1: config 8 has an invalid interface number: 207 but max is 3
+[   46.888748][ T8151] usb 1-1: config 8 has an invalid interface number: 146 but max is 3
+[   46.889824][ T8151] usb 1-1: config 8 has an invalid descriptor of length 0, skipping remainder of the config
+[   46.891177][ T8151] usb 1-1: config 8 has 2 interfaces, different from the descriptor's value: 4
+[   46.892345][ T8151] usb 1-1: config 8 has no interface number 0
+[   46.893166][ T8151] usb 1-1: config 8 has no interface number 1
+[   46.893971][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has an invalid descriptor for endpoint zero, skipping
+[   46.895359][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0x8, skipping
+[   46.896789][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x5 has invalid maxpacket 959, setting to 64
+[   46.898493][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0xB, skipping
+[   46.899886][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x2 has invalid maxpacket 512, setting to 64
+[   46.901457][ T8151] usb 1-1: config 8 interface 146 altsetting 9 has 0 endpoint descriptors, different from the interface descriptor's value: 8
+[   46.903327][ T8151] usb 1-1: config 8 interface 207 has no altsetting 0
+[   46.904203][ T8151] usb 1-1: config 8 interface 146 has no altsetting 0
+[   46.906539][ T8151] usb 1-1: New USB device found, idVendor=0424, idProduct=cf30, bcdDevice=86.3f
+[   46.907736][ T8151] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   46.908783][ T8151] usb 1-1: Product: syz
+[   46.909362][ T8151] usb 1-1: Manufacturer: syz
+[   46.909981][ T8151] usb 1-1: SerialNumber: syz
+[   46.911941][ T8344] raw-gadget.0 gadget.0: fail, usb_ep_enable returned -22
+executing program
+[   47.138738][ T8151] usb 1-1: USB disconnect, device number 8
+[   47.425862][ T8151] usb 1-1: new high-speed USB device number 9 using dummy_hcd
+[   47.585839][ T8151] usb 1-1: Using ep0 maxpacket: 8
+[   47.587571][ T8151] usb 1-1: config 8 has an invalid interface number: 207 but max is 3
+[   47.588689][ T8151] usb 1-1: config 8 has an invalid interface number: 146 but max is 3
+[   47.589645][ T8151] usb 1-1: config 8 has an invalid descriptor of length 0, skipping remainder of the config
+[   47.590843][ T8151] usb 1-1: config 8 has 2 interfaces, different from the descriptor's value: 4
+[   47.591883][ T8151] usb 1-1: config 8 has no interface number 0
+[   47.592596][ T8151] usb 1-1: config 8 has no interface number 1
+[   47.593311][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has an invalid descriptor for endpoint zero, skipping
+[   47.594524][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0x8, skipping
+[   47.595722][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x5 has invalid maxpacket 959, setting to 64
+[   47.597013][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0xB, skipping
+[   47.598229][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x2 has invalid maxpacket 512, setting to 64
+[   47.599453][ T8151] usb 1-1: config 8 interface 146 altsetting 9 has 0 endpoint descriptors, different from the interface descriptor's value: 8
+[   47.600879][ T8151] usb 1-1: config 8 interface 207 has no altsetting 0
+[   47.601654][ T8151] usb 1-1: config 8 interface 146 has no altsetting 0
+[   47.603667][ T8151] usb 1-1: New USB device found, idVendor=0424, idProduct=cf30, bcdDevice=86.3f
+[   47.604709][ T8151] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   47.605614][ T8151] usb 1-1: Product: syz
+[   47.606160][ T8151] usb 1-1: Manufacturer: syz
+[   47.606696][ T8151] usb 1-1: SerialNumber: syz
+[   47.608521][ T8367] raw-gadget.0 gadget.0: fail, usb_ep_enable returned -22
+executing program
+[   47.833128][ T8151] usb 1-1: USB disconnect, device number 9
+[   48.145841][ T8151] usb 1-1: new high-speed USB device number 10 using dummy_hcd
+[   48.295829][ T8151] usb 1-1: Using ep0 maxpacket: 8
+[   48.297634][ T8151] usb 1-1: config 8 has an invalid interface number: 207 but max is 3
+[   48.298715][ T8151] usb 1-1: config 8 has an invalid interface number: 146 but max is 3
+[   48.299833][ T8151] usb 1-1: config 8 has an invalid descriptor of length 0, skipping remainder of the config
+[   48.301167][ T8151] usb 1-1: config 8 has 2 interfaces, different from the descriptor's value: 4
+[   48.302333][ T8151] usb 1-1: config 8 has no interface number 0
+[   48.303154][ T8151] usb 1-1: config 8 has no interface number 1
+[   48.303967][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has an invalid descriptor for endpoint zero, skipping
+[   48.305373][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0x8, skipping
+[   48.306842][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x5 has invalid maxpacket 959, setting to 64
+[   48.308268][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0xB, skipping
+[   48.309644][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x2 has invalid maxpacket 512, setting to 64
+[   48.311044][ T8151] usb 1-1: config 8 interface 146 altsetting 9 has 0 endpoint descriptors, different from the interface descriptor's value: 8
+[   48.312705][ T8151] usb 1-1: config 8 interface 207 has no altsetting 0
+[   48.313635][ T8151] usb 1-1: config 8 interface 146 has no altsetting 0
+[   48.316727][ T8151] usb 1-1: New USB device found, idVendor=0424, idProduct=cf30, bcdDevice=86.3f
+[   48.317942][ T8151] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   48.319015][ T8151] usb 1-1: Product: syz
+[   48.319599][ T8151] usb 1-1: Manufacturer: syz
+[   48.320248][ T8151] usb 1-1: SerialNumber: syz
+[   48.322208][ T8395] raw-gadget.0 gadget.0: fail, usb_ep_enable returned -22
+executing program
+[   48.540278][ T8151] usb 1-1: USB disconnect, device number 10
+[   48.835843][ T8151] usb 1-1: new high-speed USB device number 11 using dummy_hcd
+[   48.985860][ T8151] usb 1-1: Using ep0 maxpacket: 8
+[   48.987576][ T8151] usb 1-1: config 8 has an invalid interface number: 207 but max is 3
+[   48.988620][ T8151] usb 1-1: config 8 has an invalid interface number: 146 but max is 3
+[   48.989590][ T8151] usb 1-1: config 8 has an invalid descriptor of length 0, skipping remainder of the config
+[   48.990782][ T8151] usb 1-1: config 8 has 2 interfaces, different from the descriptor's value: 4
+[   48.991883][ T8151] usb 1-1: config 8 has no interface number 0
+[   48.992651][ T8151] usb 1-1: config 8 has no interface number 1
+[   48.993413][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has an invalid descriptor for endpoint zero, skipping
+[   48.994688][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0x8, skipping
+[   48.996029][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x5 has invalid maxpacket 959, setting to 64
+[   48.997395][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0xB, skipping
+[   48.998700][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x2 has invalid maxpacket 512, setting to 64
+[   49.000008][ T8151] usb 1-1: config 8 interface 146 altsetting 9 has 0 endpoint descriptors, different from the interface descriptor's value: 8
+[   49.001629][ T8151] usb 1-1: config 8 interface 207 has no altsetting 0
+[   49.002503][ T8151] usb 1-1: config 8 interface 146 has no altsetting 0
+[   49.004612][ T8151] usb 1-1: New USB device found, idVendor=0424, idProduct=cf30, bcdDevice=86.3f
+[   49.005709][ T8151] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   49.006745][ T8151] usb 1-1: Product: syz
+[   49.007289][ T8151] usb 1-1: Manufacturer: syz
+[   49.007863][ T8151] usb 1-1: SerialNumber: syz
+[   49.010050][ T8422] raw-gadget.0 gadget.0: fail, usb_ep_enable returned -22
+executing program
+[   49.228617][ T8151] usb 1-1: USB disconnect, device number 11
+[   49.535858][ T8151] usb 1-1: new high-speed USB device number 12 using dummy_hcd
+[   49.685851][ T8151] usb 1-1: Using ep0 maxpacket: 8
+[   49.687551][ T8151] usb 1-1: config 8 has an invalid interface number: 207 but max is 3
+[   49.688547][ T8151] usb 1-1: config 8 has an invalid interface number: 146 but max is 3
+[   49.689540][ T8151] usb 1-1: config 8 has an invalid descriptor of length 0, skipping remainder of the config
+[   49.690752][ T8151] usb 1-1: config 8 has 2 interfaces, different from the descriptor's value: 4
+[   49.691830][ T8151] usb 1-1: config 8 has no interface number 0
+[   49.692594][ T8151] usb 1-1: config 8 has no interface number 1
+[   49.693381][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has an invalid descriptor for endpoint zero, skipping
+[   49.694723][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0x8, skipping
+[   49.696059][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x5 has invalid maxpacket 959, setting to 64
+[   49.697401][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0xB, skipping
+[   49.698683][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x2 has invalid maxpacket 512, setting to 64
+[   49.700010][ T8151] usb 1-1: config 8 interface 146 altsetting 9 has 0 endpoint descriptors, different from the interface descriptor's value: 8
+[   49.701618][ T8151] usb 1-1: config 8 interface 207 has no altsetting 0
+[   49.702485][ T8151] usb 1-1: config 8 interface 146 has no altsetting 0
+[   49.704606][ T8151] usb 1-1: New USB device found, idVendor=0424, idProduct=cf30, bcdDevice=86.3f
+[   49.705714][ T8151] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   49.706747][ T8151] usb 1-1: Product: syz
+[   49.707295][ T8151] usb 1-1: Manufacturer: syz
+[   49.707872][ T8151] usb 1-1: SerialNumber: syz
+[   49.711769][ T8450] raw-gadget.0 gadget.0: fail, usb_ep_enable returned -22
+executing program
+[   49.932903][ T8151] usb 1-1: USB disconnect, device number 12
+[   50.225905][ T8151] usb 1-1: new high-speed USB device number 13 using dummy_hcd
+[   50.375819][ T8151] usb 1-1: Using ep0 maxpacket: 8
+[   50.377525][ T8151] usb 1-1: config 8 has an invalid interface number: 207 but max is 3
+[   50.378522][ T8151] usb 1-1: config 8 has an invalid interface number: 146 but max is 3
+[   50.379518][ T8151] usb 1-1: config 8 has an invalid descriptor of length 0, skipping remainder of the config
+[   50.380720][ T8151] usb 1-1: config 8 has 2 interfaces, different from the descriptor's value: 4
+[   50.381793][ T8151] usb 1-1: config 8 has no interface number 0
+[   50.382536][ T8151] usb 1-1: config 8 has no interface number 1
+[   50.383300][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has an invalid descriptor for endpoint zero, skipping
+[   50.384585][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0x8, skipping
+[   50.385910][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x5 has invalid maxpacket 959, setting to 64
+[   50.387238][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0xB, skipping
+[   50.388513][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x2 has invalid maxpacket 512, setting to 64
+[   50.389818][ T8151] usb 1-1: config 8 interface 146 altsetting 9 has 0 endpoint descriptors, different from the interface descriptor's value: 8
+[   50.391372][ T8151] usb 1-1: config 8 interface 207 has no altsetting 0
+[   50.392206][ T8151] usb 1-1: config 8 interface 146 has no altsetting 0
+[   50.394275][ T8151] usb 1-1: New USB device found, idVendor=0424, idProduct=cf30, bcdDevice=86.3f
+[   50.395361][ T8151] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   50.396378][ T8151] usb 1-1: Product: syz
+[   50.396900][ T8151] usb 1-1: Manufacturer: syz
+[   50.397486][ T8151] usb 1-1: SerialNumber: syz
+[   50.400042][ T8476] raw-gadget.0 gadget.0: fail, usb_ep_enable returned -22
+executing program
+[   50.624030][ T8151] usb 1-1: USB disconnect, device number 13
+[   50.915850][ T8151] usb 1-1: new high-speed USB device number 14 using dummy_hcd
+[   51.065816][ T8151] usb 1-1: Using ep0 maxpacket: 8
+[   51.067562][ T8151] usb 1-1: config 8 has an invalid interface number: 207 but max is 3
+[   51.068562][ T8151] usb 1-1: config 8 has an invalid interface number: 146 but max is 3
+[   51.069552][ T8151] usb 1-1: config 8 has an invalid descriptor of length 0, skipping remainder of the config
+[   51.070746][ T8151] usb 1-1: config 8 has 2 interfaces, different from the descriptor's value: 4
+[   51.071835][ T8151] usb 1-1: config 8 has no interface number 0
+[   51.072591][ T8151] usb 1-1: config 8 has no interface number 1
+[   51.073353][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has an invalid descriptor for endpoint zero, skipping
+[   51.074646][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0x8, skipping
+[   51.075978][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x5 has invalid maxpacket 959, setting to 64
+[   51.077288][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0xB, skipping
+[   51.078551][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x2 has invalid maxpacket 512, setting to 64
+[   51.079850][ T8151] usb 1-1: config 8 interface 146 altsetting 9 has 0 endpoint descriptors, different from the interface descriptor's value: 8
+[   51.081383][ T8151] usb 1-1: config 8 interface 207 has no altsetting 0
+[   51.082201][ T8151] usb 1-1: config 8 interface 146 has no altsetting 0
+[   51.084194][ T8151] usb 1-1: New USB device found, idVendor=0424, idProduct=cf30, bcdDevice=86.3f
+[   51.085250][ T8151] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   51.086254][ T8151] usb 1-1: Product: syz
+[   51.086772][ T8151] usb 1-1: Manufacturer: syz
+[   51.087355][ T8151] usb 1-1: SerialNumber: syz
+[   51.093672][ T8503] raw-gadget.0 gadget.0: fail, usb_ep_enable returned -22
+executing program
+[   51.314063][ T8151] usb 1-1: USB disconnect, device number 14
+[   51.615893][ T8151] usb 1-1: new high-speed USB device number 15 using dummy_hcd
+[   51.765834][ T8151] usb 1-1: Using ep0 maxpacket: 8
+[   51.767491][ T8151] usb 1-1: config 8 has an invalid interface number: 207 but max is 3
+[   51.768468][ T8151] usb 1-1: config 8 has an invalid interface number: 146 but max is 3
+[   51.769442][ T8151] usb 1-1: config 8 has an invalid descriptor of length 0, skipping remainder of the config
+[   51.770627][ T8151] usb 1-1: config 8 has 2 interfaces, different from the descriptor's value: 4
+[   51.771689][ T8151] usb 1-1: config 8 has no interface number 0
+[   51.772427][ T8151] usb 1-1: config 8 has no interface number 1
+[   51.773185][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has an invalid descriptor for endpoint zero, skipping
+[   51.774461][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0x8, skipping
+[   51.775721][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x5 has invalid maxpacket 959, setting to 64
+[   51.777066][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0xB, skipping
+[   51.778345][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x2 has invalid maxpacket 512, setting to 64
+[   51.779706][ T8151] usb 1-1: config 8 interface 146 altsetting 9 has 0 endpoint descriptors, different from the interface descriptor's value: 8
+[   51.781227][ T8151] usb 1-1: config 8 interface 207 has no altsetting 0
+[   51.782038][ T8151] usb 1-1: config 8 interface 146 has no altsetting 0
+[   51.784131][ T8151] usb 1-1: New USB device found, idVendor=0424, idProduct=cf30, bcdDevice=86.3f
+[   51.785226][ T8151] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   51.786245][ T8151] usb 1-1: Product: syz
+[   51.786768][ T8151] usb 1-1: Manufacturer: syz
+[   51.787360][ T8151] usb 1-1: SerialNumber: syz
+[   51.789286][ T8531] raw-gadget.0 gadget.0: fail, usb_ep_enable returned -22
+executing program
+[   52.013355][ T8151] usb 1-1: USB disconnect, device number 15
+[   52.315917][ T8151] usb 1-1: new high-speed USB device number 16 using dummy_hcd
+[   52.465815][ T8151] usb 1-1: Using ep0 maxpacket: 8
+[   52.467494][ T8151] usb 1-1: config 8 has an invalid interface number: 207 but max is 3
+[   52.468477][ T8151] usb 1-1: config 8 has an invalid interface number: 146 but max is 3
+[   52.469450][ T8151] usb 1-1: config 8 has an invalid descriptor of length 0, skipping remainder of the config
+[   52.470634][ T8151] usb 1-1: config 8 has 2 interfaces, different from the descriptor's value: 4
+[   52.471702][ T8151] usb 1-1: config 8 has no interface number 0
+[   52.472429][ T8151] usb 1-1: config 8 has no interface number 1
+[   52.473157][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has an invalid descriptor for endpoint zero, skipping
+[   52.474384][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0x8, skipping
+[   52.475602][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x5 has invalid maxpacket 959, setting to 64
+[   52.476925][ T8151] usb 1-1: config 8 interface 207 altsetting 6 has a duplicate endpoint with address 0xB, skipping
+[   52.478162][ T8151] usb 1-1: config 8 interface 207 altsetting 6 endpoint 0x2 has invalid maxpacket 512, setting to 64
+[   52.479419][ T8151] usb 1-1: config 8 interface 146 altsetting 9 has 0 endpoint descriptors, different from the interface descriptor's value: 8
+[   52.480894][ T8151] usb 1-1: config 8 interface 207 has no altsetting 0
+[   52.481692][ T8151] usb 1-1: config 8 interface 146 has no altsetting 0
+[   52.483789][ T8151] usb 1-1: New USB device found, idVendor=0424, idProduct=cf30, bcdDevice=86.3f
+[   52.484856][ T8151] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   52.485832][ T8151] usb 1-1: Product: syz
+[   52.486357][ T8151] usb 1-1: Manufacturer: syz
+[   52.486912][ T8151] usb 1-1: SerialNumber: syz
+[   52.489576][ T8557] raw-gadget.0 gadget.0: fail, usb_ep_enable returned -22
+executing program
+[   52.710405][ T8151] usb 1-1: USB disconnect, device number 16
+
+VM DIAGNOSIS:
+21:08:51  Registers:
+info registers vcpu 0
+RAX=0000000000000053 RBX=0000000000000000 RCX=0000000000000000 RDX=00000000000003f8
+RSI=ffffffff82a1d59a RDI=ffffffff880cbfc0 RBP=ffff88800ec1b5e0 RSP=ffff88800ec1b5c8
+R8 =392e32342020205b R9 =205b5d3036303431 R10=0000000000000053 R11=205d313531385420
+R12=ffffffff880cbfc0 R13=0000000000000053 R14=ffffffff87fb4b32 R15=0000000000000000
+RIP=ffffffff82a1d5b1 RFL=00000002 [-------] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 00000000 00000000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 00000000 00000000
+FS =0000 0000000000000000 00000000 00000000
+GS =0000 ffff88803ea00000 00000000 00000000
+LDT=0000 fffffe0000000000 00000000 00000000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007f416ec799d0 CR3=000000000b202000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000001d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM01=0000000000000000 0000000000000000 a26ea2fb5618d191 0d4269ea5d351884
+YMM02=0000000000000000 0000000000000000 22ba204eea562bb6 00000000002c58c8
+YMM03=0000000000000000 0000000000000000 80f09f19808d26a3 00000000002c5b08
+YMM04=0000000000000000 0000000000000000 66909998ae4f059f 000000000040b698
+YMM05=0000000000000000 0000000000000000 df8cbfae608ff12b 000000000040b100
+YMM06=0000000000000000 0000000000000000 c3f9961c463488f6 0000000000329aa0
+YMM07=0000000000000000 0000000000000000 d3fdd5f48436fbd7 00000000002c5970
+YMM08=0000000000000000 0000000000000000 44495f474f4c5359 530069253d595449
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+info registers vcpu 1
+RAX=0000000000000000 RBX=ffff88800cf13dc8 RCX=ffffffff8257573f RDX=ffff888040491800
+RSI=ffffffff82575767 RDI=0000000000000000 RBP=ffff88800cf13cf0 RSP=ffff88800cf13ca8
+R8 =0000000000000000 R9 =0000000000000000 R10=0000000000000000 R11=0000000000000000
+R12=0000000000000000 R13=ffff8880138fd180 R14=0000000000000000 R15=0000000000020070
+RIP=ffffffff82575779 RFL=00000246 [---Z-P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 00000000 00000000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 00000000 00000000
+FS =0000 00007fbcd53398c0 00000000 00000000
+GS =0000 ffff88807ee00000 00000000 00000000
+LDT=0000 fffffe0000000000 00000000 00000000
+TR =0040 fffffe000003e000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe000003c000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=000055e56496e178 CR3=000000000fc58000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000001d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 2525252525252525 2525252525252525
+YMM01=0000000000000000 0000000000000000 0000000000000000 00000000000000ff
+YMM02=0000000000000000 0000000000000000 0000000000000000 00000000000000ff
+YMM03=0000000000000000 0000000000000000 696e656420737365 636341002f737973
+YMM04=0000000000000000 0000000000000000 3a470a305f646368 5f796d6d75642d6d
+YMM05=0000000000000000 0000000000000000 5f524f465f44493a 450a305f6463685f
+YMM06=0000000000000000 0000000000000000 41545f485441505f 44493a450a302e64
+YMM07=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM08=0000000000000000 0000000000000000 3c20706f20262620 30203d3e20706f00
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000200000 0000000000200000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000
