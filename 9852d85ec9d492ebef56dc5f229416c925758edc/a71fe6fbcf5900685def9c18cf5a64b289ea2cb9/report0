@@ -1,0 +1,63 @@
+bond0 (unregistering): (slave bond_slave_0): Releasing backup interface
+bond0 (unregistering): (slave bond_slave_1): Releasing backup interface
+bond0 (unregistering): Released all slaves
+------------[ cut here ]------------
+WARNING: CPU: 0 PID: 117489 at net/l2tp/l2tp_core.c:1877 l2tp_exit_net+0x42/0x120 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/l2tp/l2tp_core.c:1877
+Modules linked in:
+CPU: 0 UID: 0 PID: 117489 Comm: kworker/u8:30 Not tainted 6.12.0-rc1 #5
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+Workqueue: netns cleanup_net
+RIP: 0010:l2tp_exit_net+0x42/0x120 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/l2tp/l2tp_core.c:1877
+Code: a2 5e 03 e8 e0 b8 75 fc 49 8b 84 24 18 0d 00 00 48 8b 1c d8 e8 ff f9 75 fc 48 83 7b 30 00 4c 8d 63 28 74 63 e8 7f 8b 80 fc 90 <0f> 0b 90 e8 76 8b 80 fc 4c 89 e7 e8 fe e7 4d 00 48 83 7b 48 00 4c
+RSP: 0018:ffff8880082dbd78 EFLAGS: 00010293
+RAX: 0000000000000000 RBX: ffff888018fbcc00 RCX: ffffffff850246c4
+RDX: ffff888008e2b300 RSI: ffffffff84b45e81 RDI: ffff888008e2b300
+RBP: ffff8880082dbd90 R08: ffff888016e89cc0 R09: 000000000015000c
+R10: 0000000000000000 R11: ffff88803ea30400 R12: ffff888018fbcc28
+R13: ffff8880082dbde0 R14: ffffffff86eb5c40 R15: ffffffffffffffc8
+FS:  0000000000000000(0000) GS:ffff88803ea00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 00007f2456e956b8 CR3: 000000001aedc000 CR4: 0000000000350ef0
+Call Trace:
+ <TASK>
+ ops_exit_list+0x4a/0x90 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/core/net_namespace.c:173
+ cleanup_net+0x33f/0x5f0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/core/net_namespace.c:626
+ process_one_work+0x237/0x5c0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/workqueue.c:3229
+ process_scheduled_works data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/workqueue.c:3310 [inline]
+ worker_thread+0x3c6/0x5f0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/workqueue.c:3391
+ kthread+0x11d/0x160 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/kthread.c:389
+ ret_from_fork+0x54/0x60 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/kernel/process.c:147
+ ret_from_fork_asm+0x1a/0x30 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/entry/entry_64.S:244
+ </TASK>
+---[ end trace 0000000000000000 ]---
+IPVS: stopping master sync thread 108771 ...
+hsr_slave_0: left promiscuous mode
+hsr_slave_1: left promiscuous mode
+batman_adv: batadv0: Interface deactivated: batadv_slave_0
+batman_adv: batadv0: Removing interface: batadv_slave_0
+batman_adv: batadv0: Removing interface: batadv_slave_1
+hsr_slave_0: left promiscuous mode
+hsr_slave_1: left promiscuous mode
+batman_adv: batadv0: Interface deactivated: batadv_slave_0
+batman_adv: batadv0: Removing interface: batadv_slave_0
+batman_adv: batadv0: Interface deactivated: batadv_slave_1
+batman_adv: batadv0: Removing interface: batadv_slave_1
+veth1_macvtap: left promiscuous mode
+veth0_macvtap: left promiscuous mode
+veth1_vlan: left promiscuous mode
+veth0_vlan: left promiscuous mode
+veth1_macvtap: left promiscuous mode
+veth0_macvtap: left promiscuous mode
+veth1_vlan: left promiscuous mode
+team0 (unregistering): Port device team_slave_1 removed
+team0 (unregistering): Port device team_slave_0 removed
+team0 (unregistering): Port device team_slave_1 removed
+team0 (unregistering): Port device team_slave_0 removed
+bridge0: port 1(bridge_slave_0) entered blocking state
+bridge0: port 1(bridge_slave_0) entered forwarding state
+wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50

@@ -1,0 +1,29 @@
+------------[ cut here ]------------
+WARNING: CPU: 1 PID: 3222 at net/l2tp/l2tp_core.c:1877 l2tp_exit_net+0x42/0x120 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/l2tp/l2tp_core.c:1877
+Modules linked in:
+CPU: 1 UID: 0 PID: 3222 Comm: kworker/u8:8 Not tainted 6.12.0-rc1 #5
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+Workqueue: netns cleanup_net
+RIP: 0010:l2tp_exit_net+0x42/0x120 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/l2tp/l2tp_core.c:1877
+Code: a2 5e 03 e8 e0 b8 75 fc 49 8b 84 24 18 0d 00 00 48 8b 1c d8 e8 ff f9 75 fc 48 83 7b 30 00 4c 8d 63 28 74 63 e8 7f 8b 80 fc 90 <0f> 0b 90 e8 76 8b 80 fc 4c 89 e7 e8 fe e7 4d 00 48 83 7b 48 00 4c
+RSP: 0018:ffff88800ec1fd78 EFLAGS: 00010293
+RAX: 0000000000000000 RBX: ffff88800f423f00 RCX: 0000000000001d91
+RDX: ffff88800ec39100 RSI: ffffffff84b45e81 RDI: ffff88800ec39100
+RBP: ffff88800ec1fd90 R08: 0000000000000000 R09: 0000000000000000
+R10: 0000000000008000 R11: 0000000000000000 R12: ffff88800f423f28
+R13: ffff88800ec1fde0 R14: ffffffff86eb5c40 R15: ffffffffffffffc8
+FS:  0000000000000000(0000) GS:ffff88807ee00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 00007f099b0fa328 CR3: 0000000006a60000 CR4: 0000000000350ef0
+Call Trace:
+ <TASK>
+ ops_exit_list+0x4a/0x90 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/core/net_namespace.c:173
+ cleanup_net+0x33f/0x5f0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/net/core/net_namespace.c:626
+ process_one_work+0x237/0x5c0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/workqueue.c:3229
+ process_scheduled_works data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/workqueue.c:3310 [inline]
+ worker_thread+0x3c6/0x5f0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/workqueue.c:3391
+ kthread+0x11d/0x160 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/kthread.c:389
+ ret_from_fork+0x54/0x60 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/kernel/process.c:147
+ ret_from_fork_asm+0x1a/0x30 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/entry/entry_64.S:244
+ </TASK>
+---[ end trace 0000000000000000 ]---
