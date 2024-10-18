@@ -1,0 +1,80 @@
+BUG: unable to handle page fault for address: ffff88800f9d9000
+#PF: supervisor read access in kernel mode
+#PF: error_code(0x0000) - not-present page
+PGD 8201067 P4D 8201067 PUD 8202067 PMD e9f5063 PTE 800ffffff0626060
+Oops: Oops: 0000 [#1] PREEMPT SMP NOPTI
+CPU: 1 UID: 0 PID: 8206 Comm: syz-executor841 Not tainted 6.12.0-rc1 #5
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+RIP: 0010:memcmp+0x32/0x50 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/lib/string.c:676
+Code: 06 48 39 07 75 17 48 83 c7 08 48 83 c6 08 48 83 ea 08 48 83 fa 07 77 e6 48 85 d2 74 20 31 c9 eb 09 48 83 c1 01 48 39 ca 74 0e <0f> b6 04 0f 44 0f b6 04 0e 44 29 c0 74 e9 e9 7b 20 03 00 31 c0 e9
+RSP: 0018:ffff88800f7a3990 EFLAGS: 00010246
+RAX: 0000000000000000 RBX: ffff88800f9d9000 RCX: 0000000000000000
+RDX: 0000000000000004 RSI: ffffffff863584a0 RDI: ffff88800f9d9000
+RBP: ffff88800f7a3a50 R08: ffff88800ea75fe4 R09: 0000000000000001
+R10: 0000000000000012 R11: 000055556ed5dfff R12: 0000000000000000
+R13: ffff88800f7a3b0c R14: 0000000000000000 R15: ffff88800ea75000
+FS:  000055556ed3c3c0(0000) GS:ffff88807ee00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: ffff88800f9d9000 CR3: 000000000f35c000 CR4: 0000000000350ef0
+Call Trace:
+ <TASK>
+ build_id_parse_nofault+0x2f/0x40 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/lib/buildid.c:338
+ perf_event_mmap_event data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/events/core.c:8966 [inline]
+ perf_event_mmap+0x513/0x5a0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/kernel/events/core.c:9104
+ mmap_region+0x33e/0x1370 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/mm/mmap.c:1530
+ do_mmap+0x813/0x9d0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/mm/mmap.c:496
+ vm_mmap_pgoff+0xf9/0x1f0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/mm/util.c:588
+ ksys_mmap_pgoff+0x237/0x2e0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/mm/mmap.c:542
+ __do_sys_mmap data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/kernel/sys_x86_64.c:86 [inline]
+ __se_sys_mmap data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/kernel/sys_x86_64.c:79 [inline]
+ __x64_sys_mmap+0x7e/0xb0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/kernel/sys_x86_64.c:79
+ x64_sys_call+0x18be/0x20d0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/include/generated/asm/syscalls_64.h:10
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0x9e/0x1d0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7f37d35311cd
+Code: 28 c3 e8 46 1e 00 00 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b8 ff ff ff f7 d8 64 89 01 48
+RSP: 002b:00007ffd2d369d78 EFLAGS: 00000246 ORIG_RAX: 0000000000000009
+RAX: ffffffffffffffda RBX: 00007ffd2d369f88 RCX: 00007f37d35311cd
+RDX: 0000000000000001 RSI: 0000000000003000 RDI: 0000000020ffa000
+RBP: 0000000000000001 R08: 0000000000000004 R09: 000000005e0a6000
+R10: 0000000000000011 R11: 0000000000000246 R12: 0000000000000001
+R13: 00007ffd2d369f78 R14: 00007f37d35ae530 R15: 0000000000000001
+ </TASK>
+Modules linked in:
+CR2: ffff88800f9d9000
+---[ end trace 0000000000000000 ]---
+RIP: 0010:memcmp+0x32/0x50 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/lib/string.c:676
+Code: 06 48 39 07 75 17 48 83 c7 08 48 83 c6 08 48 83 ea 08 48 83 fa 07 77 e6 48 85 d2 74 20 31 c9 eb 09 48 83 c1 01 48 39 ca 74 0e <0f> b6 04 0f 44 0f b6 04 0e 44 29 c0 74 e9 e9 7b 20 03 00 31 c0 e9
+RSP: 0018:ffff88800f7a3990 EFLAGS: 00010246
+RAX: 0000000000000000 RBX: ffff88800f9d9000 RCX: 0000000000000000
+RDX: 0000000000000004 RSI: ffffffff863584a0 RDI: ffff88800f9d9000
+RBP: ffff88800f7a3a50 R08: ffff88800ea75fe4 R09: 0000000000000001
+R10: 0000000000000012 R11: 000055556ed5dfff R12: 0000000000000000
+R13: ffff88800f7a3b0c R14: 0000000000000000 R15: ffff88800ea75000
+FS:  000055556ed3c3c0(0000) GS:ffff88807ee00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: ffff88800f9d9000 CR3: 000000000f35c000 CR4: 0000000000350ef0
+----------------
+Code disassembly (best guess), 1 bytes skipped:
+   0:	48 39 07             	cmp    %rax,(%rdi)
+   3:	75 17                	jne    0x1c
+   5:	48 83 c7 08          	add    $0x8,%rdi
+   9:	48 83 c6 08          	add    $0x8,%rsi
+   d:	48 83 ea 08          	sub    $0x8,%rdx
+  11:	48 83 fa 07          	cmp    $0x7,%rdx
+  15:	77 e6                	ja     0xfffffffd
+  17:	48 85 d2             	test   %rdx,%rdx
+  1a:	74 20                	je     0x3c
+  1c:	31 c9                	xor    %ecx,%ecx
+  1e:	eb 09                	jmp    0x29
+  20:	48 83 c1 01          	add    $0x1,%rcx
+  24:	48 39 ca             	cmp    %rcx,%rdx
+  27:	74 0e                	je     0x37
+* 29:	0f b6 04 0f          	movzbl (%rdi,%rcx,1),%eax <-- trapping instruction
+  2d:	44 0f b6 04 0e       	movzbl (%rsi,%rcx,1),%r8d
+  32:	44 29 c0             	sub    %r8d,%eax
+  35:	74 e9                	je     0x20
+  37:	e9 7b 20 03 00       	jmp    0x320b7
+  3c:	31 c0                	xor    %eax,%eax
+  3e:	e9                   	.byte 0xe9
