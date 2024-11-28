@@ -1,0 +1,29 @@
+------------[ cut here ]------------
+UBSAN: shift-out-of-bounds in fs/jfs/super.c:140:14
+shift exponent 50331650 is too large for 64-bit type 'long long int'
+CPU: 3 UID: 0 PID: 34371 Comm: syz.3.50 Not tainted 6.12.0-07749-g28eb75e178d3 #1
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+Call Trace:
+ <TASK>
+ __dump_stack data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/lib/dump_stack.c:94 [inline]
+ dump_stack_lvl+0x180/0x1b0 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/lib/dump_stack.c:120
+ ubsan_epilogue data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/lib/ubsan.c:231 [inline]
+ __ubsan_handle_shift_out_of_bounds+0x24a/0x430 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/lib/ubsan.c:468
+ jfs_statfs.cold+0x17/0x1c data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/jfs/super.c:140
+ statfs_by_dentry+0x138/0x220 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/statfs.c:66
+ vfs_statfs data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/statfs.c:90 [inline]
+ user_statfs+0xaa/0x170 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/statfs.c:105
+ __do_sys_statfs+0x8b/0x150 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/fs/statfs.c:193
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/linux_v6.11/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7fab8fb9df8d
+Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+RSP: 002b:00007fab90a99f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000089
+RAX: ffffffffffffffda RBX: 00007fab8fd75f80 RCX: 00007fab8fb9df8d
+RDX: 0000000000000000 RSI: 0000000020000280 RDI: 0000000020000040
+RBP: 00007fab8fc2768c R08: 0000000000000000 R09: 0000000000000000
+R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+R13: 0000000000000000 R14: 00007fab8fd75f80 R15: 00007fab90a7a000
+ </TASK>
+---[ end trace ]---
