@@ -1,0 +1,73 @@
+Oops: general protection fault, probably for non-canonical address 0xdffffc0000000056: 0000 [#1] PREEMPT SMP KASAN NOPTI
+KASAN: null-ptr-deref in range [0x00000000000002b0-0x00000000000002b7]
+CPU: 4 UID: 0 PID: 9589 Comm: syz-executor238 Not tainted 6.14.0-rc6 #1
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+RIP: 0010:afs_atcell_get_link+0x33e/0x480 data/ghui/docker_data/linux_kernel/upstream/linux/fs/afs/dynroot.c:321
+Code: 89 c3 89 c6 e8 43 2a 41 fe 85 db 75 64 e8 4a 2f 41 fe 48 8d bd b0 02 00 00 48 b8 00 00 00 00 00 fc ff df 48 89 fa 48 c1 ea 03 <80> 3c 02 00 0f 85 1f 01 00 00 4c 89 f6 bf 03 00 00 00 4c 8b a5 b0
+RSP: 0018:ffffc900175b7990 EFLAGS: 00010216
+RAX: dffffc0000000000 RBX: 0000000000000001 RCX: ffffffff8377085a
+RDX: 0000000000000056 RSI: ffffffff837707e6 RDI: 00000000000002b0
+RBP: 0000000000000000 R08: 0000000000000001 R09: fffffbfff2083d82
+R10: 0000000000000001 R11: 0000000000000000 R12: 0000000000000000
+R13: ffff88810b84e000 R14: 0000000000000003 R15: ffffffff837704c0
+FS:  000055557774b3c0(0000) GS:ffff888062900000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 00007ffefb423f88 CR3: 000000003159c000 CR4: 0000000000350ef0
+Call Trace:
+ <TASK>
+ pick_link data/ghui/docker_data/linux_kernel/upstream/linux/fs/namei.c:1914 [inline]
+ step_into+0x1882/0x2090 data/ghui/docker_data/linux_kernel/upstream/linux/fs/namei.c:1984
+ open_last_lookups data/ghui/docker_data/linux_kernel/upstream/linux/fs/namei.c:3777 [inline]
+ path_openat+0x54a/0x2960 data/ghui/docker_data/linux_kernel/upstream/linux/fs/namei.c:3986
+ do_filp_open+0x1f8/0x460 data/ghui/docker_data/linux_kernel/upstream/linux/fs/namei.c:4016
+ do_sys_openat2+0x164/0x1d0 data/ghui/docker_data/linux_kernel/upstream/linux/fs/open.c:1428
+ do_sys_open data/ghui/docker_data/linux_kernel/upstream/linux/fs/open.c:1443 [inline]
+ __do_sys_openat data/ghui/docker_data/linux_kernel/upstream/linux/fs/open.c:1459 [inline]
+ __se_sys_openat data/ghui/docker_data/linux_kernel/upstream/linux/fs/open.c:1454 [inline]
+ __x64_sys_openat+0x140/0x1f0 data/ghui/docker_data/linux_kernel/upstream/linux/fs/open.c:1454
+ do_syscall_x64 data/ghui/docker_data/linux_kernel/upstream/linux/arch/x86/entry/common.c:52 [inline]
+ do_syscall_64+0xcb/0x250 data/ghui/docker_data/linux_kernel/upstream/linux/arch/x86/entry/common.c:83
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+RIP: 0033:0x7fb100d4fc0b
+Code: 25 00 00 41 00 3d 00 00 41 00 74 4b 64 8b 04 25 18 00 00 00 85 c0 75 67 44 89 e2 48 89 ee bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 0f 87 91 00 00 00 48 8b 54 24 28 64 48 2b 14 25
+RSP: 002b:00007ffefb4246f0 EFLAGS: 00000246 ORIG_RAX: 0000000000000101
+RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007fb100d4fc0b
+RDX: 0000000000000000 RSI: 00007ffefb424820 RDI: 00000000ffffff9c
+RBP: 00007ffefb424820 R08: 0000000000000000 R09: 00007ffefb4245f0
+R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+R13: 00005555777547b0 R14: 00007ffefb424788 R15: 000055557774b378
+ </TASK>
+Modules linked in:
+---[ end trace 0000000000000000 ]---
+RIP: 0010:afs_atcell_get_link+0x33e/0x480 data/ghui/docker_data/linux_kernel/upstream/linux/fs/afs/dynroot.c:321
+Code: 89 c3 89 c6 e8 43 2a 41 fe 85 db 75 64 e8 4a 2f 41 fe 48 8d bd b0 02 00 00 48 b8 00 00 00 00 00 fc ff df 48 89 fa 48 c1 ea 03 <80> 3c 02 00 0f 85 1f 01 00 00 4c 89 f6 bf 03 00 00 00 4c 8b a5 b0
+RSP: 0018:ffffc900175b7990 EFLAGS: 00010216
+RAX: dffffc0000000000 RBX: 0000000000000001 RCX: ffffffff8377085a
+RDX: 0000000000000056 RSI: ffffffff837707e6 RDI: 00000000000002b0
+RBP: 0000000000000000 R08: 0000000000000001 R09: fffffbfff2083d82
+R10: 0000000000000001 R11: 0000000000000000 R12: 0000000000000000
+R13: ffff88810b84e000 R14: 0000000000000003 R15: ffffffff837704c0
+FS:  000055557774b3c0(0000) GS:ffff888062900000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: 00007ffefb423f88 CR3: 000000003159c000 CR4: 0000000000350ef0
+----------------
+Code disassembly (best guess):
+   0:	89 c3                	mov    %eax,%ebx
+   2:	89 c6                	mov    %eax,%esi
+   4:	e8 43 2a 41 fe       	call   0xfe412a4c
+   9:	85 db                	test   %ebx,%ebx
+   b:	75 64                	jne    0x71
+   d:	e8 4a 2f 41 fe       	call   0xfe412f5c
+  12:	48 8d bd b0 02 00 00 	lea    0x2b0(%rbp),%rdi
+  19:	48 b8 00 00 00 00 00 	movabs $0xdffffc0000000000,%rax
+  20:	fc ff df
+  23:	48 89 fa             	mov    %rdi,%rdx
+  26:	48 c1 ea 03          	shr    $0x3,%rdx
+* 2a:	80 3c 02 00          	cmpb   $0x0,(%rdx,%rax,1) <-- trapping instruction
+  2e:	0f 85 1f 01 00 00    	jne    0x153
+  34:	4c 89 f6             	mov    %r14,%rsi
+  37:	bf 03 00 00 00       	mov    $0x3,%edi
+  3c:	4c                   	rex.WR
+  3d:	8b                   	.byte 0x8b
+  3e:	a5                   	movsl  %ds:(%rsi),%es:(%rdi)
+  3f:	b0                   	.byte 0xb0
