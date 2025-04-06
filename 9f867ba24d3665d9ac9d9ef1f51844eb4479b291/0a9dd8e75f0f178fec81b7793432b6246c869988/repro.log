@@ -1,0 +1,2027 @@
+hefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  210.692190][T36324] Node 1 DMA32: 2*4kB (UM) 0*8kB 1*16kB (U) 2*32kB (ME) 2*64kB (ME) 2*128kB (ME) 2*256kB (UM) 
+[  210.693662][T36367] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  210.695783][T36324] 2*512kB (UE) 2*1024kB (UM) 2*2048kB (UE) 198*4096kB (M) = 819160kB
+[  210.696837][T36324] Node 1 Normal: 18*4kB (UME) 36*8kB (UME) 18*16kB (UME) 17*32kB (UM) 43*64kB (UME) 35*128kB (UME) 12*256kB (UM) 8*512kB (ME) 7*1024kB (UM) 4*2048kB (UME) 2*4096kB (UM) = 39144kB
+[  210.699212][T36324] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[  210.700726][T36324] Node 0 hugepages_total=2 hugepages_free=2 hugepages_surp=0 hugepages_size=2048kB
+[  210.700914][T36470] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  210.701809][T36324] Node 1 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[  210.703193][T36470] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  210.703301][T36452] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  210.703393][T36471] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  210.703458][T36452] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  210.703533][T36471] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  210.704168][T36324] Node 1 hugepages_total=2 hugepages_free=2 hugepages_surp=0 hugepages_size=2048kB
+[  210.710401][T36324] 101507 total pagecache pages
+[  210.710975][T36324] 86 pages in swap cache
+[  210.711508][T36324] Free swap  = 117112kB
+[  210.712013][T36324] Total swap = 124996kB
+[  210.712562][T36324] 1048446 pages RAM
+[  210.713040][T36324] 0 pages HighMem/MovableOnly
+[  210.713921][T36324] 281552 pages reserved
+[  210.714563][T36324] 0 pages cma reserved
+[  210.717438][T36324] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  210.720155][T36439] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  210.747165][T35503] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  210.748155][T35503] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  210.760613][T36432] bcachefs (loop10): accounting_read...
+[  210.765177][T36383] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  210.767372][T36383] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  210.778016][T36454] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  210.780066][T36454] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  210.793044][T36473] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  210.794487][T36473] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  210.797960][T36374] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  210.799382][T36374] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  210.810102][T36432]  done
+[  210.810509][T36432] bcachefs (loop10): alloc_read... done
+[  210.811370][T36432] bcachefs (loop10): snapshots_read... done
+[  210.812173][T36432] bcachefs (loop10): check_allocations...
+[  210.827606][T36432] bcachefs (loop10): btree ptr not marked in member info btree allocated bitmap
+[  210.827634][T36432]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a64f6cc698df3452 written 48 min_key POS_MIN durability: 1 ptr: 0:26:0 gen 0, fixing
+[  210.845325][T36432] bcachefs (loop10): btree ptr not marked in member info btree allocated bitmap
+[  210.845353][T36432]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a4a08c15958b7fc8 written 24 min_key POS_MIN durability: 1 ptr: 0:38:0 gen 0, fixing
+[  210.850498][T36378] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  210.850614][T36378] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  210.864311][T36432] bcachefs (loop10): btree ptr not marked in member info btree allocated bitmap
+[  210.864335][T36432]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 68ba4c6599367 written 24 min_key POS_MIN durability: 1 ptr: 0:41:0 gen 0, fixing
+[  210.864490][T36324] bcachefs: bch2_fs_get_tree() error: ENOMEM_journal_pin_fifo
+[  210.882801][T36432] bcachefs (loop10): btree ptr not marked in member info btree allocated bitmap
+[  210.882827][T36432]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a6f3a05050194d82 written 16 min_key POS_MIN durability: 1 ptr: 0:35:0 gen 0, fixing
+[  210.962489][T36432] bcachefs (loop10): btree ptr not marked in member info btree allocated bitmap
+[  210.962516][T36432]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq b2fb6fcebb2a2f51 written 16 min_key POS_MIN durability: 1 ptr: 0:32:0 gen 0, fixing
+[  210.982255][T36383] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  210.985334][T36432] bcachefs (loop10): btree ptr not marked in member info btree allocated bitmap
+[  210.985361][T36432]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 7fd83409d5b7165 written 48 min_key POS_MIN durability: 1 ptr: 0:29:0 gen 0, fixing
+[  210.994597][T36473] bcachefs: bch2_fs_get_tree() error: EINVAL
+2025/04/05 23:32:24 executed programs: 107
+[  211.050198][T36432]  done
+[  211.054364][T36432] bcachefs (loop10): going read-write
+[  211.069871][T36367] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  211.079517][T36432] bcachefs (loop10): bch2_journal_reclaim_start(): error creating journal reclaim thread EINTR
+[  211.080792][T36432] bcachefs (loop10): flushing journal and stopping allocators, journal seq 15
+[  211.081961][T36432] bcachefs (loop10): flushing journal and stopping allocators complete, journal seq 15
+[  211.085730][T36454] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  211.091838][T36432] bcachefs (loop10): unclean shutdown complete, journal seq 16
+[  211.109984][T36471] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  211.131191][T36556] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  211.132396][T36556] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  211.160444][T36058] bcachefs: bch2_fs_get_tree() error: EINTR
+[  211.190672][T36432] bcachefs (loop10): bch2_fs_recovery(): error EINTR
+[  211.191531][T36432] bcachefs (loop10): bch2_fs_start(): error starting filesystem EINTR
+[  211.192489][T36432] bcachefs (loop10): shutting down
+[  211.214668][T36428] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  211.220394][T35503] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  211.221374][T35503] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  211.224758][T36345] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  211.232030][T36420] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  211.275004][T36280] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  211.295374][T36410] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  211.301940][T36455] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  211.342402][T36374] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  211.379959][T36439] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  211.390044][T36470] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  211.402211][T36378] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  211.438365][T36605] loop11: detected capacity change from 0 to 32768
+[  211.460543][T36452] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  211.466370][T36473] fuse: Bad value for 'fd'
+[  211.509056][T36432] bcachefs (loop10): shutdown complete
+[  211.635123][T36682] loop9: detected capacity change from 0 to 32768
+[  211.636857][T36682] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  211.698618][   T97] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  211.719012][   T97] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  211.851083][T35603] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  211.852039][T35603] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  211.968499][T35503] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  211.969688][T35503] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  212.222955][T36714] loop21: detected capacity change from 0 to 32768
+[  212.224606][T36714] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  212.346785][T36748] loop3: detected capacity change from 0 to 32768
+[  212.370196][T36748] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  212.414275][T36733] loop19: detected capacity change from 0 to 32768
+[  212.415951][T36733] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  212.478247][T36757] loop8: detected capacity change from 0 to 32768
+[  212.480712][T36757] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  212.589133][T36754] loop4: detected capacity change from 0 to 32768
+[  212.596646][T36754] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  212.597221][T36760] loop0: detected capacity change from 0 to 32768
+[  212.608966][T36761] loop13: detected capacity change from 0 to 32768
+[  212.609553][T36760] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  212.610681][T36761] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  212.647167][T36735] loop22: detected capacity change from 0 to 32768
+[  212.648797][T36735] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  212.671479][T36556] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  212.681453][T36739] loop18: detected capacity change from 0 to 32768
+[  212.683073][T36739] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  212.739744][T36763] loop23: detected capacity change from 0 to 32768
+[  212.741408][T36763] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  212.747181][T36773] loop1: detected capacity change from 0 to 32768
+[  212.748945][T36773] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  212.751337][T36780] loop16: detected capacity change from 0 to 32768
+[  212.752924][T36780] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  212.772218][T36767] loop12: detected capacity change from 0 to 32768
+[  212.773869][T36767] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  212.811369][T36771] loop2: detected capacity change from 0 to 32768
+[  212.813038][T36771] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  212.826295][T36772] loop5: detected capacity change from 0 to 32768
+[  212.828144][T36772] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  212.991394][T36777] loop17: detected capacity change from 0 to 32768
+[  212.993072][T36777] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  213.011025][T36782] loop6: detected capacity change from 0 to 32768
+[  213.012665][T36782] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  213.087902][T36784] loop7: detected capacity change from 0 to 32768
+[  213.102117][T36784] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  213.137031][T36791] loop9: detected capacity change from 0 to 32768
+[  213.343587][T36797] loop15: detected capacity change from 0 to 32768
+[  213.345258][T36797] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  213.411484][T36801] loop14: detected capacity change from 0 to 32768
+[  213.413181][T36801] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  213.647217][T36714] loop21: detected capacity change from 0 to 32768
+[  213.650300][T36748] loop3: detected capacity change from 0 to 32768
+[  213.652627][T36857] loop0: detected capacity change from 0 to 32768
+[  213.665082][ T1391] ieee802154 phy0 wpan0: encryption failed: -22
+[  213.666327][ T1391] ieee802154 phy1 wpan1: encryption failed: -22
+[  213.676189][T36833] loop8: detected capacity change from 0 to 32768
+[  213.785434][T36880] loop22: detected capacity change from 0 to 32768
+[  213.814522][T36879] loop5: detected capacity change from 0 to 32768
+[  213.835354][T36847] loop19: detected capacity change from 0 to 32768
+[  213.850343][T36878] loop20: detected capacity change from 0 to 32768
+[  213.852137][T36878] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  213.919842][T36870] loop13: detected capacity change from 0 to 32768
+[  213.977750][T36739] loop18: detected capacity change from 0 to 32768
+[  213.991945][T36842] loop1: detected capacity change from 0 to 32768
+[  214.030778][T36903] loop17: detected capacity change from 0 to 32768
+[  214.043986][T36896] loop6: detected capacity change from 0 to 32768
+[  214.081257][T36791] workqueue: Failed to create a rescuer kthread for wq "bcachefs_journal": -EINTR
+[  214.092048][T36858] loop4: detected capacity change from 0 to 32768
+[  214.100581][T36791] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  214.102336][T36605] bcachefs (loop11): starting version 1.7: mi_btree_bitmap opts=compression=lz4,nojournal_transaction_names
+[  214.103993][T36605] bcachefs (loop11): recovering from clean shutdown, journal seq 15
+[  214.109671][T36605] bcachefs (loop11): Doing compatible version upgrade from 1.7: mi_btree_bitmap to 1.25: extent_flags
+[  214.109671][T36605]   running recovery passes: check_allocations,check_extents_to_backpointers,check_inodes
+[  214.110547][T36780] loop16: detected capacity change from 0 to 32768
+[  214.133419][T36767] loop12: detected capacity change from 0 to 32768
+[  214.138383][T36857] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  214.140592][T36748] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  214.140599][T36857] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  214.143295][T36748] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  214.166822][T36605] bcachefs (loop11): accounting_read...
+[  214.187232][T36882] loop2: detected capacity change from 0 to 32768
+[  214.191173][T36833] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  214.192115][T36605]  done
+[  214.192387][T36833] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  214.192677][T36605] bcachefs (loop11): alloc_read... done
+[  214.193969][T36797] loop15: detected capacity change from 0 to 32768
+[  214.195163][T36605] bcachefs (loop11): snapshots_read... done
+[  214.198253][T36891] loop23: detected capacity change from 0 to 32768
+[  214.205057][T36605] bcachefs (loop11): check_allocations...
+[  214.207412][T36605] bcachefs (loop11): btree ptr not marked in member info btree allocated bitmap
+[  214.207438][T36605]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a64f6cc698df3452 written 48 min_key POS_MIN durability: 1 ptr: 0:26:0 gen 0, fixing
+[  214.221170][T36605] bcachefs (loop11): btree ptr not marked in member info btree allocated bitmap
+[  214.221197][T36605]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a4a08c15958b7fc8 written 24 min_key POS_MIN durability: 1 ptr: 0:38:0 gen 0, fixing
+[  214.225523][T36880] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  214.225636][T36880] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  214.245882][T36906] loop7: detected capacity change from 0 to 32768
+[  214.248982][T36714] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  214.248979][T36605] bcachefs (loop11): btree ptr not marked in member info btree allocated bitmap
+[  214.249057][T36605]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 68ba4c6599367 written 24 min_key POS_MIN durability: 1 ptr: 0:41:0 gen 0, fixing
+[  214.249101][T36714] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  214.260940][T36605] bcachefs (loop11): btree ptr not marked in member info btree allocated bitmap
+[  214.260966][T36605]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a6f3a05050194d82 written 16 min_key POS_MIN durability: 1 ptr: 0:35:0 gen 0, fixing
+[  214.283350][T36605] bcachefs (loop11): btree ptr not marked in member info btree allocated bitmap
+[  214.283374][T36605]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq b2fb6fcebb2a2f51 written 16 min_key POS_MIN durability: 1 ptr: 0:32:0 gen 0, fixing
+[  214.291513][T36605] bcachefs (loop11): btree ptr not marked in member info btree allocated bitmap
+[  214.291536][T36605]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 7fd83409d5b7165 written 48 min_key POS_MIN durability: 1 ptr: 0:29:0 gen 0, fixing
+[  214.323764][T36605]  done
+[  214.333811][T36605] bcachefs (loop11): going read-write
+[  214.338382][T36605] bcachefs (loop11): bch2_journal_reclaim_start(): error creating journal reclaim thread EINTR
+[  214.342528][T36605] bcachefs (loop11): flushing journal and stopping allocators, journal seq 15
+[  214.343959][T36605] bcachefs (loop11): flushing journal and stopping allocators complete, journal seq 15
+[  214.354181][T36605] bcachefs (loop11): unclean shutdown complete, journal seq 16
+[  214.396236][T36791] bcachefs: bch2_fs_get_tree() error: ENOMEM_fs_other_alloc
+[  214.409388][T36605] bcachefs (loop11): bch2_fs_recovery(): error EINTR
+[  214.410340][T36605] bcachefs (loop11): bch2_fs_start(): error starting filesystem EINTR
+[  214.411299][T36605] bcachefs (loop11): shutting down
+[  214.444469][T36847] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  214.445690][T36847] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  214.467620][T36879] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  214.468876][T36879] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  214.481252][T36964] loop20: detected capacity change from 0 to 32768
+[  214.518054][T36801] loop14: detected capacity change from 0 to 32768
+[  214.518315][T36714] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  214.527849][T36432] bcachefs: bch2_fs_get_tree() error: EINTR
+[  214.542689][T36605] bcachefs (loop11): shutdown complete
+[  214.651802][T36739] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  214.689408][T36748] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  214.720527][T36858] workqueue: Failed to create a rescuer kthread for wq "bcachefs_journal": -EINTR
+[  214.720659][T36858] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  214.747502][T36857] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  214.999594][T37067] loop9: detected capacity change from 0 to 32768
+[  215.001238][T37067] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  215.004499][T37066] loop21: detected capacity change from 0 to 32768
+[  215.006363][T37066] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  215.011692][T37073] loop10: detected capacity change from 0 to 32768
+[  215.013310][T37073] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  215.174568][T36896] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  215.204781][T36896] bcachefs: bch2_fs_get_tree() error: ENOMEM_journal_pin_fifo
+[  215.207319][T36880] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  215.248903][T37085] loop3: detected capacity change from 0 to 32768
+[  215.251968][T37085] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  215.275154][T36906] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  215.275545][T36842] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  215.277332][T36842] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  215.278758][T36767] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  215.281266][T36882] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  215.284638][T36903] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  215.285812][T36903] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  215.298723][T36797] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  215.299934][T36797] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  215.302016][T36870] bcachefs (loop13): starting version 1.7: mi_btree_bitmap opts=compression=lz4,nojournal_transaction_names
+[  215.302214][T37087] loop0: detected capacity change from 0 to 32768
+[  215.304170][T36870] bcachefs (loop13): recovering from clean shutdown, journal seq 15
+[  215.305366][T37087] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  215.305753][T36870] bcachefs (loop13): Doing compatible version upgrade from 1.7: mi_btree_bitmap to 1.25: extent_flags
+[  215.305753][T36870]   running recovery passes: check_allocations,check_extents_to_backpointers,check_inodes
+[  215.310395][T36891] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  215.311575][T36891] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  215.315813][T36833] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  215.321262][T36780] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  215.321509][T36858] bcachefs: bch2_fs_get_tree() error: ENOMEM_fs_other_alloc
+[  215.338851][T36906] bcachefs: bch2_fs_get_tree() error: ENOMEM_journal_pin_fifo
+[  215.355498][T36739] bcachefs: bch2_fs_get_tree() error: ENOMEM
+[  215.360809][T36767] bcachefs: bch2_fs_get_tree() error: ENOMEM_journal_pin_fifo
+[  215.363260][T36879] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  215.363752][T36847] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  215.364926][T36882] bcachefs: bch2_fs_get_tree() error: ENOMEM_journal_pin_fifo
+[  215.367941][T36780] bcachefs: bch2_fs_get_tree() error: ENOMEM_journal_pin_fifo
+[  215.399915][T36801] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  215.401123][T36801] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  215.406820][T36870] bcachefs (loop13): accounting_read...
+[  215.457101][T37066] loop21: detected capacity change from 0 to 32768
+[  215.485131][T36964] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  215.495380][T36964] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  215.554240][T36870]  done
+[  215.554626][T36870] bcachefs (loop13): alloc_read... done
+[  215.555364][T36870] bcachefs (loop13): snapshots_read... done
+[  215.556175][T36870] bcachefs (loop13): check_allocations...
+[  215.582270][T36870] bcachefs (loop13): btree ptr not marked in member info btree allocated bitmap
+[  215.582300][T36870]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a64f6cc698df3452 written 48 min_key POS_MIN durability: 1 ptr: 0:26:0 gen 0, fixing
+[  215.621186][T36870] bcachefs (loop13): btree ptr not marked in member info btree allocated bitmap
+[  215.621212][T36870]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a4a08c15958b7fc8 written 24 min_key POS_MIN durability: 1 ptr: 0:38:0 gen 0, fixing
+[  215.628139][T36870] bcachefs (loop13): btree ptr not marked in member info btree allocated bitmap
+[  215.628162][T36870]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 68ba4c6599367 written 24 min_key POS_MIN durability: 1 ptr: 0:41:0 gen 0, fixing
+[  215.641676][T36870] bcachefs (loop13): btree ptr not marked in member info btree allocated bitmap
+[  215.641700][T36870]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a6f3a05050194d82 written 16 min_key POS_MIN durability: 1 ptr: 0:35:0 gen 0, fixing
+[  215.656395][T36870] bcachefs (loop13): btree ptr not marked in member info btree allocated bitmap
+[  215.656419][T36870]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq b2fb6fcebb2a2f51 written 16 min_key POS_MIN durability: 1 ptr: 0:32:0 gen 0, fixing
+[  215.663537][T36870] bcachefs (loop13): btree ptr not marked in member info btree allocated bitmap
+[  215.663560][T36870]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 7fd83409d5b7165 written 48 min_key POS_MIN durability: 1 ptr: 0:29:0 gen 0, fixing
+[  215.685477][T36870]  done
+[  215.696161][T36870] bcachefs (loop13): going read-write
+[  215.706932][T37103] loop9: detected capacity change from 0 to 32768
+[  215.708239][T36870] bcachefs (loop13): bch2_journal_reclaim_start(): error creating journal reclaim thread EINTR
+[  215.709743][T36870] bcachefs (loop13): flushing journal and stopping allocators, journal seq 15
+[  215.710938][T36870] bcachefs (loop13): flushing journal and stopping allocators complete, journal seq 15
+[  215.720016][T36891] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  215.723024][T36870] bcachefs (loop13): unclean shutdown complete, journal seq 16
+[  215.750107][T36842] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  215.759888][T36797] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  215.776263][T37066] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  215.777426][T37066] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  215.789892][T36801] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  215.819213][T36903] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  215.863132][T36870] bcachefs (loop13): bch2_fs_recovery(): error EINTR
+[  215.864001][T36870] bcachefs (loop13): bch2_fs_start(): error starting filesystem EINTR
+[  215.864079][T36964] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  215.864933][T36870] bcachefs (loop13): shutting down
+[  215.945904][T37103] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  215.947131][T37103] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  216.005090][T36878] fuse: Bad value for 'fd'
+[  216.029899][T36605] bcachefs: bch2_fs_get_tree() error: EINTR
+[  216.102217][T36870] bcachefs (loop13): shutdown complete
+2025/04/05 23:32:29 executed programs: 150
+[  216.470853][T37112] loop10: detected capacity change from 0 to 32768
+[  216.492574][T37164] loop2: detected capacity change from 0 to 32768
+[  216.500809][T37164] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  216.575138][T37141] loop0: detected capacity change from 0 to 32768
+[  216.672454][T37209] loop14: detected capacity change from 0 to 32768
+[  216.674130][T37209] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  216.772934][T37173] loop7: detected capacity change from 0 to 32768
+[  216.774580][T37173] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  216.780618][T37168] loop6: detected capacity change from 0 to 32768
+[  216.781317][T37184] loop1: detected capacity change from 0 to 32768
+[  216.782256][T37168] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  216.783341][T37184] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  216.793491][T37193] loop20: detected capacity change from 0 to 32768
+[  216.795447][T37193] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  216.806771][T37201] loop22: detected capacity change from 0 to 32768
+[  216.808409][T37201] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  216.819840][T37182] loop12: detected capacity change from 0 to 32768
+[  216.821903][T37182] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  216.976239][T37195] loop16: detected capacity change from 0 to 32768
+[  216.977901][T37195] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  216.978131][T37085] loop3: detected capacity change from 0 to 32768
+[  216.979576][T37199] loop8: detected capacity change from 0 to 32768
+[  216.981377][T37199] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  217.051255][T37185] loop4: detected capacity change from 0 to 32768
+[  217.052920][T37185] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  217.052938][T37190] loop19: detected capacity change from 0 to 32768
+[  217.055626][T37190] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  217.126998][T37221] loop11: detected capacity change from 0 to 32768
+[  217.128856][T37221] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  217.163405][T37220] loop17: detected capacity change from 0 to 32768
+[  217.181825][T37220] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  217.186393][T37066] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  217.238645][T37214] loop15: detected capacity change from 0 to 32768
+[  217.250949][T37214] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  217.275071][T37103] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  217.283380][T37212] loop23: detected capacity change from 0 to 32768
+[  217.296551][T37212] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  217.317829][T37205] loop5: detected capacity change from 0 to 32768
+[  217.341190][T37205] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  217.487795][T37209] loop14: detected capacity change from 0 to 32768
+[  217.655958][T37164] loop2: detected capacity change from 0 to 32768
+[  217.660242][T37207] loop18: detected capacity change from 0 to 32768
+[  217.662735][T37207] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  217.752359][T37274] loop22: detected capacity change from 0 to 32768
+[  217.753376][T37293] loop20: detected capacity change from 0 to 32768
+[  217.758328][T37289] loop7: detected capacity change from 0 to 32768
+[  217.796075][T37291] loop16: detected capacity change from 0 to 32768
+[  217.901801][T37312] loop12: detected capacity change from 0 to 32768
+[  217.942305][T37321] loop11: detected capacity change from 0 to 32768
+[  217.960989][T37288] loop6: detected capacity change from 0 to 32768
+[  217.995578][T37337] loop23: detected capacity change from 0 to 32768
+[  218.078580][T37280] loop8: detected capacity change from 0 to 32768
+[  218.114987][T37205] loop5: detected capacity change from 0 to 32768
+[  218.165545][T37313] loop15: detected capacity change from 0 to 32768
+[  218.197165][T37354] loop21: detected capacity change from 0 to 32768
+[  218.198799][T37354] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  218.201965][T37220] loop17: detected capacity change from 0 to 32768
+[  218.218272][T37302] loop1: detected capacity change from 0 to 32768
+[  218.225721][T37318] loop19: detected capacity change from 0 to 32768
+[  218.341983][T37332] loop4: detected capacity change from 0 to 32768
+[  218.432661][T37390] loop18: detected capacity change from 0 to 32768
+[  218.440291][T37356] loop9: detected capacity change from 0 to 32768
+[  218.441838][T37356] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  218.613666][T37354] loop21: detected capacity change from 0 to 32768
+[  218.648213][T37112] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  218.649503][T37112] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  218.652767][T37141] bcachefs (loop0): starting version 1.7: mi_btree_bitmap opts=compression=lz4,nojournal_transaction_names
+[  218.654281][T37141] bcachefs (loop0): recovering from clean shutdown, journal seq 15
+[  218.655384][T37141] bcachefs (loop0): Doing compatible version upgrade from 1.7: mi_btree_bitmap to 1.25: extent_flags
+[  218.655384][T37141]   running recovery passes: check_allocations,check_extents_to_backpointers,check_inodes
+[  218.677601][T37141] bcachefs (loop0): accounting_read...
+[  218.690878][T37085] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  218.692805][T37085] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  218.698587][T37141]  done
+[  218.698971][T37141] bcachefs (loop0): alloc_read... done
+[  218.707428][T37141] bcachefs (loop0): snapshots_read... done
+[  218.708209][T37141] bcachefs (loop0): check_allocations...
+[  218.714406][T37293] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  218.716233][T37141] bcachefs (loop0): btree ptr not marked in member info btree allocated bitmap
+[  218.716256][T37141]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a64f6cc698df3452 written 48 min_key POS_MIN durability: 1 ptr: 0:26:0 gen 0, fixing
+[  218.719877][T37293] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  218.724801][T37141] bcachefs (loop0): btree ptr not marked in member info btree allocated bitmap
+[  218.724828][T37141]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a4a08c15958b7fc8 written 24 min_key POS_MIN durability: 1 ptr: 0:38:0 gen 0, fixing
+[  218.729059][T37141] bcachefs (loop0): btree ptr not marked in member info btree allocated bitmap
+[  218.729081][T37141]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 68ba4c6599367 written 24 min_key POS_MIN durability: 1 ptr: 0:41:0 gen 0, fixing
+[  218.732118][T37209] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  218.733331][T37209] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  218.734322][T37141] bcachefs (loop0): btree ptr not marked in member info btree allocated bitmap
+[  218.734346][T37141]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a6f3a05050194d82 written 16 min_key POS_MIN durability: 1 ptr: 0:35:0 gen 0, fixing
+[  218.738479][T37141] bcachefs (loop0): btree ptr not marked in member info btree allocated bitmap
+[  218.738501][T37141]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq b2fb6fcebb2a2f51 written 16 min_key POS_MIN durability: 1 ptr: 0:32:0 gen 0, fixing
+[  218.742908][T37141] bcachefs (loop0): btree ptr not marked in member info btree allocated bitmap
+[  218.742931][T37141]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 7fd83409d5b7165 written 48 min_key POS_MIN durability: 1 ptr: 0:29:0 gen 0, fixing
+[  218.753426][T37164] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  218.754627][T37164] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  218.759225][T37141]  done
+[  218.790379][T37141] bcachefs (loop0): going read-write
+[  218.792124][T37141] bcachefs (loop0): bch2_journal_reclaim_start(): error creating journal reclaim thread EINTR
+[  218.793336][T37141] bcachefs (loop0): flushing journal and stopping allocators, journal seq 15
+[  218.794569][T37141] bcachefs (loop0): flushing journal and stopping allocators complete, journal seq 15
+[  218.804198][T37141] bcachefs (loop0): unclean shutdown complete, journal seq 16
+[  218.861469][T37141] bcachefs (loop0): bch2_fs_recovery(): error EINTR
+[  218.862412][T37141] bcachefs (loop0): bch2_fs_start(): error starting filesystem EINTR
+[  218.863365][T37141] bcachefs (loop0): shutting down
+[  218.883283][T37274] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  218.884491][T37274] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  218.900317][T37289] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  218.907609][T37390] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  218.913365][T37390] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  218.916241][T37313] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  218.917462][T37313] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  218.929197][T37291] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  218.930920][T37291] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  218.934996][T37356] loop9: detected capacity change from 0 to 32768
+[  218.951562][T37321] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  218.952769][T37321] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  218.982262][T37302] workqueue: Failed to create a rescuer kthread for wq "btree_update": -EINTR
+[  218.984222][T37288] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  218.994563][T37312] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  219.025340][T37141] bcachefs (loop0): shutdown complete
+[  219.042753][T37280] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  219.045568][T37205] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  219.046720][T37220] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  219.046795][T37205] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  219.047931][T37220] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  219.058496][T37280] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  219.069795][T37302] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  219.069796][T36870] bcachefs: bch2_fs_get_tree() error: EINTR
+[  219.077962][T37337] bcachefs (loop23): starting version 1.7: mi_btree_bitmap opts=compression=lz4,nojournal_transaction_names
+[  219.078423][T37332] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  219.079972][T37337] bcachefs (loop23): recovering from clean shutdown, journal seq 15
+[  219.083819][T37337] bcachefs (loop23): Doing compatible version upgrade from 1.7: mi_btree_bitmap to 1.25: extent_flags
+[  219.083819][T37337]   running recovery passes: check_allocations,check_extents_to_backpointers,check_inodes
+[  219.089862][T37289] bcachefs: bch2_fs_get_tree() error: ENOMEM
+[  219.141293][T37318] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  219.147358][T37337] bcachefs (loop23): accounting_read...
+[  219.162727][T37164] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  219.170462][T37085] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  219.174404][T37274] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  219.202657][T37280] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  219.211482][T37337]  done
+[  219.211898][T37337] bcachefs (loop23): alloc_read... done
+[  219.212615][T37337] bcachefs (loop23): snapshots_read... done
+[  219.214303][T37337] bcachefs (loop23): check_allocations...
+[  219.214901][T37291] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  219.216473][T37337] bcachefs (loop23): btree ptr not marked in member info btree allocated bitmap
+[  219.216497][T37337]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a64f6cc698df3452 written 48 min_key POS_MIN durability: 1 ptr: 0:26:0 gen 0, fixing
+[  219.233616][T37354] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  219.233725][T37354] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  219.263561][T37390] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  219.269862][T37209] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  219.270903][T37356] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  219.272151][T37356] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  219.280716][T37220] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  219.308375][T37318] bcachefs: bch2_fs_get_tree() error: ENOMEM
+[  219.311126][T37337] bcachefs (loop23): btree ptr not marked in member info btree allocated bitmap
+[  219.311152][T37337]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a4a08c15958b7fc8 written 24 min_key POS_MIN durability: 1 ptr: 0:38:0 gen 0, fixing
+[  219.335465][T37337] bcachefs (loop23): btree ptr not marked in member info btree allocated bitmap
+[  219.335491][T37337]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 68ba4c6599367 written 24 min_key POS_MIN durability: 1 ptr: 0:41:0 gen 0, fixing
+[  219.370116][T37337] bcachefs (loop23): btree ptr not marked in member info btree allocated bitmap
+[  219.370143][T37337]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a6f3a05050194d82 written 16 min_key POS_MIN durability: 1 ptr: 0:35:0 gen 0, fixing
+[  219.370437][T37302] bcachefs: bch2_fs_get_tree() error: ENOMEM_btree_interior_update_worker_init
+[  219.405828][T37337] bcachefs (loop23): btree ptr not marked in member info btree allocated bitmap
+[  219.405854][T37337]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq b2fb6fcebb2a2f51 written 16 min_key POS_MIN durability: 1 ptr: 0:32:0 gen 0, fixing
+[  219.409228][T37332] bcachefs: bch2_fs_get_tree() error: ENOMEM
+[  219.421053][T37312] bcachefs: bch2_fs_get_tree() error: ENOMEM
+[  219.428455][T37288] bcachefs: bch2_fs_get_tree() error: ENOMEM
+[  219.429503][T37337] bcachefs (loop23): btree ptr not marked in member info btree allocated bitmap
+[  219.429526][T37337]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 7fd83409d5b7165 written 48 min_key POS_MIN durability: 1 ptr: 0:29:0 gen 0, fixing
+[  219.448083][T37337]  done
+[  219.504479][T37337] bcachefs (loop23): going read-write
+[  219.505381][T37112] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  219.506597][T37313] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  219.519625][T37337] bcachefs (loop23): bch2_journal_reclaim_start(): error creating journal reclaim thread EINTR
+[  219.520902][T37337] bcachefs (loop23): flushing journal and stopping allocators, journal seq 15
+[  219.522089][T37337] bcachefs (loop23): flushing journal and stopping allocators complete, journal seq 15
+[  219.546936][T37205] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  219.563388][T37337] bcachefs (loop23): unclean shutdown complete, journal seq 16
+[  219.617339][T37293] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  219.618743][T37321] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  219.640337][T37141] bcachefs: bch2_fs_get_tree() error: EINTR
+[  219.670326][T37337] bcachefs (loop23): bch2_fs_recovery(): error EINTR
+[  219.671159][T37337] bcachefs (loop23): bch2_fs_start(): error starting filesystem EINTR
+[  219.672125][T37337] bcachefs (loop23): shutting down
+[  219.711157][T37356] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  219.815215][T37354] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  220.020942][T37337] bcachefs (loop23): shutdown complete
+[  220.217693][T37356] fuse: Bad value for 'fd'
+[  220.286417][T37354] fuse: Bad value for 'fd'
+[  220.313422][T37563] loop13: detected capacity change from 0 to 32768
+[  220.325265][T37563] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  220.487417][T37560] loop3: detected capacity change from 0 to 32768
+[  220.489007][T37560] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  220.538593][T37578] loop16: detected capacity change from 0 to 32768
+[  220.568095][T37579] loop7: detected capacity change from 0 to 32768
+[  220.592456][T37578] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  220.600691][T37579] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  220.683135][T37585] loop1: detected capacity change from 0 to 32768
+[  220.684732][T37585] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  220.719335][T37590] loop22: detected capacity change from 0 to 32768
+[  220.721969][T37590] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  220.738630][T37610] loop6: detected capacity change from 0 to 32768
+[  220.760315][T37610] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  220.870700][T37594] loop8: detected capacity change from 0 to 32768
+[  220.872294][T37594] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  220.879901][T37608] loop14: detected capacity change from 0 to 32768
+[  220.881439][T37608] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  220.885766][T37604] loop18: detected capacity change from 0 to 32768
+[  220.887423][T37604] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  220.897409][T37606] loop17: detected capacity change from 0 to 32768
+[  220.898928][T37606] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  220.944324][T37616] loop15: detected capacity change from 0 to 32768
+[  220.945244][T37617] loop12: detected capacity change from 0 to 32768
+[  220.945921][T37616] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  220.946820][T37617] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  220.986207][T37614] loop5: detected capacity change from 0 to 32768
+[  220.987775][T37614] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  221.004306][T37603] loop2: detected capacity change from 0 to 32768
+[  221.006284][T37603] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  221.007578][T37621] loop0: detected capacity change from 0 to 32768
+[  221.009127][T37621] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  221.024394][T37602] loop19: detected capacity change from 0 to 32768
+[  221.026091][T37602] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  221.039875][T37607] loop4: detected capacity change from 0 to 32768
+[  221.041414][T37607] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  221.070944][T37623] loop10: detected capacity change from 0 to 32768
+[  221.074865][T37623] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  221.152216][T37632] loop21: detected capacity change from 0 to 32768
+[  221.153828][T37632] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  221.201817][T37627] loop20: detected capacity change from 0 to 32768
+[  221.203496][T37627] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  221.208434][T37628] loop9: detected capacity change from 0 to 32768
+[  221.211193][T37628] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  221.259347][T37622] loop11: detected capacity change from 0 to 32768
+[  221.261470][T37622] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  221.629139][T37651] loop13: detected capacity change from 0 to 32768
+[  221.825239][T37662] loop3: detected capacity change from 0 to 32768
+[  221.895840][T37712] loop12: detected capacity change from 0 to 32768
+[  221.947851][T37718] loop0: detected capacity change from 0 to 32768
+[  222.023660][T37686] loop7: detected capacity change from 0 to 32768
+[  222.024936][T37733] loop5: detected capacity change from 0 to 32768
+[  222.034106][T37578] loop16: detected capacity change from 0 to 32768
+[  222.073684][T37688] loop1: detected capacity change from 0 to 32768
+[  222.098917][T37687] loop22: detected capacity change from 0 to 32768
+[  222.158150][T37708] loop8: detected capacity change from 0 to 32768
+[  222.240519][T37608] loop14: detected capacity change from 0 to 32768
+[  222.242203][T37754] loop11: detected capacity change from 0 to 32768
+[  222.267072][T37693] loop6: detected capacity change from 0 to 32768
+[  222.269958][T37717] loop15: detected capacity change from 0 to 32768
+[  222.278632][T37743] loop9: detected capacity change from 0 to 32768
+[  222.279825][T37720] loop17: detected capacity change from 0 to 32768
+[  222.294690][T37721] loop4: detected capacity change from 0 to 32768
+[  222.298708][T37719] loop18: detected capacity change from 0 to 32768
+[  222.322830][T37736] loop19: detected capacity change from 0 to 32768
+[  222.350560][T37746] loop21: detected capacity change from 0 to 32768
+[  222.364766][T37729] loop2: detected capacity change from 0 to 32768
+[  222.370978][T37737] loop10: detected capacity change from 0 to 32768
+[  222.419409][T37749] loop20: detected capacity change from 0 to 32768
+[  222.499873][T37662] warn_alloc: 22 callbacks suppressed
+[  222.499897][T37662] syz.3.123: vmalloc error: size 8388608, failed to allocated page array size 16384, mode:0xcc2(GFP_KERNEL|__GFP_HIGHMEM), nodemask=(null),cpuset=/,mems_allowed=0-1
+[  222.502554][T37662] CPU: 7 UID: 0 PID: 37662 Comm: syz.3.123 Not tainted 6.14.0-13408-g9f867ba24d36 #1 PREEMPT(full) 
+[  222.502592][T37662] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  222.502610][T37662] Call Trace:
+[  222.502620][T37662]  <TASK>
+[  222.502630][T37662]  dump_stack_lvl+0x180/0x1b0
+[  222.502675][T37662]  warn_alloc+0x211/0x360
+[  222.502716][T37662]  ? __pfx_warn_alloc+0x10/0x10
+[  222.502769][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.502811][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.502853][T37662]  ? __get_vm_area_node+0x1e0/0x300
+[  222.502913][T37662]  __vmalloc_node_range_noprof+0x10a1/0x1460
+[  222.502960][T37662]  ? bch2_fs_journal_init+0x330/0x650
+[  222.503021][T37662]  ? lockdep_hardirqs_on+0x7c/0x110
+[  222.503057][T37662]  ? __pfx___vmalloc_node_range_noprof+0x10/0x10
+[  222.503092][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.503133][T37662]  ? __alloc_pages_noprof+0xc/0x1b0
+[  222.503169][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.503214][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.503262][T37662]  __kvmalloc_node_noprof+0x2f1/0x600
+[  222.503299][T37662]  ? bch2_fs_journal_init+0x330/0x650
+[  222.503338][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.503379][T37662]  ? lockdep_init_map_type+0x4b/0x280
+[  222.503414][T37662]  ? bch2_fs_journal_init+0x330/0x650
+[  222.503455][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.503505][T37662]  ? bch2_fs_journal_init+0x330/0x650
+[  222.503544][T37662]  bch2_fs_journal_init+0x330/0x650
+[  222.503591][T37662]  bch2_fs_alloc+0x17c6/0x2430
+[  222.503654][T37662]  ? __pfx_bch2_fs_alloc+0x10/0x10
+[  222.503701][T37662]  ? get_freelist+0x195/0x1d0
+[  222.503771][T37662]  ? __bch2_darray_resize_noprof+0xf8/0x280
+[  222.503841][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.503888][T37662]  bch2_fs_open+0x92c/0x1110
+[  222.503966][T37662]  ? __lock_acquire+0xa76/0x1a70
+[  222.504004][T37662]  ? __pfx_bch2_fs_open+0x10/0x10
+[  222.504062][T37662]  ? sget+0x263/0x710
+[  222.504091][T37662]  ? bch2_fs_get_tree+0x409/0x1770
+[  222.504137][T37662]  ? vfs_get_tree+0x93/0x340
+[  222.504184][T37662]  ? path_mount+0x6b0/0x1eb0
+[  222.504224][T37662]  ? __x64_sys_mount+0x27b/0x300
+[  222.504289][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.504332][T37662]  ? debug_check_no_obj_freed+0x2a6/0x520
+[  222.504391][T37662]  ? kasan_quarantine_put+0x10d/0x230
+[  222.504428][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.504468][T37662]  ? lockdep_hardirqs_on+0x7c/0x110
+[  222.504504][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.504552][T37662]  bch2_fs_get_tree+0x10d0/0x1770
+[  222.504631][T37662]  ? __pfx_bch2_fs_get_tree+0x10/0x10
+[  222.504679][T37662]  ? avc_has_perm_noaudit+0x11b/0x3c0
+[  222.504720][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.504783][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.504830][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.504874][T37662]  ? trace_cap_capable+0x18d/0x200
+[  222.504931][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.504972][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.505023][T37662]  ? security_capable+0x210/0x250
+[  222.505074][T37662]  vfs_get_tree+0x93/0x340
+[  222.505126][T37662]  path_mount+0x6b0/0x1eb0
+[  222.505170][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.505211][T37662]  ? kmem_cache_free+0x14b/0x4d0
+[  222.505246][T37662]  ? __pfx_path_mount+0x10/0x10
+[  222.505293][T37662]  ? srso_return_thunk+0x5/0x5f
+[  222.505334][T37662]  ? putname.part.0+0x11b/0x160
+[  222.505386][T37662]  __x64_sys_mount+0x27b/0x300
+[  222.505430][T37662]  ? __pfx___x64_sys_mount+0x10/0x10
+[  222.505486][T37662]  do_syscall_64+0xcb/0x250
+[  222.505528][T37662]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  222.505560][T37662] RIP: 0033:0x7ff84639fdfe
+[  222.505583][T37662] Code: 48 c7 c0 ff ff ff ff eb aa e8 5e 20 00 00 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 f3 0f 1e fa 49 89 ca b8 a5 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  222.505613][T37662] RSP: 002b:00007ff847194da8 EFLAGS: 00000246 ORIG_RAX: 00000000000000a5
+[  222.505640][T37662] RAX: ffffffffffffffda RBX: 000000000000fe88 RCX: 00007ff84639fdfe
+[  222.505661][T37662] RDX: 000000002000fec0 RSI: 000000002000ff00 RDI: 00007ff847194e00
+[  222.505680][T37662] RBP: 00007ff847194e40 R08: 00007ff847194e40 R09: 0000000000000000
+[  222.505699][T37662] R10: 0000000000000000 R11: 0000000000000246 R12: 000000002000fec0
+[  222.505718][T37662] R13: 000000002000ff00 R14: 00007ff847194e00 R15: 000000002000ff40
+[  222.505759][T37662]  </TASK>
+[  222.505783][T37662] Mem-Info:
+[  222.553947][T37662] active_anon:131531 inactive_anon:19720 isolated_anon:0
+[  222.553947][T37662]  active_file:13679 inactive_file:4594 isolated_file:0
+[  222.553947][T37662]  unevictable:1536 dirty:1979 writeback:1
+[  222.553947][T37662]  slab_reclaimable:15000 slab_unreclaimable:155373
+[  222.553947][T37662]  mapped:14486 shmem:99886 pagetables:2083
+[  222.553947][T37662]  sec_pagetables:0 bounce:0
+[  222.553947][T37662]  kernel_misc_reclaimable:0
+[  222.553947][T37662]  free:299300 free_pcp:11857 free_cma:0
+[  222.559040][T37662] Node 0 active_anon:204024kB inactive_anon:78880kB active_file:47908kB inactive_file:16160kB unevictable:3072kB isolated(anon):0kB isolated(file):0kB mapped:55336kB dirty:5692kB writeback:4kB shmem:89872kB shmem_thp:0kB shmem_pmdmapped:0kB anon_thp:0kB writeback_tmp:0kB kernel_stack:17256kB pagetables:7480kB sec_pagetables:0kB all_unreclaimable? no Balloon:0kB
+[  222.562972][T37662] Node 1 active_anon:322100kB inactive_anon:0kB active_file:6808kB inactive_file:2216kB unevictable:3072kB isolated(anon):0kB isolated(file):0kB mapped:2608kB dirty:2224kB writeback:0kB shmem:309672kB shmem_thp:0kB shmem_pmdmapped:0kB anon_thp:0kB writeback_tmp:0kB kernel_stack:8092kB pagetables:852kB sec_pagetables:0kB all_unreclaimable? yes Balloon:0kB
+[  222.566769][T37662] Node 0 DMA free:5200kB boost:0kB min:452kB low:564kB high:676kB reserved_highatomic:0KB active_anon:192kB inactive_anon:7484kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:15992kB managed:15360kB mlocked:0kB bounce:0kB free_pcp:144kB local_pcp:20kB free_cma:0kB
+[  222.569972][T37662] lowmem_reserve[]: 0 1175 1175 1175 1175
+[  222.570732][T37662] Node 0 DMA32 free:126872kB boost:77824kB min:112652kB low:121356kB high:130060kB reserved_highatomic:12288KB active_anon:203648kB inactive_anon:71396kB active_file:47908kB inactive_file:16160kB unevictable:3072kB writepending:5696kB present:2080772kB managed:1203424kB mlocked:0kB bounce:0kB free_pcp:4624kB local_pcp:824kB free_cma:0kB
+[  222.574327][T37662] lowmem_reserve[]: 0 0 0 0 0
+[  222.574933][T37662] Node 1 DMA32 free:959648kB boost:0kB min:29144kB low:36428kB high:43712kB reserved_highatomic:0KB active_anon:4kB inactive_anon:0kB active_file:0kB inactive_file:24kB unevictable:0kB writepending:16kB present:1048444kB managed:982908kB mlocked:0kB bounce:0kB free_pcp:4112kB local_pcp:0kB free_cma:0kB
+[  222.578056][T37662] lowmem_reserve[]: 0 0 845 845 845
+[  222.578747][T37662] Node 1 Normal free:106000kB boost:14336kB min:40012kB low:46428kB high:52844kB reserved_highatomic:0KB active_anon:322096kB inactive_anon:0kB active_file:6808kB inactive_file:2192kB unevictable:3072kB writepending:2208kB present:1048576kB managed:865884kB mlocked:0kB bounce:0kB free_pcp:38720kB local_pcp:812kB free_cma:0kB
+[  222.582341][T37662] lowmem_reserve[]: 0 0 0 0 0
+[  222.582994][T37662] Node 0 DMA: 27*4kB (UM) 18*8kB (U) 8*16kB (U) 3*32kB (UME) 2*64kB (UE) 2*128kB (ME) 3*256kB (UME) 1*512kB (E) 1*1024kB (E) 1*2048kB (M) 0*4096kB = 5212kB
+[  222.585167][T37662] Node 0 DMA32: 124*4kB (UMEH) 419*8kB (UMEH) 250*16kB (UMEH) 630*32kB (UMEH) 740*64kB (UMEH) 229*128kB (UMEH) 39*256kB (UMEH) 16*512kB (UMEH) 4*1024kB (UH) 0*2048kB 0*4096kB = 126952kB
+[  222.587617][T37662] Node 1 DMA32: 30*4kB (UM) 37*8kB (UM) 38*16kB (UM) 53*32kB (UME) 48*64kB (UME) 44*128kB (UME) 40*256kB (UME) 30*512kB (UME) 21*1024kB (UME) 14*2048kB (UE) 213*4096kB (UME) = 959648kB
+[  222.590315][T37662] Node 1 Normal: 24*4kB (ME) 32*8kB (UE) 59*16kB (U) 43*32kB (E) 46*64kB (UME) 94*128kB (UME) 68*256kB (UME) 46*512kB (UME) 42*1024kB (UME) 0*2048kB 1*4096kB (U) = 105712kB
+[  222.592662][T37662] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[  222.593849][T37662] Node 0 hugepages_total=2 hugepages_free=2 hugepages_surp=0 hugepages_size=2048kB
+[  222.594959][T37662] Node 1 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[  222.600784][T37662] Node 1 hugepages_total=2 hugepages_free=2 hugepages_surp=0 hugepages_size=2048kB
+[  222.601880][T37662] 118276 total pagecache pages
+[  222.602466][T37662] 117 pages in swap cache
+[  222.602988][T37662] Free swap  = 103728kB
+[  222.603504][T37662] Total swap = 124996kB
+[  222.604024][T37662] 1048446 pages RAM
+[  222.604505][T37662] 0 pages HighMem/MovableOnly
+[  222.605080][T37662] 281552 pages reserved
+[  222.605589][T37662] 0 pages cma reserved
+[  222.615543][T37662] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  222.784936][T37686] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  222.807754][T37687] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  222.808976][T37688] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  222.815044][T37578] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  222.854212][T37708] workqueue: Failed to create a rescuer kthread for wq "btree_update": -EINTR
+[  222.879379][T37712] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  222.880500][T37718] bcachefs (loop0): starting version 1.7: mi_btree_bitmap opts=compression=lz4,nojournal_transaction_names
+[  222.883128][T37718] bcachefs (loop0): recovering from clean shutdown, journal seq 15
+[  222.883558][T37712] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  222.884195][T37718] bcachefs (loop0): Doing compatible version upgrade from 1.7: mi_btree_bitmap to 1.25: extent_flags
+[  222.884195][T37718]   running recovery passes: check_allocations,check_extents_to_backpointers,check_inodes
+[  222.884460][T37733] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  222.884569][T37733] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  222.889855][T37651] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  222.889961][T37651] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  222.909394][T37578] bcachefs: bch2_fs_get_tree() error: ENOMEM_journal_pin_fifo
+[  222.925380][T37688] bcachefs: bch2_fs_get_tree() error: ENOMEM_journal_pin_fifo
+2025/04/05 23:32:36 executed programs: 177
+[  222.955733][T37708] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  222.958936][T37718] bcachefs (loop0): accounting_read... done
+[  222.961543][T37718] bcachefs (loop0): alloc_read... done
+[  222.962403][T37718] bcachefs (loop0): snapshots_read... done
+[  222.964461][T37718] bcachefs (loop0): check_allocations...
+[  222.969017][T37718] bcachefs (loop0): btree ptr not marked in member info btree allocated bitmap
+[  222.969041][T37718]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a64f6cc698df3452 written 48 min_key POS_MIN durability: 1 ptr: 0:26:0 gen 0, fixing
+[  222.972443][T37736] workqueue: Failed to create a rescuer kthread for wq "btree_update": -EINTR
+[  222.974625][T37736] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  222.976456][T37687] bcachefs: bch2_fs_get_tree() error: ENOMEM_journal_pin_fifo
+[  222.978427][T37743] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  222.979788][T37743] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  222.984822][T37718] bcachefs (loop0): btree ptr not marked in member info btree allocated bitmap
+[  222.984846][T37718]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a4a08c15958b7fc8 written 24 min_key POS_MIN durability: 1 ptr: 0:38:0 gen 0, fixing
+[  222.997520][T37718] bcachefs (loop0): btree ptr not marked in member info btree allocated bitmap
+[  222.997545][T37718]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 68ba4c6599367 written 24 min_key POS_MIN durability: 1 ptr: 0:41:0 gen 0, fixing
+[  223.000781][T37686] bcachefs: bch2_fs_get_tree() error: ENOMEM_journal_pin_fifo
+[  223.003590][T37718] bcachefs (loop0): btree ptr not marked in member info btree allocated bitmap
+[  223.003613][T37718]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a6f3a05050194d82 written 16 min_key POS_MIN durability: 1 ptr: 0:35:0 gen 0, fixing
+[  223.014794][T37721] workqueue: Failed to create a rescuer kthread for wq "btree_update": -EINTR
+[  223.014901][T37721] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  223.023030][T37718] bcachefs (loop0): btree ptr not marked in member info btree allocated bitmap
+[  223.023059][T37718]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq b2fb6fcebb2a2f51 written 16 min_key POS_MIN durability: 1 ptr: 0:32:0 gen 0, fixing
+[  223.027615][T37608] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  223.028791][T37718] bcachefs (loop0): btree ptr not marked in member info btree allocated bitmap
+[  223.028818][T37718]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 7fd83409d5b7165 written 48 min_key POS_MIN durability: 1 ptr: 0:29:0 gen 0, fixing
+[  223.037295][T37718]  done
+[  223.042317][T37718] bcachefs (loop0): going read-write
+[  223.044979][T37718] bcachefs (loop0): journal_replay...
+[  223.047451][T37737] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  223.052153][T37737] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  223.128707][T37754] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  223.171730][T37337] bcachefs: bch2_fs_get_tree() error: EINTR
+[  223.178524][T37754] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  223.187638][T37717] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  223.190062][T37720] workqueue: Failed to create a rescuer kthread for wq "btree_update": -EINTR
+[  223.190171][T37720] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  223.198889][T37693] workqueue: Failed to create a rescuer kthread for wq "btree_update": -EINTR
+[  223.199399][T37693] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  223.202885][T37746] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  223.203362][T37662] bcachefs: bch2_fs_get_tree() error: ENOMEM_journal_pin_fifo
+[  223.203982][T37746] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  223.206498][T37736] bcachefs: bch2_fs_get_tree() error: ENOMEM_btree_interior_update_worker_init
+[  223.215464][T37719] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  223.217575][T37718]  done
+[  223.222800][T37718] bcachefs (loop0): check_extents_to_backpointers...
+[  223.224851][T37718] bcachefs (loop0): scanning for missing backpointers in 6/128 buckets
+[  223.234193][T37718]  done
+[  223.241248][T37718] bcachefs (loop0): check_inodes... done
+[  223.244575][T37718] bcachefs (loop0): resume_logged_ops... done
+[  223.245345][T37718] bcachefs (loop0): delete_dead_inodes... done
+[  223.270587][T37729] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  223.279518][T37718] bcachefs (loop0): Fixed errors, running fsck a second time to verify fs is clean
+[  223.280601][T37718] bcachefs (loop0): check_extents_to_backpointers... done
+[  223.282786][T37718] bcachefs (loop0): check_inodes... done
+[  223.283998][T37718] bcachefs (loop0): resume_logged_ops... done
+[  223.284744][T37718] bcachefs (loop0): delete_dead_inodes... done
+[  223.294653][T37749] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  223.302830][T37718] bcachefs (loop0): bch2_copygc_start(): error creating copygc thread EINTR
+[  223.303882][T37718] bcachefs (loop0): error starting copygc thread
+[  223.304631][T37718] bcachefs (loop0): bch2_fs_start(): error starting filesystem EINTR
+[  223.310485][T37718] bcachefs (loop0): shutting down
+[  223.311099][T37718] bcachefs (loop0): going read-only
+[  223.311729][T37718] bcachefs (loop0): finished waiting for writes to stop
+[  223.312579][T37718] bcachefs (loop0): flushing journal and stopping allocators, journal seq 23
+[  223.332112][T37733] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  223.341157][T37718] bcachefs (loop0): flushing journal and stopping allocators complete, journal seq 23
+[  223.364710][T37718] bcachefs (loop0): clean shutdown complete, journal seq 24
+[  223.407412][T37720] bcachefs: bch2_fs_get_tree() error: ENOMEM_btree_interior_update_worker_init
+[  223.432886][T37719] bcachefs: bch2_fs_get_tree() error: ENOMEM
+[  223.439102][T37721] bcachefs: bch2_fs_get_tree() error: ENOMEM_btree_interior_update_worker_init
+[  223.439894][T37693] bcachefs: bch2_fs_get_tree() error: ENOMEM_btree_interior_update_worker_init
+[  223.449220][T37743] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  223.470045][T37717] bcachefs: bch2_fs_get_tree() error: ENOMEM
+[  223.500598][T37712] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  223.513012][T37718] bcachefs (loop0): marking filesystem clean
+[  223.530918][T37708] bcachefs: bch2_fs_get_tree() error: ENOMEM_btree_interior_update_worker_init
+[  223.541904][T37608] bcachefs: bch2_fs_get_tree() error: ENOMEM
+[  223.549515][T37729] bcachefs: bch2_fs_get_tree() error: ENOMEM
+[  223.583647][T37746] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  223.589867][T37749] bcachefs: bch2_fs_get_tree() error: ENOMEM
+[  223.697443][T37754] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  223.729895][T37737] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  223.742482][T37718] bcachefs (loop0): shutdown complete
+[  223.753095][T37651] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  223.779736][T37948] loop7: detected capacity change from 0 to 32768
+[  223.781350][T37948] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  223.783960][T37933] loop16: detected capacity change from 0 to 32768
+[  223.785523][T37933] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  224.082601][T37936] loop1: detected capacity change from 0 to 32768
+[  224.084231][T37936] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  224.330310][T37938] loop22: detected capacity change from 0 to 32768
+[  224.331872][T37938] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  224.499433][T37986] loop18: detected capacity change from 0 to 32768
+[  224.521210][T37986] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  224.632935][T38011] loop21: detected capacity change from 0 to 32768
+[  224.634880][T38011] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  224.705462][T37983] loop3: detected capacity change from 0 to 32768
+[  224.707085][T37983] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  224.790945][T38006] loop17: detected capacity change from 0 to 32768
+[  224.793022][T38006] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  224.798474][T38007] loop5: detected capacity change from 0 to 32768
+[  224.816933][T38007] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  224.839803][T38023] loop12: detected capacity change from 0 to 32768
+[  224.841574][T38023] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  224.869228][T38016] loop9: detected capacity change from 0 to 32768
+[  224.876037][T38016] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  224.880357][T37999] loop19: detected capacity change from 0 to 32768
+[  224.881946][T37999] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  224.883414][T38028] loop20: detected capacity change from 0 to 32768
+[  224.888814][T38028] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  224.942381][T38002] loop23: detected capacity change from 0 to 32768
+[  224.943916][T38002] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  224.947811][T38018] loop4: detected capacity change from 0 to 32768
+[  224.949403][T38018] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  224.959744][T38019] loop15: detected capacity change from 0 to 32768
+[  224.961321][T38019] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  225.005758][T38012] loop14: detected capacity change from 0 to 32768
+[  225.007325][T38012] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  225.047122][T38010] loop6: detected capacity change from 0 to 32768
+[  225.048647][T38010] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  225.061175][T38042] loop7: detected capacity change from 0 to 32768
+[  225.092149][T38027] loop2: detected capacity change from 0 to 32768
+[  225.093745][T38027] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  225.121080][T38036] loop13: detected capacity change from 0 to 32768
+[  225.122935][T38036] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  225.123841][T38029] loop8: detected capacity change from 0 to 32768
+[  225.125575][T38029] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  225.143956][T38031] loop11: detected capacity change from 0 to 32768
+[  225.145581][T38031] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  225.169867][T37933] loop16: detected capacity change from 0 to 32768
+[  225.229855][T38035] loop10: detected capacity change from 0 to 32768
+[  225.231521][T38035] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  225.280480][T38059] loop21: detected capacity change from 0 to 32768
+[  225.392496][T38049] loop1: detected capacity change from 0 to 32768
+[  225.584240][T37938] loop22: detected capacity change from 0 to 32768
+[  225.693264][T38112] loop5: detected capacity change from 0 to 32768
+[  225.761846][T38101] loop3: detected capacity change from 0 to 32768
+[  225.792374][T38121] loop9: detected capacity change from 0 to 32768
+[  225.815803][T38120] loop17: detected capacity change from 0 to 32768
+[  225.818914][T38023] loop12: detected capacity change from 0 to 32768
+[  225.903072][T38150] loop14: detected capacity change from 0 to 32768
+[  225.910230][T38084] loop18: detected capacity change from 0 to 32768
+[  225.996187][T38164] loop2: detected capacity change from 0 to 32768
+[  226.022358][T38031] loop11: detected capacity change from 0 to 32768
+[  226.022487][T38141] loop4: detected capacity change from 0 to 32768
+[  226.043210][T38028] loop20: detected capacity change from 0 to 32768
+[  226.059623][T38132] loop13: detected capacity change from 0 to 32768
+[  226.081060][T38119] loop15: detected capacity change from 0 to 32768
+[  226.091193][T38144] loop23: detected capacity change from 0 to 32768
+[  226.113672][T38175] loop10: detected capacity change from 0 to 32768
+[  226.131691][T37933] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.154620][T38169] loop8: detected capacity change from 0 to 32768
+[  226.163198][T38049] workqueue: Failed to create a rescuer kthread for wq "btree_update": -EINTR
+[  226.168752][T38142] loop19: detected capacity change from 0 to 32768
+[  226.195948][T38049] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.202646][T37938] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.233643][T38152] loop6: detected capacity change from 0 to 32768
+[  226.421118][T37933] bcachefs: bch2_fs_get_tree() error: ENOMEM_journal_pin_fifo
+[  226.736075][T38023] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.738274][T38120] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.738327][T38023] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.738541][T38112] bcachefs (loop5): starting version 1.7: mi_btree_bitmap opts=compression=lz4,nojournal_transaction_names
+[  226.738687][T38112] bcachefs (loop5): recovering from clean shutdown, journal seq 15
+[  226.738833][T38112] bcachefs (loop5): Doing compatible version upgrade from 1.7: mi_btree_bitmap to 1.25: extent_flags
+[  226.738833][T38112]   running recovery passes: check_allocations,check_extents_to_backpointers,check_inodes
+[  226.739390][T38120] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.739803][T38084] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.739924][T38084] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.750992][T38121] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.752234][T38121] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.755861][T38059] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.756925][T38101] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.756948][T38059] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.759019][T38101] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.760539][T38042] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.764452][T38042] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.768242][T38028] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.769352][T38028] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.780265][T38112] bcachefs (loop5): accounting_read... done
+[  226.791575][T38112] bcachefs (loop5): alloc_read... done
+[  226.792245][T38112] bcachefs (loop5): snapshots_read... done
+[  226.793002][T38112] bcachefs (loop5): check_allocations...
+[  226.797098][T38142] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.798933][T38142] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.800714][T38141] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.801887][T38141] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.805342][T38112] bcachefs (loop5): btree ptr not marked in member info btree allocated bitmap
+[  226.805366][T38112]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a64f6cc698df3452 written 48 min_key POS_MIN durability: 1 ptr: 0:26:0 gen 0, fixing
+[  226.817654][T38150] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.818812][T38150] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.828895][T38132] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.830125][T38132] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.833731][T38303] loop16: detected capacity change from 0 to 32768
+[  226.835838][T38112] bcachefs (loop5): btree ptr not marked in member info btree allocated bitmap
+[  226.835862][T38112]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a4a08c15958b7fc8 written 24 min_key POS_MIN durability: 1 ptr: 0:38:0 gen 0, fixing
+[  226.836252][T38303] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  226.839717][T38112] bcachefs (loop5): btree ptr not marked in member info btree allocated bitmap
+[  226.839744][T38112]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 68ba4c6599367 written 24 min_key POS_MIN durability: 1 ptr: 0:41:0 gen 0, fixing
+[  226.850859][T38175] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.852049][T38175] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.861533][T38152] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.862666][T38152] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.864002][T38112] bcachefs (loop5): btree ptr not marked in member info btree allocated bitmap
+[  226.864026][T38112]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a6f3a05050194d82 written 16 min_key POS_MIN durability: 1 ptr: 0:35:0 gen 0, fixing
+[  226.864449][T38164] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.872284][T38112] bcachefs (loop5): btree ptr not marked in member info btree allocated bitmap
+[  226.872306][T38112]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq b2fb6fcebb2a2f51 written 16 min_key POS_MIN durability: 1 ptr: 0:32:0 gen 0, fixing
+[  226.877708][T38164] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.880852][T37938] bcachefs: bch2_fs_get_tree() error: ENOMEM
+[  226.900570][T38031] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.901689][T38031] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.906110][T38144] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.930018][T38049] bcachefs: bch2_fs_get_tree() error: ENOMEM_btree_interior_update_worker_init
+[  226.936627][T37718] bcachefs: bch2_fs_get_tree() error: EINTR
+[  226.958826][T38169] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.962691][T38169] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  226.970471][T38112] bcachefs (loop5): btree ptr not marked in member info btree allocated bitmap
+[  226.970496][T38112]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 7fd83409d5b7165 written 48 min_key POS_MIN durability: 1 ptr: 0:29:0 gen 0, fixing
+[  226.979190][T38119] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  226.980370][T38119] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  227.012463][T38112]  done
+[  227.020779][T38042] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.022388][T38112] bcachefs (loop5): going read-write
+[  227.025427][T38112] bcachefs (loop5): bch2_journal_reclaim_start(): error creating journal reclaim thread EINTR
+[  227.028126][T38112] bcachefs (loop5): flushing journal and stopping allocators, journal seq 15
+[  227.030409][T38112] bcachefs (loop5): flushing journal and stopping allocators complete, journal seq 15
+[  227.040264][T38112] bcachefs (loop5): unclean shutdown complete, journal seq 16
+[  227.041655][T38059] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.047880][T38121] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.063049][T38101] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.098145][T38144] bcachefs: bch2_fs_get_tree() error: ENOMEM
+[  227.239926][T38169] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.270572][T38164] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.315140][T38132] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.322059][T38112] bcachefs (loop5): bch2_fs_recovery(): error EINTR
+[  227.322437][T38120] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.322836][T38112] bcachefs (loop5): bch2_fs_start(): error starting filesystem EINTR
+[  227.323995][T38023] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.324585][T38112] bcachefs (loop5): shutting down
+[  227.326992][T38084] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.344546][T38028] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.381333][T38119] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.424750][T38031] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.459969][T38141] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.479845][T38175] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.480031][T38142] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.500305][T38150] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.576029][T38152] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  227.680763][T38112] bcachefs (loop5): shutdown complete
+[  227.974832][T38345] loop16: detected capacity change from 0 to 32768
+[  228.142913][T38372] loop22: detected capacity change from 0 to 32768
+[  228.144545][T38372] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.175363][T38361] loop7: detected capacity change from 0 to 32768
+[  228.177095][T38361] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.256365][T38364] loop9: detected capacity change from 0 to 32768
+[  228.270380][T38364] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.294726][T38409] loop2: detected capacity change from 0 to 32768
+[  228.296369][T38409] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.325525][T38407] loop23: detected capacity change from 0 to 32768
+[  228.327242][T38407] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.339348][T38385] loop1: detected capacity change from 0 to 32768
+[  228.343263][T38425] loop19: detected capacity change from 0 to 32768
+[  228.344867][T38425] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.360296][T38385] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.486880][T38405] loop3: detected capacity change from 0 to 32768
+[  228.488508][T38405] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.531439][T38396] loop8: detected capacity change from 0 to 32768
+[  228.533025][T38396] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.574225][T38402] loop0: detected capacity change from 0 to 32768
+[  228.576207][T38402] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.611594][T38435] loop14: detected capacity change from 0 to 32768
+[  228.613203][T38435] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.625074][T38413] loop20: detected capacity change from 0 to 32768
+[  228.626712][T38413] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.653095][T38426] loop15: detected capacity change from 0 to 32768
+[  228.654686][T38426] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.673535][T38403] loop21: detected capacity change from 0 to 32768
+[  228.675067][T38403] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.708724][T38417] loop13: detected capacity change from 0 to 32768
+[  228.730543][T38417] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.748857][T38416] loop18: detected capacity change from 0 to 32768
+[  228.754071][T38416] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.773862][T38420] loop17: detected capacity change from 0 to 32768
+[  228.775541][T38420] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.812142][T38422] loop11: detected capacity change from 0 to 32768
+[  228.813731][T38422] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.852281][T38419] loop12: detected capacity change from 0 to 32768
+[  228.853988][T38419] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  228.882185][T38432] loop4: detected capacity change from 0 to 32768
+[  228.883798][T38432] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  229.056347][T38429] loop6: detected capacity change from 0 to 32768
+[  229.057924][T38429] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  229.149164][T38437] loop10: detected capacity change from 0 to 32768
+[  229.153493][T38437] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  229.299679][T38460] loop2: detected capacity change from 0 to 32768
+[  229.304964][T38425] loop19: detected capacity change from 0 to 32768
+[  229.346805][T38484] loop23: detected capacity change from 0 to 32768
+[  229.442064][T38487] loop7: detected capacity change from 0 to 32768
+[  229.478820][T38488] loop9: detected capacity change from 0 to 32768
+[  229.497535][T38372] loop22: detected capacity change from 0 to 32768
+[  229.497690][T38497] loop3: detected capacity change from 0 to 32768
+[  229.631575][T38540] loop13: detected capacity change from 0 to 32768
+[  229.637268][T38385] loop1: detected capacity change from 0 to 32768
+[  229.653326][T38426] loop15: detected capacity change from 0 to 32768
+[  229.747223][T38538] loop11: detected capacity change from 0 to 32768
+[  229.754987][T38516] loop0: detected capacity change from 0 to 32768
+[  229.759898][T38425] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  229.761215][T38425] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  229.769739][T38345] bcachefs (loop16): starting version 1.7: mi_btree_bitmap opts=compression=lz4,nojournal_transaction_names
+[  229.771143][T38345] bcachefs (loop16): recovering from clean shutdown, journal seq 15
+[  229.797155][T38345] bcachefs (loop16): Doing compatible version upgrade from 1.7: mi_btree_bitmap to 1.25: extent_flags
+[  229.797155][T38345]   running recovery passes: check_allocations,check_extents_to_backpointers,check_inodes
+[  229.798170][T38460] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  229.804810][T38460] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  229.814700][T38519] loop20: detected capacity change from 0 to 32768
+[  229.814909][T38551] loop12: detected capacity change from 0 to 32768
+[  229.821444][T38524] loop14: detected capacity change from 0 to 32768
+[  229.835294][T38345] bcachefs (loop16): accounting_read... done
+[  229.851057][T38345] bcachefs (loop16): alloc_read... done
+[  229.851712][T38345] bcachefs (loop16): snapshots_read... done
+[  229.852474][T38345] bcachefs (loop16): check_allocations...
+[  229.853225][T38521] loop8: detected capacity change from 0 to 32768
+[  229.859769][T38345] bcachefs (loop16): btree ptr not marked in member info btree allocated bitmap
+[  229.859791][T38345]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a64f6cc698df3452 written 48 min_key POS_MIN durability: 1 ptr: 0:26:0 gen 0, fixing
+[  229.859869][T38484] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  229.863518][T38484] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  229.880097][T38437] loop10: detected capacity change from 0 to 32768
+[  229.881660][T38345] bcachefs (loop16): btree ptr not marked in member info btree allocated bitmap
+[  229.881682][T38345]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a4a08c15958b7fc8 written 24 min_key POS_MIN durability: 1 ptr: 0:38:0 gen 0, fixing
+[  229.886968][T38345] bcachefs (loop16): btree ptr not marked in member info btree allocated bitmap
+[  229.886989][T38345]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 68ba4c6599367 written 24 min_key POS_MIN durability: 1 ptr: 0:41:0 gen 0, fixing
+[  229.898231][T38429] loop6: detected capacity change from 0 to 32768
+[  229.903045][T38539] loop4: detected capacity change from 0 to 32768
+[  229.903593][T38534] loop21: detected capacity change from 0 to 32768
+[  229.905226][T38345] bcachefs (loop16): btree ptr not marked in member info btree allocated bitmap
+[  229.905250][T38345]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a6f3a05050194d82 written 16 min_key POS_MIN durability: 1 ptr: 0:35:0 gen 0, fixing
+[  229.907899][T38416] loop18: detected capacity change from 0 to 32768
+[  229.910050][T38345] bcachefs (loop16): btree ptr not marked in member info btree allocated bitmap
+[  229.910072][T38345]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq b2fb6fcebb2a2f51 written 16 min_key POS_MIN durability: 1 ptr: 0:32:0 gen 0, fixing
+[  229.916019][T38345] bcachefs (loop16): btree ptr not marked in member info btree allocated bitmap
+[  229.916040][T38345]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 7fd83409d5b7165 written 48 min_key POS_MIN durability: 1 ptr: 0:29:0 gen 0, fixing
+[  229.924490][T38345]  done
+[  229.928718][T38345] bcachefs (loop16): going read-write
+[  229.930522][T38345] bcachefs (loop16): bch2_journal_reclaim_start(): error creating journal reclaim thread EINTR
+[  229.931805][T38345] bcachefs (loop16): flushing journal and stopping allocators, journal seq 15
+[  229.932937][T38345] bcachefs (loop16): flushing journal and stopping allocators complete, journal seq 15
+[  229.936677][T38345] bcachefs (loop16): unclean shutdown complete, journal seq 16
+[  229.955845][T38497] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  229.957025][T38497] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  229.957306][T38545] loop17: detected capacity change from 0 to 32768
+[  229.991905][T38487] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  229.993056][T38487] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  229.993380][T38488] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  229.995095][T38488] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  230.011557][T38345] bcachefs (loop16): bch2_fs_recovery(): error EINTR
+[  230.012357][T38345] bcachefs (loop16): bch2_fs_start(): error starting filesystem EINTR
+[  230.013420][T38345] bcachefs (loop16): shutting down
+[  230.025870][T38460] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.043351][T38372] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  230.044497][T38372] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  230.141248][T38409] fuse: Bad value for 'fd'
+2025/04/05 23:32:43 executed programs: 223
+[  230.203277][T38345] bcachefs (loop16): shutdown complete
+[  230.211632][T38385] bcachefs (loop1): starting version 1.7: mi_btree_bitmap opts=compression=lz4,nojournal_transaction_names
+[  230.213052][T38385] bcachefs (loop1): recovering from clean shutdown, journal seq 15
+[  230.214128][T38385] bcachefs (loop1): Doing compatible version upgrade from 1.7: mi_btree_bitmap to 1.25: extent_flags
+[  230.214128][T38385]   running recovery passes: check_allocations,check_extents_to_backpointers,check_inodes
+[  230.236943][T38385] bcachefs (loop1): accounting_read... done
+[  230.239536][T38385] bcachefs (loop1): alloc_read... done
+[  230.240212][T38385] bcachefs (loop1): snapshots_read... done
+[  230.240964][T38385] bcachefs (loop1): check_allocations...
+[  230.243022][T38385] bcachefs (loop1): btree ptr not marked in member info btree allocated bitmap
+[  230.243045][T38385]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a64f6cc698df3452 written 48 min_key POS_MIN durability: 1 ptr: 0:26:0 gen 0, fixing
+[  230.266607][T38385] bcachefs (loop1): btree ptr not marked in member info btree allocated bitmap
+[  230.266631][T38385]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a4a08c15958b7fc8 written 24 min_key POS_MIN durability: 1 ptr: 0:38:0 gen 0, fixing
+[  230.271903][T38385] bcachefs (loop1): btree ptr not marked in member info btree allocated bitmap
+[  230.271936][T38385]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 68ba4c6599367 written 24 min_key POS_MIN durability: 1 ptr: 0:41:0 gen 0, fixing
+[  230.273382][T38519] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  230.279086][T38519] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  230.282404][T38385] bcachefs (loop1): btree ptr not marked in member info btree allocated bitmap
+[  230.282434][T38385]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a6f3a05050194d82 written 16 min_key POS_MIN durability: 1 ptr: 0:35:0 gen 0, fixing
+[  230.286681][T38385] bcachefs (loop1): btree ptr not marked in member info btree allocated bitmap
+[  230.286702][T38385]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq b2fb6fcebb2a2f51 written 16 min_key POS_MIN durability: 1 ptr: 0:32:0 gen 0, fixing
+[  230.289773][T38426] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  230.290940][T38426] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  230.292002][T38385] bcachefs (loop1): btree ptr not marked in member info btree allocated bitmap
+[  230.292024][T38385]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 7fd83409d5b7165 written 48 min_key POS_MIN durability: 1 ptr: 0:29:0 gen 0, fixing
+[  230.301232][T38385]  done
+[  230.305528][T38385] bcachefs (loop1): going read-write
+[  230.320790][T38385] bcachefs (loop1): journal_replay...
+[  230.326779][T38539] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  230.328547][T38539] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  230.329352][T38534] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  230.330632][T38534] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  230.342105][T38516] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  230.343240][T38516] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  230.347174][T38551] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  230.348308][T38551] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  230.366843][T38385]  done
+[  230.368224][T38385] bcachefs (loop1): check_extents_to_backpointers...
+[  230.370672][T38385] bcachefs (loop1): scanning for missing backpointers in 6/128 buckets
+[  230.373413][T38385]  done
+[  230.375823][T38385] bcachefs (loop1): check_inodes... done
+[  230.384903][T38385] bcachefs (loop1): resume_logged_ops... done
+[  230.385648][T38385] bcachefs (loop1): delete_dead_inodes... done
+[  230.388605][T38385] bcachefs (loop1): Fixed errors, running fsck a second time to verify fs is clean
+[  230.390208][T38385] bcachefs (loop1): check_extents_to_backpointers... done
+[  230.392246][T38385] bcachefs (loop1): check_inodes... done
+[  230.393410][T38385] bcachefs (loop1): resume_logged_ops... done
+[  230.394152][T38385] bcachefs (loop1): delete_dead_inodes... done
+[  230.395065][T38524] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  230.396232][T38524] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  230.402584][T38385] bcachefs (loop1): done starting filesystem
+[  230.406155][T38385] fuse: Bad value for 'fd'
+[  230.412678][T38437] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  230.413788][T38437] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  230.414052][T38385] syz.1.170 (38385) used greatest stack depth: 16184 bytes left
+[  230.419213][T38484] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.420528][T11049] bcachefs (loop1): shutting down
+[  230.421142][T11049] bcachefs (loop1): going read-only
+[  230.421754][T11049] bcachefs (loop1): finished waiting for writes to stop
+[  230.422718][T38699] loop2: detected capacity change from 0 to 32768
+[  230.423333][T38425] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.424254][T38699] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  230.432114][T38416] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  230.433257][T38416] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  230.440036][T38112] bcachefs: bch2_fs_get_tree() error: EINTR
+[  230.454686][T11049] bcachefs (loop1): flushing journal and stopping allocators, journal seq 23
+[  230.455868][T11049] bcachefs (loop1): flushing journal and stopping allocators complete, journal seq 23
+[  230.464574][T11049] bcachefs (loop1): clean shutdown complete, journal seq 24
+[  230.478415][T38538] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  230.484744][T38497] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.490986][T38538] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  230.499915][T38488] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.500024][T38487] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.502976][T38429] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  230.504114][T38429] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  230.509044][T38540] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  230.529901][T38540] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  230.533337][T11049] bcachefs (loop1): marking filesystem clean
+[  230.538834][T38521] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  230.555785][T38521] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  230.570339][T38545] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  230.571453][T38545] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  230.616013][T38429] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.679889][T38426] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.705767][T38416] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.784793][T38372] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.811231][T38345] bcachefs: bch2_fs_get_tree() error: EINTR
+[  230.817743][T38437] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.862416][T38519] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.870156][T38540] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.874455][T38539] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.876430][T38538] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.889905][T38551] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.917778][T38521] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.930039][T38516] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  230.944807][T38425] fuse: Bad value for 'fd'
+[  230.945246][T38429] fuse: Bad value for 'fd'
+[  230.949151][T11049] bcachefs (loop1): shutdown complete
+[  230.990126][T38534] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  231.427460][T38751] loop2: detected capacity change from 0 to 32768
+[  231.763756][T38788] loop5: detected capacity change from 0 to 32768
+[  231.765444][T38788] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  231.766187][T38812] loop16: detected capacity change from 0 to 32768
+[  231.768118][T38812] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  231.768307][T38773] loop23: detected capacity change from 0 to 32768
+[  231.768363][T38791] loop19: detected capacity change from 0 to 32768
+[  231.769250][T38791] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  231.771307][T38773] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  231.789079][T38802] loop7: detected capacity change from 0 to 32768
+[  231.790735][T38802] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  231.799696][T38797] loop9: detected capacity change from 0 to 32768
+[  231.801224][T38797] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  231.886133][T38810] loop22: detected capacity change from 0 to 32768
+[  231.887680][T38810] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  231.924430][T38830] loop8: detected capacity change from 0 to 32768
+[  231.926006][T38830] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  231.930956][T38795] loop3: detected capacity change from 0 to 32768
+[  231.932571][T38795] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  231.993350][T38803] loop6: detected capacity change from 0 to 32768
+[  231.994949][T38803] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  232.031363][T38807] loop18: detected capacity change from 0 to 32768
+[  232.032974][T38807] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  232.065681][T38817] loop20: detected capacity change from 0 to 32768
+[  232.067245][T38817] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  232.090711][T38805] loop15: detected capacity change from 0 to 32768
+[  232.092311][T38805] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  232.133041][T38545] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  232.150136][T38524] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  232.181118][T38821] loop0: detected capacity change from 0 to 32768
+[  232.182974][T38821] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  232.216786][T38832] loop21: detected capacity change from 0 to 32768
+[  232.218454][T38832] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  232.326988][T38814] loop10: detected capacity change from 0 to 32768
+[  232.328498][T38814] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  232.366675][T38829] loop11: detected capacity change from 0 to 32768
+[  232.368103][T38820] loop4: detected capacity change from 0 to 32768
+[  232.368241][T38829] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  232.380344][T38820] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  232.449376][T38828] loop13: detected capacity change from 0 to 32768
+[  232.451581][T38828] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  232.489596][T38827] loop12: detected capacity change from 0 to 32768
+[  232.491135][T38827] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  232.812042][T38881] loop7: detected capacity change from 0 to 32768
+[  232.954360][T38872] loop19: detected capacity change from 0 to 32768
+[  232.972941][T38876] loop16: detected capacity change from 0 to 32768
+[  233.077380][T38797] loop9: detected capacity change from 0 to 32768
+[  233.102862][T38924] loop18: detected capacity change from 0 to 32768
+[  233.128023][T38906] loop23: detected capacity change from 0 to 32768
+[  233.189722][T38912] loop6: detected capacity change from 0 to 32768
+[  233.194515][T38900] loop22: detected capacity change from 0 to 32768
+[  233.197202][T38917] loop0: detected capacity change from 0 to 32768
+[  233.210560][T38889] loop8: detected capacity change from 0 to 32768
+[  233.221598][T38931] loop14: detected capacity change from 0 to 32768
+[  233.223093][T38931] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  233.233799][T38898] loop3: detected capacity change from 0 to 32768
+[  233.240210][T38890] loop5: detected capacity change from 0 to 32768
+[  233.253580][T38935] loop15: detected capacity change from 0 to 32768
+[  233.289848][T38827] loop12: detected capacity change from 0 to 32768
+[  233.301305][T38950] loop13: detected capacity change from 0 to 32768
+[  233.336908][T38948] loop21: detected capacity change from 0 to 32768
+[  233.338069][T38932] loop17: detected capacity change from 0 to 32768
+[  233.347954][T38942] loop4: detected capacity change from 0 to 32768
+[  233.353764][T38932] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  233.359159][T38817] loop20: detected capacity change from 0 to 32768
+[  233.378288][T38943] loop10: detected capacity change from 0 to 32768
+[  233.381571][T38937] loop11: detected capacity change from 0 to 32768
+[  233.646901][T38931] loop14: detected capacity change from 0 to 32768
+[  233.695185][T38751] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  233.696731][T38751] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  233.697881][T38881] bcachefs (loop7): starting version 1.7: mi_btree_bitmap opts=compression=lz4,nojournal_transaction_names
+[  233.699312][T38881] bcachefs (loop7): recovering from clean shutdown, journal seq 15
+[  233.700362][T38881] bcachefs (loop7): Doing compatible version upgrade from 1.7: mi_btree_bitmap to 1.25: extent_flags
+[  233.700362][T38881]   running recovery passes: check_allocations,check_extents_to_backpointers,check_inodes
+[  233.719922][T38881] bcachefs (loop7): accounting_read...
+[  233.721212][T38872] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  233.722900][T38924] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  233.723248][T38881]  done
+[  233.724050][T38924] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  233.724092][T38872] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  233.724292][T38881] bcachefs (loop7): alloc_read... done
+[  233.726737][T38881] bcachefs (loop7): snapshots_read... done
+[  233.727483][T38881] bcachefs (loop7): check_allocations...
+[  233.729568][T38881] bcachefs (loop7): btree ptr not marked in member info btree allocated bitmap
+[  233.729592][T38881]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a64f6cc698df3452 written 48 min_key POS_MIN durability: 1 ptr: 0:26:0 gen 0, fixing
+[  233.735069][T38881] bcachefs (loop7): btree ptr not marked in member info btree allocated bitmap
+[  233.735090][T38881]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a4a08c15958b7fc8 written 24 min_key POS_MIN durability: 1 ptr: 0:38:0 gen 0, fixing
+[  233.739132][T38881] bcachefs (loop7): btree ptr not marked in member info btree allocated bitmap
+[  233.739153][T38881]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 68ba4c6599367 written 24 min_key POS_MIN durability: 1 ptr: 0:41:0 gen 0, fixing
+[  233.741026][T38932] loop17: detected capacity change from 0 to 32768
+[  233.746769][T38876] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  233.747925][T38876] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  233.748864][T38881] bcachefs (loop7): btree ptr not marked in member info btree allocated bitmap
+[  233.748895][T38881]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq a6f3a05050194d82 written 16 min_key POS_MIN durability: 1 ptr: 0:35:0 gen 0, fixing
+[  233.763449][T38817] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  233.764840][T38881] bcachefs (loop7): btree ptr not marked in member info btree allocated bitmap
+[  233.764862][T38881]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq b2fb6fcebb2a2f51 written 16 min_key POS_MIN durability: 1 ptr: 0:32:0 gen 0, fixing
+[  233.765004][T38817] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  233.765143][T38917] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  233.765239][T38917] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  233.771015][T38881] bcachefs (loop7): btree ptr not marked in member info btree allocated bitmap
+[  233.771037][T38881]   u64s 11 type btree_ptr_v2 SPOS_MAX len 0 ver 0: seq 7fd83409d5b7165 written 48 min_key POS_MIN durability: 1 ptr: 0:29:0 gen 0, fixing
+[  233.779535][T38881]  done
+[  233.784460][T38881] bcachefs (loop7): going read-write
+[  233.788677][T38881] bcachefs (loop7): journal_replay...
+[  233.822076][T38797] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  233.823971][T38797] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  233.827554][T38827] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  233.828730][T38827] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  233.834058][T38890] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  233.835170][T38890] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  233.844453][T38943] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  233.845584][T38943] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  233.847127][T38900] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  233.848241][T38900] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  233.871432][T38937] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  233.872568][T38937] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  233.873289][T38948] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  233.874702][T38948] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  233.874845][T38912] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  233.877020][T38912] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  233.881540][T38906] warn_alloc: 25 callbacks suppressed
+[  233.881558][T38906] syz.23.195: vmalloc error: size 6291456, failed to allocated page array size 12288, mode:0xcc2(GFP_KERNEL|__GFP_HIGHMEM), nodemask=(null),cpuset=/,mems_allowed=0-1
+[  233.884067][T38906] CPU: 5 UID: 0 PID: 38906 Comm: syz.23.195 Not tainted 6.14.0-13408-g9f867ba24d36 #1 PREEMPT(full) 
+[  233.884102][T38906] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  233.884119][T38906] Call Trace:
+[  233.884127][T38906]  <TASK>
+[  233.884138][T38906]  dump_stack_lvl+0x180/0x1b0
+[  233.884176][T38906]  warn_alloc+0x211/0x360
+[  233.884214][T38906]  ? __pfx_warn_alloc+0x10/0x10
+[  233.884264][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.884307][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.884346][T38906]  ? __get_vm_area_node+0x1e0/0x300
+[  233.884403][T38906]  __vmalloc_node_range_noprof+0x10a1/0x1460
+[  233.884447][T38906]  ? __bch2_darray_resize_noprof+0xf8/0x280
+[  233.884493][T38906]  ? find_held_lock+0x2b/0x80
+[  233.884535][T38906]  ? __pfx___vmalloc_node_range_noprof+0x10/0x10
+[  233.884567][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.884606][T38906]  ? __alloc_pages_noprof+0xc/0x1b0
+[  233.884641][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.884683][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.884728][T38906]  __kvmalloc_node_noprof+0x2f1/0x600
+[  233.884763][T38906]  ? __bch2_darray_resize_noprof+0xf8/0x280
+[  233.884801][T38906]  ? __bch2_darray_resize_noprof+0xf8/0x280
+[  233.884835][T38906]  ? rcu_is_watching+0x12/0xc0
+[  233.884891][T38906]  ? __bch2_darray_resize_noprof+0xf8/0x280
+[  233.884926][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.884965][T38906]  __bch2_darray_resize_noprof+0xf8/0x280
+[  233.885006][T38906]  bch2_fs_btree_write_buffer_init+0x2a4/0x380
+[  233.885050][T38906]  bch2_fs_alloc+0x18bd/0x2430
+[  233.885108][T38906]  ? __pfx_bch2_fs_alloc+0x10/0x10
+[  233.885151][T38906]  ? get_freelist+0x195/0x1d0
+[  233.885217][T38906]  ? __bch2_darray_resize_noprof+0xf8/0x280
+[  233.885278][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.885323][T38906]  bch2_fs_open+0x92c/0x1110
+[  233.885396][T38906]  ? __lock_acquire+0xa76/0x1a70
+[  233.885425][T38906]  ? __pfx_bch2_fs_open+0x10/0x10
+[  233.885481][T38906]  ? sget+0x263/0x710
+[  233.885507][T38906]  ? bch2_fs_get_tree+0x409/0x1770
+[  233.885552][T38906]  ? vfs_get_tree+0x93/0x340
+[  233.885596][T38906]  ? path_mount+0x6b0/0x1eb0
+[  233.885633][T38906]  ? __x64_sys_mount+0x27b/0x300
+[  233.885694][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.885733][T38906]  ? debug_check_no_obj_freed+0x2a6/0x520
+[  233.885786][T38906]  ? kasan_quarantine_put+0x10d/0x230
+[  233.885821][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.885859][T38906]  ? lockdep_hardirqs_on+0x7c/0x110
+[  233.885901][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.885946][T38906]  bch2_fs_get_tree+0x10d0/0x1770
+[  233.886021][T38906]  ? __pfx_bch2_fs_get_tree+0x10/0x10
+[  233.886067][T38906]  ? avc_has_perm_noaudit+0x11b/0x3c0
+[  233.886106][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.886166][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.886211][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.886252][T38906]  ? trace_cap_capable+0x18d/0x200
+[  233.886306][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.886345][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.886383][T38906]  ? security_capable+0x210/0x250
+[  233.886432][T38906]  vfs_get_tree+0x93/0x340
+[  233.886481][T38906]  path_mount+0x6b0/0x1eb0
+[  233.886524][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.886562][T38906]  ? kmem_cache_free+0x14b/0x4d0
+[  233.886596][T38906]  ? __pfx_path_mount+0x10/0x10
+[  233.886640][T38906]  ? srso_return_thunk+0x5/0x5f
+[  233.886679][T38906]  ? putname.part.0+0x11b/0x160
+[  233.886729][T38906]  __x64_sys_mount+0x27b/0x300
+[  233.886770][T38906]  ? __pfx___x64_sys_mount+0x10/0x10
+[  233.886824][T38906]  do_syscall_64+0xcb/0x250
+[  233.886864][T38906]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  233.886901][T38906] RIP: 0033:0x7f4cef19fdfe
+[  233.886923][T38906] Code: 48 c7 c0 ff ff ff ff eb aa e8 5e 20 00 00 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 f3 0f 1e fa 49 89 ca b8 a5 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  233.886951][T38906] RSP: 002b:00007f4ceff65da8 EFLAGS: 00000246 ORIG_RAX: 00000000000000a5
+[  233.886977][T38906] RAX: ffffffffffffffda RBX: 000000000000fe88 RCX: 00007f4cef19fdfe
+[  233.886996][T38906] RDX: 000000002000fec0 RSI: 000000002000ff00 RDI: 00007f4ceff65e00
+[  233.887014][T38906] RBP: 00007f4ceff65e40 R08: 00007f4ceff65e40 R09: 0000000000000000
+[  233.887032][T38906] R10: 0000000000000000 R11: 0000000000000246 R12: 000000002000fec0
+[  233.887050][T38906] R13: 000000002000ff00 R14: 00007f4ceff65e00 R15: 000000002000ff40
+[  233.887088][T38906]  </TASK>
+[  233.887102][T38906] Mem-Info:
+[  233.902249][T38942] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  233.902382][T38906] active_anon:140728 inactive_anon:16017 isolated_anon:0
+[  233.902382][T38906]  active_file:16909 inactive_file:660 isolated_file:0
+[  233.902382][T38906]  unevictable:1536 dirty:1633 writeback:0
+[  233.902382][T38906]  slab_reclaimable:15166 slab_unreclaimable:175307
+[  233.902382][T38906]  mapped:13899 shmem:100107 pagetables:1979
+[  233.902382][T38906]  sec_pagetables:0 bounce:0
+[  233.902382][T38906]  kernel_misc_reclaimable:0
+[  233.902382][T38906]  free:176515 free_pcp:18805 free_cma:0
+[  233.913274][T38942] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  233.941012][T38906] Node 0 active_anon:224628kB inactive_anon:63904kB active_file:59936kB inactive_file:244kB unevictable:3072kB isolated(anon):0kB isolated(file):0kB mapped:52728kB dirty:4848kB writeback:0kB shmem:80816kB shmem_thp:0kB shmem_pmdmapped:0kB anon_thp:0kB writeback_tmp:0kB kernel_stack:17144kB pagetables:6836kB sec_pagetables:0kB all_unreclaimable? no Balloon:0kB
+[  233.947707][T38906] Node 1 active_anon:338284kB inactive_anon:0kB active_file:7700kB inactive_file:2660kB unevictable:3072kB isolated(anon):0kB isolated(file):0kB mapped:2868kB dirty:1684kB writeback:0kB shmem:319612kB shmem_thp:0kB shmem_pmdmapped:0kB anon_thp:0kB writeback_tmp:0kB kernel_stack:8556kB pagetables:1080kB sec_pagetables:0kB all_unreclaimable? yes Balloon:0kB
+[  233.951907][T38906] Node 0 DMA free:5200kB boost:0kB min:452kB low:564kB high:676kB reserved_highatomic:0KB active_anon:292kB inactive_anon:7484kB active_file:4kB inactive_file:0kB unevictable:0kB writepending:4kB present:15992kB managed:15360kB mlocked:0kB bounce:0kB free_pcp:104kB local_pcp:60kB free_cma:0kB
+[  233.955004][T38906] lowmem_reserve[]: 0 1175 1175 1175 1175
+[  233.955729][T38906] Node 0 DMA32 free:126420kB boost:78352kB min:113180kB low:121884kB high:130588kB reserved_highatomic:12288KB active_anon:224336kB inactive_anon:56748kB active_file:59932kB inactive_file:244kB unevictable:3072kB writepending:4844kB present:2080772kB managed:1203424kB mlocked:0kB bounce:0kB free_pcp:6004kB local_pcp:616kB free_cma:0kB
+[  233.959422][T38906] lowmem_reserve[]: 0 0 0 0 0
+[  233.960370][T38906] Node 1 DMA32 free:489152kB boost:0kB min:29144kB low:36428kB high:43712kB reserved_highatomic:0KB active_anon:9456kB inactive_anon:0kB active_file:208kB inactive_file:52kB unevictable:0kB writepending:48kB present:1048444kB managed:982908kB mlocked:0kB bounce:0kB free_pcp:61248kB local_pcp:9284kB free_cma:0kB
+[  233.968814][T38881]  done
+[  233.969205][T38906] lowmem_reserve[]: 0 0 845 845 845
+[  233.973345][T38881] bcachefs (loop7): check_extents_to_backpointers...
+[  233.975105][T38881] bcachefs (loop7): scanning for missing backpointers in 6/128 buckets
+[  233.977400][T38881]  done
+[  233.978203][T38935] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  233.978548][T38906] Node 1 Normal free:95040kB boost:51200kB min:76876kB low:83292kB high:89708kB reserved_highatomic:0KB active_anon:328828kB inactive_anon:0kB active_file:7492kB inactive_file:2608kB unevictable:3072kB writepending:1636kB present:1048576kB managed:865884kB mlocked:0kB bounce:0kB free_pcp:26936kB local_pcp:900kB free_cma:0kB
+[  233.979327][T38935] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  233.991803][T38881] bcachefs (loop7): check_inodes... done
+[  233.995021][T38881] bcachefs (loop7): resume_logged_ops... done
+[  233.995731][T38881] bcachefs (loop7): delete_dead_inodes... done
+[  233.998795][T38881] bcachefs (loop7): Fixed errors, running fsck a second time to verify fs is clean
+[  233.999928][T38881] bcachefs (loop7): check_extents_to_backpointers... done
+[  234.001971][T38881] bcachefs (loop7): check_inodes... done
+[  234.003133][T38881] bcachefs (loop7): resume_logged_ops... done
+[  234.003863][T38881] bcachefs (loop7): delete_dead_inodes... done
+[  234.008171][T38889] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  234.009246][T38889] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  234.014941][T38950] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  234.016141][T38950] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  234.016312][T38898] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  234.018198][T38898] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  234.032394][T38906] lowmem_reserve[]: 0 0 0 0 0
+[  234.033018][T38906] Node 0 DMA: 26*4kB (UM) 19*8kB (U) 9*16kB 
+[  234.033109][T38900] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.033742][T38906] (U) 0*32kB 1*64kB (M) 1*128kB (U) 2*256kB (UM) 0*512kB 0*1024kB 2*2048kB (ME) 0*4096kB = 5200kB
+[  234.035797][T38906] Node 0 DMA32: 113*4kB (UMEH) 257*8kB (UMEH) 178*16kB (UMEH) 542*32kB (UMEH) 743*64kB (UMEH) 247*128kB (UMEH) 43*256kB (UMEH) 20*512kB (UMEH) 4*1024kB (EH) 0*2048kB 0*4096kB = 127212kB
+[  234.038134][T38906] Node 1 DMA32: 14*4kB (UM) 15*8kB (UM) 14*16kB (UM) 6*32kB (U) 22*64kB (U) 52*128kB (UE) 25*256kB (UE) 20*512kB (UE) 16*1024kB (UE) 4*2048kB (UE) 107*4096kB (UME) = 488144kB
+[  234.115417][T38881] bcachefs (loop7): bch2_copygc_start(): error creating copygc thread EINTR
+[  234.116441][T38881] bcachefs (loop7): error starting copygc thread
+[  234.117151][T38881] bcachefs (loop7): bch2_fs_start(): error starting filesystem EINTR
+[  234.118485][T38906] Node 1 Normal: 71*4kB (UME) 255*8kB (UME) 86*16kB (UME) 119*32kB (UME) 35*64kB (UME) 52*128kB (UME) 74*256kB (UME) 44*512kB (UME) 41*1024kB (UME) 0*2048kB 0*4096kB = 99860kB
+[  234.119532][T38827] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.120811][T38906] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[  234.122451][T38906] Node 0 hugepages_total=2 hugepages_free=2 hugepages_surp=0 hugepages_size=2048kB
+[  234.123502][T38906] Node 1 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[  234.124569][T38906] Node 1 hugepages_total=2 hugepages_free=2 hugepages_surp=0 hugepages_size=2048kB
+[  234.125608][T38906] 117083 total pagecache pages
+[  234.126155][T38906] 193 pages in swap cache
+[  234.126656][T38906] Free swap  = 93664kB
+[  234.127136][T38906] Total swap = 124996kB
+[  234.127616][T38906] 1048446 pages RAM
+[  234.128069][T38906] 0 pages HighMem/MovableOnly
+[  234.128606][T38906] 281552 pages reserved
+[  234.129091][T38906] 0 pages cma reserved
+[  234.130329][T38881] bcachefs (loop7): shutting down
+[  234.130912][T38881] bcachefs (loop7): going read-only
+[  234.131518][T38881] bcachefs (loop7): finished waiting for writes to stop
+[  234.132343][T38881] bcachefs (loop7): flushing journal and stopping allocators, journal seq 23
+[  234.133458][T38881] bcachefs (loop7): flushing journal and stopping allocators complete, journal seq 23
+[  234.155444][T38881] bcachefs (loop7): clean shutdown complete, journal seq 24
+[  234.159894][T38751] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.205115][T38906] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  234.220040][T38948] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.229437][T38931] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  234.255599][T38890] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.261164][T38797] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.280084][T38917] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.299664][T38931] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  234.318770][T38932] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  234.342981][T38898] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.343405][T38889] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.359869][T38950] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.360414][T38881] bcachefs (loop7): marking filesystem clean
+[  234.369855][T38932] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  234.399895][T38924] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.451594][T38872] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.462173][T38906] bcachefs: bch2_fs_get_tree() error: ENOMEM
+[  234.566797][T38912] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.567744][T38937] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.585013][T38943] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.599979][T38817] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.660581][T38935] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.666595][T38876] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.670382][T38942] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.763159][T38932] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.773319][T38931] bcachefs: bch2_fs_get_tree() error: EINVAL
+[  234.793638][T38881] bcachefs (loop7): shutdown complete
+[  235.200401][T38932] fuse: Bad value for 'fd'
+[  235.210057][T38931] fuse: Bad value for 'fd'
+[  235.222092][T39163] loop22: detected capacity change from 0 to 32768
+[  235.223607][T39163] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.270954][T39176] loop1: detected capacity change from 0 to 32768
+[  235.272446][T39176] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.291910][T39197] loop9: detected capacity change from 0 to 32768
+2025/04/05 23:32:48 executed programs: 267
+[  235.293407][T39197] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.360733][T39179] loop12: detected capacity change from 0 to 32768
+[  235.362314][T39179] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.531302][T39191] loop5: detected capacity change from 0 to 32768
+[  235.532801][T39191] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.538495][T39213] loop21: detected capacity change from 0 to 32768
+[  235.540603][T39194] loop13: detected capacity change from 0 to 32768
+[  235.542322][T39194] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.544934][T39213] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.576856][T39205] loop8: detected capacity change from 0 to 32768
+[  235.578352][T39205] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.595776][T39196] loop0: detected capacity change from 0 to 32768
+[  235.597326][T39196] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.723440][T39214] loop2: detected capacity change from 0 to 32768
+[  235.724959][T39214] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.810909][T39222] loop19: detected capacity change from 0 to 32768
+[  235.812361][T39216] loop3: detected capacity change from 0 to 32768
+[  235.812449][T39222] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.813896][T39216] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.847707][T39233] loop20: detected capacity change from 0 to 32768
+[  235.849268][T39233] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.886264][T39219] loop18: detected capacity change from 0 to 32768
+[  235.887783][T39219] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.920177][T39226] loop11: detected capacity change from 0 to 32768
+[  235.925095][T39226] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.927890][T39239] loop16: detected capacity change from 0 to 32768
+[  235.932728][T39221] loop23: detected capacity change from 0 to 32768
+[  235.934170][T39221] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.945466][T39239] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.972666][T39227] loop15: detected capacity change from 0 to 32768
+[  235.974413][T39232] loop10: detected capacity change from 0 to 32768
+[  235.974471][T39227] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  235.975941][T39232] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  236.021485][T39243] loop14: detected capacity change from 0 to 32768
+[  236.023356][T39243] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  236.069174][T39237] loop4: detected capacity change from 0 to 32768
+[  236.070150][T39234] loop6: detected capacity change from 0 to 32768
+[  236.071700][T39234] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  236.100426][T39237] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  236.179814][T39245] loop17: detected capacity change from 0 to 32768
+[  236.181331][T39245] bcachefs: bch2_fs_parse_param() Error parsing option journal_flush_delay: option_value
+[  236.285267][T39261] loop22: detected capacity change from 0 to 32768
+[  236.546070][T39197] loop9: detected capacity change from 0 to 32768
+[  236.608831][T39222] loop19: detected capacity change from 0 to 32768
+[  236.622563][T39176] loop1: detected capacity change from 0 to 32768
+[  236.639949][T39329] loop3: detected capacity change from 0 to 32768
+[  236.660529][T39298] loop5: detected capacity change from 0 to 32768
+[  236.670190][T39275] loop12: detected capacity change from 0 to 32768
+[  236.769921][T39349] loop15: detected capacity change from 0 to 32768
+[  236.836832][T39305] loop0: detected capacity change from 0 to 32768
+[  236.849745][T39297] loop21: detected capacity change from 0 to 32768
+[  236.854123][T39364] loop14: detected capacity change from 0 to 32768
+[  236.855514][T39363] loop4: detected capacity change from 0 to 32768
+[  236.879750][T39214] loop2: detected capacity change from 0 to 32768
+[  236.913819][T39314] loop8: detected capacity change from 0 to 32768
+[  236.925121][T39306] loop13: detected capacity change from 0 to 32768
+[  236.948046][T39353] loop11: detected capacity change from 0 to 32768
+[  236.991241][T39332] loop16: detected capacity change from 0 to 32768
+[  237.000561][T39338] loop23: detected capacity change from 0 to 32768
+[  237.016256][T39342] loop20: detected capacity change from 0 to 32768
+[  237.057741][T39339] loop18: detected capacity change from 0 to 32768
+[  237.058408][T39355] loop10: detected capacity change from 0 to 32768
+[  237.074790][T39245] loop17: detected capacity change from 0 to 32768
+[  237.106455][T39362] loop6: detected capacity change from 0 to 32768
+[  237.392879][T39261] ------------[ cut here ]------------
+[  237.393560][T39261] WARNING: CPU: 2 PID: 39261 at fs/bcachefs/super.c:1229 bch2_dev_free+0x27b/0x2d0
+[  237.394662][T39261] Modules linked in:
+[  237.395123][T39261] CPU: 2 UID: 0 PID: 39261 Comm: syz.22.217 Not tainted 6.14.0-13408-g9f867ba24d36 #1 PREEMPT(full) 
+[  237.396300][T39261] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  237.397628][T39261] RIP: 0010:bch2_dev_free+0x27b/0x2d0
+[  237.398743][T39261] Code: e3 02 89 de e8 76 7c 65 fd 84 db 0f 84 df fe ff ff e9 cd fe ff ff e8 a4 81 65 fd 90 0f 0b 90 e9 e6 fd ff ff e8 96 81 65 fd 90 <0f> 0b 90 e9 b1 fd ff ff 4c 89 f7 e8 b5 44 c9 fd e9 07 fe ff ff e8
+[  237.402587][T39261] RSP: 0018:ffffc900040ef210 EFLAGS: 00010293
+[  237.403500][T39261] RAX: 0000000000000000 RBX: 0000000000000000 RCX: ffffffff8453d31c
+[  237.404932][T39261] RDX: ffff88802a070000 RSI: ffffffff8453d56a RDI: 0000000000000001
+[  237.405833][T39261] RBP: ffff8880326c6000 R08: 00000000fffffffc R09: 0000000000000000
+[  237.406747][T39261] R10: 0000000000000000 R11: 0000000000000000 R12: ffff8880326c60c0
+[  237.407653][T39261] R13: ffffc900040ef368 R14: 0000000000000000 R15: 0000000000000000
+[  237.408565][T39261] FS:  00007fb1a3364640(0000) GS:ffff8880cf059000(0000) knlGS:0000000000000000
+[  237.409679][T39261] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  237.410447][T39261] CR2: 00007fc315791fc8 CR3: 0000000040d9c000 CR4: 0000000000350ef0
+[  237.411427][T39261] Call Trace:
+[  237.411925][T39261]  <TASK>
+[  237.412436][T39261]  __bch2_dev_alloc+0xa56/0xe10
+[  237.413042][T39261]  ? kasan_save_track+0x14/0x30
+[  237.413630][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.414234][T39261]  ? kasan_save_free_info+0x3b/0x60
+[  237.414887][T39261]  bch2_dev_alloc+0xba/0x170
+[  237.415257][T39349] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  237.415432][T39261]  ? __pfx_bch2_dev_alloc+0x10/0x10
+[  237.416549][T39349] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  237.417039][T39261]  ? __pfx_bch2_member_exists.part.0+0x10/0x10
+[  237.418662][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.418933][T39197] bcachefs (loop9): starting version 1.7: mi_btree_bitmap opts=compression=lz4,nojournal_transaction_names
+[  237.419256][T39261]  ? rhashtable_init_noprof+0x45c/0x800
+[  237.420742][T39197] bcachefs (loop9): recovering from clean shutdown, journal seq 15
+[  237.421328][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.422324][T39197] bcachefs (loop9): Doing compatible version upgrade from 1.7: mi_btree_bitmap to 1.25: extent_flags
+[  237.422324][T39197]   running recovery passes: check_allocations,check_extents_to_backpointers,check_inodes
+[  237.422749][T39261]  bch2_fs_alloc+0x1b7d/0x2430
+[  237.423503][T39305] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  237.423599][T39305] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  237.424305][T39222] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): filesystem UUID already open
+[  237.424405][T39222] bcachefs (9125b66f-a93b-43d4-a39a-165aa69baec6): shutdown complete
+[  237.429334][T39261]  ? __pfx_bch2_fs_alloc+0x10/0x10
+[  237.430132][T39261]  ? __lock_acquire+0x5c2/0x1a70
+[  237.430896][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.431492][T39261]  bch2_fs_open+0x92c/0x1110
+[  237.432100][T39261]  ? __lock_acquire+0xa76/0x1a70
+[  237.432684][T39261]  ? __pfx_bch2_fs_open+0x10/0x10
+[  237.433308][T39261]  ? sget+0x263/0x710
+[  237.433804][T39261]  ? bch2_fs_get_tree+0x409/0x1770
+[  237.434432][T39261]  ? vfs_get_tree+0x93/0x340
+[  237.435004][T39261]  ? path_mount+0x6b0/0x1eb0
+[  237.435569][T39261]  ? __x64_sys_mount+0x27b/0x300
+[  237.436188][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.436771][T39261]  ? debug_check_no_obj_freed+0x2a6/0x520
+[  237.437466][T39261]  ? kasan_quarantine_put+0x10d/0x230
+[  237.438105][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.438691][T39261]  ? lockdep_hardirqs_on+0x7c/0x110
+[  237.439313][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.439996][T39261]  bch2_fs_get_tree+0x10d0/0x1770
+[  237.440635][T39261]  ? __pfx_bch2_fs_get_tree+0x10/0x10
+[  237.441291][T39261]  ? avc_has_perm_noaudit+0x11b/0x3c0
+[  237.441930][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.442534][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.443130][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.443723][T39261]  ? trace_cap_capable+0x18d/0x200
+[  237.446518][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.448265][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.448853][T39261]  ? security_capable+0x210/0x250
+[  237.449401][T39197] bcachefs (loop9): accounting_read...
+[  237.449494][T39261]  vfs_get_tree+0x93/0x340
+[  237.449551][T39261]  path_mount+0x6b0/0x1eb0
+[  237.449596][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.449637][T39261]  ? kmem_cache_free+0x14b/0x4d0
+[  237.449673][T39261]  ? __pfx_path_mount+0x10/0x10
+[  237.452987][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.453574][T39261]  ? putname.part.0+0x11b/0x160
+[  237.454174][T39261]  __x64_sys_mount+0x27b/0x300
+[  237.454745][T39261]  ? __pfx___x64_sys_mount+0x10/0x10
+[  237.455385][T39261]  do_syscall_64+0xcb/0x250
+[  237.455940][T39261]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  237.456618][T39261] RIP: 0033:0x7fb1a259fdfe
+[  237.457138][T39261] Code: 48 c7 c0 ff ff ff ff eb aa e8 5e 20 00 00 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 f3 0f 1e fa 49 89 ca b8 a5 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  237.459257][T39261] RSP: 002b:00007fb1a3363da8 EFLAGS: 00000246 ORIG_RAX: 00000000000000a5
+[  237.460321][T39261] RAX: ffffffffffffffda RBX: 000000000000fe88 RCX: 00007fb1a259fdfe
+[  237.461223][T39261] RDX: 000000002000fec0 RSI: 000000002000ff00 RDI: 00007fb1a3363e00
+[  237.462134][T39261] RBP: 00007fb1a3363e40 R08: 00007fb1a3363e40 R09: 0000000000000000
+[  237.463044][T39261] R10: 0000000000000000 R11: 0000000000000246 R12: 000000002000fec0
+[  237.463959][T39261] R13: 000000002000ff00 R14: 00007fb1a3363e00 R15: 000000002000ff40
+[  237.464890][T39261]  </TASK>
+[  237.465260][T39261] Kernel panic - not syncing: kernel: panic_on_warn set ...
+[  237.466098][T39261] CPU: 2 UID: 0 PID: 39261 Comm: syz.22.217 Not tainted 6.14.0-13408-g9f867ba24d36 #1 PREEMPT(full) 
+[  237.467320][T39261] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  237.468342][T39261] Call Trace:
+[  237.468730][T39261]  <TASK>
+[  237.469085][T39261]  dump_stack_lvl+0x3d/0x1b0
+[  237.469644][T39261]  panic+0x6fc/0x7b0
+[  237.470121][T39261]  ? __pfx_panic+0x10/0x10
+[  237.470651][T39261]  ? show_trace_log_lvl+0x278/0x380
+[  237.471283][T39261]  ? check_panic_on_warn+0x1f/0xc0
+[  237.471963][T39261]  ? bch2_dev_free+0x27b/0x2d0
+[  237.472769][T39261]  check_panic_on_warn+0xb1/0xc0
+[  237.473435][T39261]  __warn+0xf6/0x3d0
+[  237.474074][T39261]  ? bch2_dev_free+0x27b/0x2d0
+[  237.474748][T39261]  report_bug+0x2e1/0x500
+[  237.475398][T39261]  ? bch2_dev_free+0x27b/0x2d0
+[  237.475988][T39261]  handle_bug+0x2dd/0x410
+[  237.476527][T39261]  exc_invalid_op+0x35/0x80
+[  237.477085][T39261]  asm_exc_invalid_op+0x1a/0x20
+[  237.477657][T39261] RIP: 0010:bch2_dev_free+0x27b/0x2d0
+[  237.478299][T39261] Code: e3 02 89 de e8 76 7c 65 fd 84 db 0f 84 df fe ff ff e9 cd fe ff ff e8 a4 81 65 fd 90 0f 0b 90 e9 e6 fd ff ff e8 96 81 65 fd 90 <0f> 0b 90 e9 b1 fd ff ff 4c 89 f7 e8 b5 44 c9 fd e9 07 fe ff ff e8
+[  237.480447][T39261] RSP: 0018:ffffc900040ef210 EFLAGS: 00010293
+[  237.481156][T39261] RAX: 0000000000000000 RBX: 0000000000000000 RCX: ffffffff8453d31c
+[  237.482053][T39261] RDX: ffff88802a070000 RSI: ffffffff8453d56a RDI: 0000000000000001
+[  237.482962][T39261] RBP: ffff8880326c6000 R08: 00000000fffffffc R09: 0000000000000000
+[  237.483864][T39261] R10: 0000000000000000 R11: 0000000000000000 R12: ffff8880326c60c0
+[  237.484777][T39261] R13: ffffc900040ef368 R14: 0000000000000000 R15: 0000000000000000
+[  237.485697][T39261]  ? bch2_dev_free+0x2c/0x2d0
+[  237.486272][T39261]  ? bch2_dev_free+0x27a/0x2d0
+[  237.486865][T39261]  __bch2_dev_alloc+0xa56/0xe10
+[  237.487451][T39261]  ? kasan_save_track+0x14/0x30
+[  237.488047][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.488635][T39261]  ? kasan_save_free_info+0x3b/0x60
+[  237.489285][T39261]  bch2_dev_alloc+0xba/0x170
+[  237.489855][T39261]  ? __pfx_bch2_dev_alloc+0x10/0x10
+[  237.490482][T39261]  ? __pfx_bch2_member_exists.part.0+0x10/0x10
+[  237.491216][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.491824][T39261]  ? rhashtable_init_noprof+0x45c/0x800
+[  237.492496][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.493105][T39261]  bch2_fs_alloc+0x1b7d/0x2430
+[  237.493701][T39261]  ? __pfx_bch2_fs_alloc+0x10/0x10
+[  237.494322][T39261]  ? __lock_acquire+0x5c2/0x1a70
+[  237.494964][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.495553][T39261]  bch2_fs_open+0x92c/0x1110
+[  237.496150][T39261]  ? __lock_acquire+0xa76/0x1a70
+[  237.496732][T39261]  ? __pfx_bch2_fs_open+0x10/0x10
+[  237.497354][T39261]  ? sget+0x263/0x710
+[  237.497831][T39261]  ? bch2_fs_get_tree+0x409/0x1770
+[  237.498451][T39261]  ? vfs_get_tree+0x93/0x340
+[  237.499018][T39261]  ? path_mount+0x6b0/0x1eb0
+[  237.499578][T39261]  ? __x64_sys_mount+0x27b/0x300
+[  237.500196][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.500786][T39261]  ? debug_check_no_obj_freed+0x2a6/0x520
+[  237.501483][T39261]  ? kasan_quarantine_put+0x10d/0x230
+[  237.502121][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.502713][T39261]  ? lockdep_hardirqs_on+0x7c/0x110
+[  237.503358][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.503985][T39261]  bch2_fs_get_tree+0x10d0/0x1770
+[  237.504633][T39261]  ? __pfx_bch2_fs_get_tree+0x10/0x10
+[  237.505287][T39261]  ? avc_has_perm_noaudit+0x11b/0x3c0
+[  237.505933][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.506540][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.507173][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.507764][T39261]  ? trace_cap_capable+0x18d/0x200
+[  237.508393][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.508980][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.509563][T39261]  ? security_capable+0x210/0x250
+[  237.510176][T39261]  vfs_get_tree+0x93/0x340
+[  237.510724][T39261]  path_mount+0x6b0/0x1eb0
+[  237.511276][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.511874][T39261]  ? kmem_cache_free+0x14b/0x4d0
+[  237.512464][T39261]  ? __pfx_path_mount+0x10/0x10
+[  237.513061][T39261]  ? srso_return_thunk+0x5/0x5f
+[  237.513645][T39261]  ? putname.part.0+0x11b/0x160
+[  237.514245][T39261]  __x64_sys_mount+0x27b/0x300
+[  237.514822][T39261]  ? __pfx___x64_sys_mount+0x10/0x10
+[  237.515473][T39261]  do_syscall_64+0xcb/0x250
+[  237.516029][T39261]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  237.516715][T39261] RIP: 0033:0x7fb1a259fdfe
+[  237.517226][T39261] Code: 48 c7 c0 ff ff ff ff eb aa e8 5e 20 00 00 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 f3 0f 1e fa 49 89 ca b8 a5 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  237.519404][T39261] RSP: 002b:00007fb1a3363da8 EFLAGS: 00000246 ORIG_RAX: 00000000000000a5
+[  237.520377][T39261] RAX: ffffffffffffffda RBX: 000000000000fe88 RCX: 00007fb1a259fdfe
+[  237.521308][T39261] RDX: 000000002000fec0 RSI: 000000002000ff00 RDI: 00007fb1a3363e00
+[  237.522243][T39261] RBP: 00007fb1a3363e40 R08: 00007fb1a3363e40 R09: 0000000000000000
+[  237.523177][T39261] R10: 0000000000000000 R11: 0000000000000246 R12: 000000002000fec0
+[  237.524089][T39261] R13: 000000002000ff00 R14: 00007fb1a3363e00 R15: 000000002000ff40
+[  237.525030][T39261]  </TASK>
+[  237.525618][T39261] Kernel Offset: disabled
+[  237.526138][T39261] Rebooting in 86400 seconds..
+
+VM DIAGNOSIS:
+23:32:51  Registers:
+info registers vcpu 0
+RAX=00000000000df283 RBX=0000000000000000 RCX=ffffffff8b54d4c9 RDX=0000000000000000
+RSI=0000000000000001 RDI=0000000000000000 RBP=dffffc0000000000 RSP=ffffffff8de07e00
+R8 =0000000000000001 R9 =ffffed100c5065bd R10=ffff888062832deb R11=ffffffff8de11288
+R12=0000000000000000 R13=ffffffff9065df10 R14=0000000000000000 R15=0000000000000000
+RIP=ffffffff8b54b9fe RFL=00000282 [--S----] CPL=0 II=0 A20=1 SMM=0 HLT=1
+ES =0000 0000000000000000 00000000 00000000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 00000000 00000000
+FS =0000 0000000000000000 00000000 00000000
+GS =0000 ffff8880cefd9000 00000000 00000000
+LDT=0000 fffffe0000000000 00000000 00000000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007f9ea01ff000 CR3=0000000040ef8000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000001d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 0000000000989680 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 0000000000989680
+YMM02=0000000000000000 0000000000000000 00007fe77e0ad660 00007fe77e0ad660
+YMM03=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM04=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM05=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffff0000
+YMM06=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM07=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffff0000
+YMM08=0000000000000000 0000000000000000 2d746e756f6d6572 3d73726f72726500
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+info registers vcpu 1
+RAX=ffff88804da12ab8 RBX=ffff888106c0d5c0 RCX=ffffffff8196ff5b RDX=1ffff11020d81aba
+RSI=0000000000000004 RDI=ffffc90000b8fb00 RBP=ffff88804da12ab8 RSP=ffffc90000b8fb70
+R8 =0000000000000001 R9 =fffff52000171f60 R10=0000000000000003 R11=0000000000000000
+R12=dffffc0000000000 R13=ffffffff8b235bc0 R14=0000000000000057 R15=ffff88810dc60d80
+RIP=ffffffff8b235e0f RFL=00000292 [--S-A--] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 00000000 00000000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 00000000 00000000
+FS =0000 0000000000000000 00000000 00000000
+GS =0000 ffff8881a25d9000 00000000 00000000
+LDT=0000 fffffe0000000000 00000000 00000000
+TR =0040 fffffe000004a000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000048000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007fe5c93ff000 CR3=0000000027c20000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000001d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 0000000000989680 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 0000000000989680
+YMM02=0000000000000000 0000000000000000 00007f7a6b8ad660 00007f7a6b8ad660
+YMM03=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM04=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM05=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffff0000
+YMM06=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM07=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffff0000
+YMM08=0000000000000000 0000000000000000 2d746e756f6d6572 3d73726f72726500
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+info registers vcpu 2
+RAX=0000000000000020 RBX=00000000000003f8 RCX=0000000000000000 RDX=00000000000003f8
+RSI=ffffffff85405515 RDI=ffffffff9abff4e0 RBP=ffffffff9abff4a0 RSP=ffffc900040eeaf0
+R8 =0000000000000000 R9 =ffffed1004982046 R10=0000000000000000 R11=0000000000000000
+R12=0000000000000000 R13=0000000000000020 R14=ffffffff9abff4a0 R15=ffffffff854054b0
+RIP=ffffffff8540553f RFL=00000002 [-------] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 00000000 00000000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 00000000 00000000
+FS =0000 00007fb1a3364640 00000000 00000000
+GS =0000 ffff8880cf059000 00000000 00000000
+LDT=0000 fffffe0000000000 00000000 00000000
+TR =0040 fffffe0000091000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe000008f000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007fc315791fc8 CR3=0000000040d9c000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000001d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 00000000000f4240 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 00000000000f4240
+YMM02=0000000000000000 0000000000000000 00007fb1a32ad660 00007fb1a32ad660
+YMM03=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM04=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM05=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffff0000
+YMM06=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM07=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffff0000
+YMM08=0000000000000000 0000000000000000 2d746e756f6d6572 3d73726f72726500
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+info registers vcpu 3
+RAX=ffffffff90f4162a RBX=ffffffff90727a1c RCX=dffffc0000000000 RDX=ffffffff81000154
+RSI=0000000000000000 RDI=ffffffff90727a18 RBP=ffffffff90727a18 RSP=ffffc900006f09f8
+R8 =0000000000000001 R9 =0000000000000001 R10=0000000000000001 R11=00000000000a58a1
+R12=ffffffff90727a18 R13=ffffffff8100012f R14=ffffffff90727a18 R15=ffffffff90727a18
+RIP=ffffffff816922b2 RFL=00000287 [--S--PC] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 00000000 00000000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 00000000 00000000
+FS =0000 00007f32cc17f8c0 00000000 00000000
+GS =0000 ffff8881a2659000 00000000 00000000
+LDT=0000 fffffe0000000000 00000000 00000000
+TR =0040 fffffe00000d8000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe00000d6000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007fc30c5ff000 CR3=0000000028cec000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000001d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM01=0000000000000000 0000000000000000 ffff0000ff000000 0000000000000000
+YMM02=0000000000000000 0000000000000000 0000558000377570 632f302f716d2f32
+YMM03=0000000000000000 0000000000000000 7269762f73656369 7665642f7379732f
+YMM04=0000000000000000 0000000000000000 2f2f2f2f2f2f2f2f 2f2f2f2f2f2f2f2f
+YMM05=0000000000000000 0000000000000000 0000558082161c80 0000558082159160
+YMM06=0000000000000000 0000000000000000 0000000000000000 0000000000000004
+YMM07=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM08=0000000000000000 0000000000000000 3a212d2b007b3d0d 0a0920002c0d0a09
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+info registers vcpu 4
+RAX=0000000066c2ac00 RBX=0000000000000001 RCX=1ffff11022aadb18 RDX=0000000000000000
+RSI=ffffffff825a47a7 RDI=ffff88811556d8c0 RBP=ffffc90014f2f208 RSP=ffffc90014f2f1c0
+R8 =0000000000000000 R9 =0000000000000001 R10=0000000066c2ac00 R11=ffffffff8e1c0a80
+R12=ffff88811556d860 R13=ffff88811556d2c0 R14=ffffffff8bc69a20 R15=ffff88801c28d0d8
+RIP=ffffffff825ab5b2 RFL=00000216 [----AP-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 00000000 00000000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 00000000 00000000
+FS =0000 00007f10d3256640 00000000 00000000
+GS =0000 ffff8880cf0d9000 00000000 00000000
+LDT=0000 fffffe0000000000 00000000 00000000
+TR =0040 fffffe000011f000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe000011d000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007f1e42dff000 CR3=00000000246a2000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000001d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 0000000000989680 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 0000000000989680
+YMM02=0000000000000000 0000000000000000 00007fde9eead660 00007fde9eead660
+YMM03=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM04=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM05=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffff00
+YMM06=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM07=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffff00
+YMM08=0000000000000000 0000000000000000 2d746e756f6d6572 3d73726f72726500
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+info registers vcpu 5
+RAX=ffff888031582580 RBX=0000000000000030 RCX=1ffff110062b1531 RDX=ffff888020323c00
+RSI=ffffffff84c95fd9 RDI=ffff88803158a9a0 RBP=ffff88803158a998 RSP=ffffc900017deb58
+R8 =ffff88805e4f2007 R9 =00000000000008b2 R10=ffff88803158aed0 R11=0000000000000000
+R12=dffffc0000000000 R13=ffff88803158aec0 R14=ffff888031582580 R15=ffff888031580000
+RIP=ffffffff84c95fdc RFL=00000293 [--S-A-C] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 00000000 00000000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 00000000 00000000
+FS =0000 0000000000000000 00000000 00000000
+GS =0000 ffff8881a26d9000 00000000 00000000
+LDT=0000 fffffe0000000000 00000000 00000000
+TR =0040 fffffe0000166000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000164000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007f51db0650c0 CR3=0000000061dec000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000001d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 0000000000989680 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 0000000000989680
+YMM02=0000000000000000 0000000000000000 00007f1e4bead660 00007f1e4bead660
+YMM03=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM04=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM05=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffff0000
+YMM06=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM07=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffff0000
+YMM08=0000000000000000 0000000000000000 2d746e756f6d6572 3d73726f72726500
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+info registers vcpu 6
+RAX=dffffc0000000000 RBX=0000000000000001 RCX=ffffc90004b8e66c RDX=1ffff92000971cea
+RSI=ffffffff82109df7 RDI=ffffc90004b8e718 RBP=ffffc90004b8e760 RSP=ffffc90004b8e698
+R8 =0000000000000001 R9 =ffffc90004b8ebf0 R10=0000000000011070 R11=00000000000a58a1
+R12=0000000000000000 R13=ffffc90004b8e718 R14=ffff888022765a00 R15=0000000000000000
+RIP=ffffffff819f475f RFL=00000246 [---Z-P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 00000000 00000000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 00000000 00000000
+FS =0000 00007fb1f0f96640 00000000 00000000
+GS =0000 ffff8880cf159000 00000000 00000000
+LDT=0000 fffffe0000000000 00000000 00000000
+TR =0040 fffffe00001ad000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe00001ab000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007fc315792658 CR3=0000000038b56000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000001d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 0000000000989680 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 0000000000989680
+YMM02=0000000000000000 0000000000000000 00007f09294ad660 00007f09294ad660
+YMM03=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM04=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM05=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffff0000
+YMM06=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM07=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffff0000
+YMM08=0000000000000000 0000000000000000 2d746e756f6d6572 3d73726f72726500
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+info registers vcpu 7
+RAX=ffffffff958b3dd8 RBX=0000000000000200 RCX=0000000000000200 RDX=0000000000000008
+RSI=ffff8880284ba940 RDI=ffff8880284b9e00 RBP=ffffc90004c5f5e8 RSP=ffffc90004c5f550
+R8 =0000000000000001 R9 =0000000000080000 R10=0000000000000050 R11=ffff88813fff83d8
+R12=0000000000000009 R13=ffff8880284ba940 R14=0000000000000000 R15=ffff8880284b9e00
+RIP=ffffffff81968a05 RFL=00000006 [-----P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 00000000 00000000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 00000000 00000000
+FS =0000 00007f7a5725d640 00000000 00000000
+GS =0000 ffff8881a2759000 00000000 00000000
+LDT=0000 fffffe0000000000 00000000 00000000
+TR =0040 fffffe00001f4000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe00001f2000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007f9ea9330fc8 CR3=000000002401a000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000001d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 00000000000f4240 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 00000000000f4240
+YMM02=0000000000000000 0000000000000000 00007fb1a32ad660 00007fb1a32ad660
+YMM03=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM04=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM05=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffff0000
+YMM06=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM07=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffff0000
+YMM08=0000000000000000 0000000000000000 2d746e756f6d6572 3d73726f72726500
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000
